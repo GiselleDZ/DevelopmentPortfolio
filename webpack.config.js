@@ -39,6 +39,25 @@ module.exports = function(_env, argv) {
           ]
         },
         {
+          test: /\.s[ac]ss$/,
+          use: [
+            isProduction ? MiniCssExtractPlugin.loader : "style-loader",
+            {
+              loader: "css-loader",
+              options: {
+                importLoaders: 2
+              }
+            },
+            "resolve-url-loader",
+            {
+              loader: "sass-loader",
+              options: {
+                sourceMap: true
+              }
+            }
+          ]
+        },
+        {
           test: /\.(png|jpg|gif)$/i,
           use: {
             loader: "url-loader",
@@ -53,7 +72,7 @@ module.exports = function(_env, argv) {
           use: ["@svgr/webpack"]
         },
         {
-          test: /\.(eot|otf|ttf|woff|woff2)$/,
+          test: /\.(eot|otf|ttf|woff|woff2|glb)$/,
           loader: require.resolve("file-loader"),
           options: {
             name: "static/media/[name].[hash:8].[ext]"
