@@ -5,7 +5,7 @@
     }
 
     &__button{
-       background-image: radial-gradient( $darkester-gray, $black );
+       background-image: radial-gradient( $darkester-blue, $black );
         position: fixed;
         height: 8rem;
         width: 8rem;
@@ -30,7 +30,7 @@
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient( $black, $darkester-gray );
+        background-image: radial-gradient( $black, $darkester-blue );
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.33, 1, 0.68, 1);
         
@@ -59,7 +59,7 @@
        width: 100%;
        transform: scale(0);
 
-       @include center-axis;
+       @include center-axis(50%, 50%);
     }
 
     &__items{
@@ -73,11 +73,11 @@
            display: inline-block;
            font-size: 3rem;
            font-weight: 300;
-           color: $medium-light-gray;
+           color: $medium-light-blue;
            text-decoration: none;
            text-transform: uppercase;
            padding: 1rem;
-           background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $medium-light-gray 50%);
+           background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $medium-light-blue 50%);
            background-size: 240%; 
            transition: all .8s;
 
@@ -89,7 +89,7 @@
 
        &:hover{
            background-position: 100%;
-           color: $darkester-gray;
+           color: $darkester-blue;
            transform: translateX(1rem);
        }
     }
@@ -119,7 +119,7 @@
            display: inline-block;
            width: 2.8rem;
            height: 1px;
-           background-color: $medium-light-gray;
+           background-color: $medium-light-blue;
         }
 
         &::before,

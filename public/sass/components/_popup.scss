@@ -14,14 +14,14 @@
     &__content{
         width: 75%;
         height: 50rem;
-        background-color: $darkest-gray;
+        background-color: $darkest-blue;
         box-shadow: $box-shadow-dark;
         border-radius: $border-radius-sm;
         display: table;
         overflow: hidden;
         opacity: 0;
 
-        @include center-axis;
+        @include center-axis(50%, 50%);
 
         transform: translate(-50%, -50%) scale(.5);
         transition: all .4s .2s;
@@ -51,7 +51,7 @@
 
         column-count: 2;
         column-gap: 4rem;
-        column-rule: .5px solid $darkester-gray;
+        column-rule: .5px solid $darkester-blue;
 
         hyphens: auto;
         -moz-hyphens: auto;
@@ -85,7 +85,7 @@
             top: 2rem;  
             right: 3rem;
             text-decoration: none;
-            color: $medium-light-gray; 
+            color: $medium-light-blue; 
             font-size: 4rem;
             font-weight: 300 ;
             line-height: 1;
@@ -93,7 +93,7 @@
         }
 
         &:hover{
-            color: $light-gray;
+            color: $light-blue;
         }
     }
 

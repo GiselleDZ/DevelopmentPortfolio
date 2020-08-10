@@ -1,5 +1,5 @@
 .footer{
-    background-color: $darkest-gray;
+    background-color: $black;
     padding: 8rem 0;
     font-size: 1.4rem;
 
@@ -27,7 +27,7 @@
     }
     
     &__line-nav{
-        border-top: 1px solid $lightish-gray;
+        border-top: 1px solid $lightish-blue;
         padding-top: .5rem;
         display: block;
         width: 70%;
@@ -74,7 +74,7 @@
 
         &:link,
         &:visited {
-            color: $lightish-gray;
+            color: $lightish-blue;
             text-decoration: none;
             text-transform: uppercase;
             letter-spacing: .5rem;
@@ -96,7 +96,7 @@
         text-align: center;
         margin-top: 12rem;
         font-size: 1.2rem;
-        color: $lightish-gray;
+        color: $lightish-blue;
 
         @include respond(tab-port){
             margin-top: 6rem;

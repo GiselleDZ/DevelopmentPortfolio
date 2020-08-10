@@ -27,16 +27,16 @@
     &:focus {
         outline: none;
         transform: translateY(-.1rem);
-        box-shadow: 0 .5rem 1rem  #00000038;
+        box-shadow: $box-shadow-light;
     }
 
     &--white {
-        background-color: $light-gray;
+        background-color: $light-blue;
         font-weight: 600;
         color: black;
 
         &::after {
-            background-color: $light-gray;
+            background-color: $light-blue;
         }
     }
 
@@ -95,14 +95,14 @@
     }
 
     &--white{
-        color: $light-gray;
-        border-bottom: 1px solid $light-gray;
+        color: $light-blue;
+        border-bottom: 1px solid $light-blue;
         background-color: transparent;
         font-weight: 600;
         
         &:hover{
             background-color: white;
-            color: $darkest-gray;
+            color: $darkest-blue;
         }
     }
 

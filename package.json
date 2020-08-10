@@ -7,7 +7,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
-    "compile:sass" : "node-sass public/sass/main.scss public/css/style.css"
+    "compile:sass" : "node-sass public/sass/main.scss public/css/style.css -w"
   },
   "dependencies": {
     "react": "^16.9.0",

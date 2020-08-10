@@ -8,10 +8,10 @@
     }
 }
 
-@mixin center-axis{
+@mixin center-axis($top, $left){
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: $top;
+    left: $left;
     transform: translate(-50%, -50%);
 }
 
@@ -23,7 +23,7 @@
 @mixin classy-primary-button-hover{
     &:hover{
         transform: translateY(-.2rem);
-        box-shadow: 0 1rem 2rem  #00000038;
+        box-shadow: 0 1rem 2rem rgba($color: $black, $alpha: .2);
         &::after{
             transform: scale(1.05);
             opacity: 0;
@@ -94,23 +94,23 @@
 @mixin gradient-photo($photo){
     background-image: linear-gradient(
         to right bottom,
-        #000000af,
-        #222121b4),
+        rgba($black, .2),
+        rgba($darkester-blue, .2)),
         $photo;
 }
 
 @mixin gradient-transparent-photo($photo){
     background-image: linear-gradient(
         to right bottom,
-        #706f6fd0,
-        #969595e1),
+        rgba($black, .2),
+        rgba($darkester-blue, .2)),
         $photo;
 }
 
 @mixin gradient-transparent-photo-dark($photo){
     background-image: linear-gradient(
         to right bottom,
-        #242424e7,
-        #0f0f0fea),
+        rgba($black, .2),
+        rgba($darkester-blue, .2)),
         $photo;
 }

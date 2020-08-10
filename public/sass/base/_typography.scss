@@ -1,30 +1,32 @@
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
     font-size: 1.6rem;
     line-height: 1.7;
-    color: $medium-gray;
+    color: $medium-blue;
 }
 
 .heading-primary {
-    text-transform: uppercase;
-    margin: 6rem;
+
+    text-align: center;
 
     
     &--main{
-        color: white;
+        font-family: "Playfair Display", serif;
+        color: $darkester-blue;
         display: block;
-        font-size: 3.5rem;
-        font-weight: 300;
-        letter-spacing: 2.2rem;
+        font-size: 8.5rem;
+        font-weight: 900;
+        letter-spacing: .5rem;
+        line-height: 10rem;
         animation: moveInLeft .5s;
         animation-timing-function: ease-in;
+
         
-        
-        @include respond(tab-land){ 
-            letter-spacing: 1.5rem;
-            font-size: 3.6rem;
-        }
+        // @include respond(tab-land){ 
+        //     letter-spacing: 1.5rem;
+        //     font-size: 3.6rem;
+        // }
         
         @include respond(tab-port){ 
             letter-spacing: 1rem;
@@ -38,19 +40,20 @@ body {
     }
 
     &--sub{
-        color: white;
+        color: $dark-blue;
         display: block;
+        text-transform: uppercase;
         font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 2.5rem;
+        letter-spacing: 1.2rem;
         animation: moveInRight .5s ;
         animation-timing-function: ease-in;
 
         
-        @include respond(tab-land){ 
-            letter-spacing: 1.5rem;
-            font-size: 2rem;
-        }
+        // @include respond(tab-land){ 
+        //     letter-spacing: 1.5rem;
+        //     font-size: 2rem;
+        // }
         
         @include respond(tab-port){ 
             letter-spacing: 1.5rem;
@@ -73,25 +76,25 @@ body {
     display: inline-block;
     
     &--lightest{
-        background-image: linear-gradient( to right, $light-gray, $white);
+        background-image: linear-gradient( to right, $light-blue, $white);
         -webkit-background-clip: text;
         color: transparent; 
     }
 
     &--lighter{
-        background-image: linear-gradient( to right, $medium-gray, $light-gray);
+        background-image: linear-gradient( to right, $medium-blue, $light-blue);
         -webkit-background-clip: text;
         color: transparent; 
     }
 
     &--light{
-        background-image: linear-gradient( to right, $medium-gray, $darker-gray);
+        background-image: linear-gradient( to right, $medium-blue, $darker-blue);
         -webkit-background-clip: text;
         color: transparent; 
     }
 
     &--dark{
-        background-image: linear-gradient( to right, $darkest-gray, $black);
+        background-image: linear-gradient( to right, $darkest-blue, $black);
         -webkit-background-clip: text;
         color: transparent;
     }
@@ -107,7 +110,7 @@ body {
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 600;
-    color: $dark-gray;
+    color: $dark-blue;
     letter-spacing: .2rem;
 
     @include respond(tab-land){ 
@@ -115,7 +118,7 @@ body {
     }
 
     &--light{
-        color: $medium-light-gray;
+        color: $medium-light-blue;
         font-weight: 400;
     }
 }
@@ -133,7 +136,7 @@ body {
     }
 
     &--light{
-        color: $light-gray;
+        color: $light-blue;
     }
 }
 

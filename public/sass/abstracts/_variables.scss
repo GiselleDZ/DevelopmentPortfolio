@@ -1,22 +1,23 @@
 ///  C O L O R S
 
-//primary//
-$white: #FFFFFF;
-$black: #000000;
 
-$light-gray: #D3D3D3;
-$lightish-gray: #C0C0C0;
-$medium-light-gray: #A9A9A9;
+$white: #edf5ff;
+$black: #001141;
 
-//secondary//
-$medium-gray: #808080;
+$light-blue: #d0e2ff;
+$lightish-blue: #a6c8ff;
 
-$dark-gray: #686868;
-$darker-gray: #505050;
-$darkester-gray: #303030;
-$darkest-gray: #181818;
+$medium-light-blue: #78a9ff;
+$medium-blue: #4589ff;
 
-//tertiary//
+$dark-blue: #0f62fe;
+$darker-blue: #0043ce;
+$darkester-blue: #002d9c;
+$darkest-blue: #001d6c;
+
+
+
+
 $whiskey-tan-light: #A97779;
 $whiskey-tan-dark: #463132;
 
@@ -44,11 +45,11 @@ $default-font-size: 1.6rem;
 
 
 // B O X   S H A D O W
-$box-shadow-small-light: 0 1rem 2rem rgba($color: #000000, $alpha: .15);
-$box-shadow-light: 0 1.5rem 4rem rgba($color: #000000, $alpha: .15);
-$box-shadow-medium: 0 1.5rem 4rem rgba($color: #000000, $alpha: .20);
-$box-shadow-dark: 0 1.5rem 4rem rgba($color: #000000, $alpha: .25);
-$box-shadow-big-dark: 0 2rem 4rem rgba($color: #000000, $alpha: .4);
+$box-shadow-small-light: 0 1rem 2rem rgba($color: $black, $alpha: .15);
+$box-shadow-light: 0 1.5rem 4rem rgba($color: $black, $alpha: .15);
+$box-shadow-medium: 0 1.5rem 4rem rgba($color: $black, $alpha: .20);
+$box-shadow-dark: 0 1.5rem 4rem rgba($color: $black, $alpha: .25);
+$box-shadow-big-dark: 0 2rem 4rem rgba($color: $black, $alpha: .4);
 
 
 // C O M P O N E N T   V A R I A B L E S
@@ -63,6 +64,6 @@ $circle40: circle(40% at 40% 40%);
 
 // B O R D E R    R A D I U S 
 
-$border-radius-sm: .5rem;
-$border-radius-big: 1rem;
-$border-radius-round: 10rem;
+$border-radius-sm: 0rem;
+$border-radius-big: 0rem;
+$border-radius-round: 0rem;
