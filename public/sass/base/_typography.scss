@@ -9,11 +9,12 @@ body {
 .heading-primary {
 
     text-align: center;
+    
 
     
     &--main{
         font-family: "Playfair Display", serif;
-        color: $darkester-blue;
+        color: $darker-blue;
         display: block;
         font-size: 8.5rem;
         font-weight: 900;
