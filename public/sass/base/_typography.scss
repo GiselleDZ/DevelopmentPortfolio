@@ -7,11 +7,10 @@ body {
 }
 
 .heading-primary {
+    width: 100%;
 
-    text-align: center;
-    
+    // @include center-axis(40%, 50%);
 
-    
     &--main{
         font-family: "Playfair Display", serif;
         color: $darker-blue;
