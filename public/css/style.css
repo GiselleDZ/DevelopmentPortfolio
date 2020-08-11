@@ -57,7 +57,7 @@ body {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #4589ff; }
+  color: #0f62fe; }
 
 .heading-primary {
   width: 100%; }
@@ -460,18 +460,18 @@ body {
     text-align: center;
     width: 80%;
     height: 40%;
-    position: absolute;
-    padding-top: 2rem;
+    position: relative;
+    padding-top: 6rem;
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%); }
   .header__shadow-wrapper {
-    position: relative;
     width: 80%;
     height: 40%;
     top: 25%;
-    left: 10%; }
+    left: 10%;
+    position: relative; }
     .header__shadow-wrapper--dot-shadow, .header__shadow-wrapper--dot-shadow::before {
       position: absolute;
       display: block; }
@@ -479,13 +479,13 @@ body {
       width: 100%;
       height: 100%; }
     .header__shadow-wrapper--dot-shadow::before {
+      top: 1.5rem;
+      left: 1.5rem;
       content: "before";
       z-index: -1;
       background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='3'%3E%3Ccircle cx='2.5' cy='2.5' r='.5' fill='%23242a49'/%3E%3C/svg%3E") repeat bottom left;
       width: 100%;
-      height: 100%;
-      top: 1.5rem;
-      left: 1.5rem; }
+      height: 100%; }
 
 .footer {
   background-color: #001141;
@@ -575,6 +575,29 @@ body {
     .navigation__button {
       top: 2.5rem;
       right: 2.5rem; } }
+
+.navigation__shadow-wrapper {
+  color: transparent;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: 124;
+  position: relative; }
+  .navigation__shadow-wrapper--dot-shadow-round, .navigation__shadow-wrapper--dot-shadow-round::before {
+    position: absolute;
+    display: block; }
+  .navigation__shadow-wrapper--dot-shadow-round {
+    width: 100%;
+    height: 100%; }
+  .navigation__shadow-wrapper--dot-shadow-round::before {
+    border-radius: 50%;
+    top: -5rem;
+    left: 1rem;
+    content: "before";
+    z-index: -1;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='3'%3E%3Ccircle cx='2.5' cy='2.5' r='.5' fill='%23242a49'/%3E%3C/svg%3E") repeat bottom left;
+    width: 100%;
+    height: 100%; }
 
 .navigation__background {
   height: 7rem;
@@ -679,4 +702,4 @@ body {
   transform: rotate(-135deg); }
 
 .body {
-  background-color: #002d9c; }
+  background-color: #001d6c; }
