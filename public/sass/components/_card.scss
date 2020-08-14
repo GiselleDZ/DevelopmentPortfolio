@@ -1,0 +1,99 @@
+.card{
+    // F U N C T I O N A L I T Y
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: $card-height;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10rem;
+
+    &__button-container{
+        position: absolute;
+        top: 60rem;
+    }
+
+    // F R O N T   S I D E    S T Y L I N G 
+
+    &__side{
+        margin-top: 20rem;
+        height: $card-height;
+        transition: all 5s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        border-radius: $border-radius-sm;
+        box-shadow: $box-shadow-light;
+        background-color: $darkester-blue;
+
+        &--front{
+        }
+
+        &--back{
+            transform: rotateY(-180deg);
+        }
+    }
+
+    &__flip &__side--front{
+        transform: rotateY(180deg);
+        // transform: scale(3);
+    }
+
+    &__flip &__side--back{
+        // transform: rotateY(0);
+        // transform: scale(3);
+
+    }
+
+
+
+    &__about{
+        padding: 4rem;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    &__text{
+        margin: 0 auto;
+    }
+
+    
+
+    // B A C K   S I D E    S L I  D I N G 
+
+    &__tech-logos{
+        background-color: rgba($color: white, $alpha: 1.0);
+        margin: 0 auto;
+        width: 50%;
+        height: 150%;
+        padding: 8rem 8rem 8rem 8rem;
+        border: 1px solid $medium-blue;
+        text-align: center;
+    }
+
+    &__logo-img{
+        height: 3rem;
+        margin-bottom: 4rem;
+        
+
+        &--sq{
+            height: 3.5rem;
+        }
+
+        &--wide{
+            height: 2.5rem
+        }
+
+        &--x-wide{
+            height: 2rem;
+        }
+
+        &:not(:last-child){
+            margin-right: 6rem;
+        }
+    }
+    
+}   

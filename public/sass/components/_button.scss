@@ -105,7 +105,7 @@
         font-weight: 600;
         
         &:hover{
-            background-color: white;
+            background-color: $white;
             color: $darkest-blue;
         }
     }
@@ -119,7 +119,6 @@
 
     &:active,
     &:focus {
-        box-shadow: 0 .5rem 2rem #00000038;
         transform: translateY(-1px);
     }
 }

@@ -3,51 +3,11 @@
 }
 
 .intro{
-    background-color: $darkest-blue;
-    transition: all .5s;
+    // background-color: $darkest-blue;
+    // transition: all .5s;
 
-    position: relative;
+    // position: relative;
     height: 95vh;
-    margin-top: -25rem;
-
-    &__about{
-        position: absolute;
-        width: 80%;
-        background-color: $darkester-blue;
-
-        @include center-axis(50%, 50%)
-    }
-
-    &__text{
-        padding: 8rem;
-        text-align: center;
-    }
-
-    &__tech-logos{
-        background-color: white;
-        margin: 0 auto;
-        margin-top: 4rem;
-        padding: 4rem 4rem 0 4rem;
-        border-radius: .5rem;
-        border: 1px solid $medium-blue;
-    }
-
-    &__logo-img{
-        height: 3rem;
-        margin-bottom: 4rem;
-
-        &--sq{
-            height: 4rem;
-        }
-
-        &--wide{
-            height: 2rem
-        }
-
-        &:not(:last-child){
-            margin-right: 2rem;
-        }
-    }
-
+    // // margin-top: -25rem;
 
 }

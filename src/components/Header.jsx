@@ -21,7 +21,7 @@ export default class Header extends Component {
                     </div>
                     <div className="header__button">
                         <a href="#HiHello" className="btn btn--black-button btn--animated">
-                            Nice to meet you 🡓 
+                            Hi, Nice to meet you 🡓 
                         </a>
                     </div>
                 </div>

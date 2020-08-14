@@ -27,8 +27,8 @@ html {
 
 body {
     box-sizing: border-box;
-    background-color: blue($color: #272669);
-    padding: 3rem;
+    background-color: $darker-blue;
+    padding: 1rem;
 
     
     @include respond(tab-port){ 
