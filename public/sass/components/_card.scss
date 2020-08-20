@@ -1,6 +1,5 @@
 .card{
-    // F U N C T I O N A L I T Y
-    perspective: 150rem;
+    perspective: 300rem;
     -moz-perspective: 150rem;
     position: relative;
     height: $card-height;
@@ -8,17 +7,13 @@
     margin: 0 auto;
     margin-top: 10rem;
 
-    &__button-container{
-        position: absolute;
-        top: 60rem;
-    }
 
     // F R O N T   S I D E    S T Y L I N G 
 
     &__side{
         margin-top: 20rem;
         height: $card-height;
-        transition: all 5s;
+        transition: all 1s;
         position: absolute;
         top: 0;
         left: 0;
@@ -27,25 +22,37 @@
         overflow: hidden;
         border-radius: $border-radius-sm;
         box-shadow: $box-shadow-light;
-        background-color: $darkester-blue;
+        background-color: $light-blue;
 
-        &--front{
-        }
-
-        &--back{
-            transform: rotateY(-180deg);
-        }
     }
 
-    &__flip &__side--front{
+    // F U N C T I O N A L I T Y
+    //card flips whole 360 to retain right side viewing, while the sides flip-180 to be seen or hidden
+
+    &--flip {
+        transform: rotateY(360deg);
+    }
+
+    &--flip &__side--back{
+        transform: rotateY(0deg);
+    }
+
+    &--flip &__side--front{
         transform: rotateY(180deg);
-        // transform: scale(3);
     }
 
-    &__flip &__side--back{
-        // transform: rotateY(0);
-        // transform: scale(3);
+    
+    &--no-flip {
+        transform: rotateY(0);
+    }
+    
+    &__side--back{
+        transform: rotateY(-180deg)
 
+    }
+
+    &__side--front{
+        transform: rotateY(0);
     }
 
 
@@ -62,14 +69,14 @@
 
     
 
-    // B A C K   S I D E    S L I  D I N G 
+    // B A C K   S I D E    S T Y L I N G
 
     &__tech-logos{
-        background-color: rgba($color: white, $alpha: 1.0);
+        background-color: $white;
         margin: 0 auto;
-        width: 50%;
+        width: 100%;
         height: 150%;
-        padding: 8rem 8rem 8rem 8rem;
+        padding: 4rem 8rem 8rem 8rem;
         border: 1px solid $medium-blue;
         text-align: center;
     }
@@ -93,6 +100,19 @@
 
         &:not(:last-child){
             margin-right: 6rem;
+        }
+    }
+
+    &__button-container{
+        position: absolute;
+        width: 100%;
+        top: 54rem;
+        margin: 0 auto;
+        margin-top: 10rem;
+
+        &--right{
+            position: absolute;
+            right: .5rem;
         }
     }
     

@@ -7,17 +7,13 @@ export default class Intro extends Component {
         this.state = {
             card : "front",
             text : "Some of the tech I use",
-            front: "card__side card__side--front",
-            back: "card__side card__side--back"
+            flip: false,
+            cardClass: "card card--no-flip"
         }
-        this.frontRef = React.createRef()
-        this.backRef = React.createRef()
         this.handleFlip = this.handleFlip.bind(this)
     }
 
     handleFlip(e){
-        const front = this.frontRef.current
-        const back = this.backRef.current
         const aboutMe = "About me"
         const tech = "Some of the tech I use"
 
@@ -25,31 +21,28 @@ export default class Intro extends Component {
             this.setState({
                 card: "back",
                 text: aboutMe,
-                front: "card__flip card__side card__side--front",
-                back: "card__flip card__side card__side--back"
+                flip: true,
+                cardClass: "card card--flip"
             })
-
         } else {
             this.setState({
                 card: "front",
                 text: tech,
-                front: "card__side card__side--front",
-                back: "card__side card__side--back"
+                flip: false,
+                cardClass: "card card--no-flip"
             })
         }
-
-
     }
 
     render(){
         return(
             <section className="intro">
-                <div className="card" id="HiHello">
-                    <div ref={this.backRef} class={this.state.back}>
+                <div className={this.state.cardClass} id="HiHello">
+                    <div className="card__side card__side--back">
                         <div className="card__tech-logos">
                             <div className="card__wide-logos">
-                                <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="card__logo-img card__logo-img--wide"/>
-                                <img src="../../public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="card__logo-img card__logo-img--x-wide"/>
+                                <img src="./public/assets/greyscale-logos/node.png" alt="node logo" className="card__logo-img card__logo-img--wide"/>
+                                <img src="./public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="card__logo-img card__logo-img--x-wide"/>
                                 <img src="../../public/assets/greyscale-logos/mongodb.png" alt="mongodb logo" className="card__logo-img card__logo-img--wide"/>
                                 <img src="../../public/assets/greyscale-logos/sequelize.png" alt="sequelize logo" className="card__logo-img card__logo-img--wide"/>
                             </div>
@@ -70,31 +63,43 @@ export default class Intro extends Component {
                             </div>
                         </div>
                     </div>
-                    <div ref={this.frontRef} class={this.state.front}>
+                    <div className="card__side card__side--front">
                         <div className="card__about">
                             <div className="card__text">
-                                <h3 className="heading-quaternary--light u-margin-bottom-smallmedium">
+                                <h3 className="heading-quaternary--dark u-margin-bottom-smallmedium">
                                     Hi, Hello!
                                 </h3>
-                                <p className="paragraph--light">
+                                <p className="paragraph--dark">
                                     I'm a Fullstack Software Engineer.
                                 </p>
-                                <p className="paragraph--light">
+                                <p className="paragraph--dark">
                                     I used to work as a Graphic Designer, but I really love technology, so here I am, spending all my time working with all the tech I love.
                                 </p>
                             </div>
                             <div className="card__text">
-                                <p className="paragraph--light u-margin-top-medium">
+                                <p className="paragraph--dark u-margin-top-medium">
                                     I'm interested in creating memorable user experiences with engaging functionality, captivating design, state-of-the-art tech, and agile code.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    
-                    
-                    <button onClick={e => this.handleFlip(e) } class="card__button-container btn-text btn-text--white u-margin-top-medium u-margin-bottom-medium">
-                        { this.state.text } &rarr;
-                    </button>
+                    <div className="card__button-container">
+                        <div className="row">
+                            <div className="col-1of2">
+                                <button 
+                                    onClick={() => this.handleFlip() } 
+                                    className="card__button-container--left btn-text btn-text--medium u-margin-bottom-medium">
+                                        { this.state.text } &#x219F;
+                                </button>
+                            </div>
+                            <div className="col-1of2">
+                                <button href="#projects"
+                                className="card__button-container--right btn-text btn-text--medium u-margin-bottom-medium">
+                                    View Projects &#x21B4;
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         )

@@ -1,6 +1,5 @@
 
 .btn {
-
     &,
     &:link,
     &:visited{
@@ -110,11 +109,39 @@
         }
     }
 
-    &:hover{
-        font-size: $default-font-size;
-        transform: translateY(-2px);
-        box-shadow: 0 1rem 2rem  #00000038;
+    &--medium{
+        &,
+        &:active,
+        &:visited,
+        &:link {
+            color: $darkest-blue;
+            border-bottom: 1px solid $dark-blue;
+            background-color: transparent;
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+
+        @media (anyhover: hover){
+            &:hover{
+                color: $darkest-blue;
+                border: none;
+            }
+        } 
     }
+
+    @media (anyhover: hover){
+        &:hover{
+            font-size: $default-font-size;
+            transform: translateY(-2px);
+            box-shadow: 0 1rem 2rem  #00000038;
+        }
+    }
+
+    // &:hover{
+    //     font-size: $default-font-size;
+    //     transform: translateY(-2px);
+    //     box-shadow: 0 1rem 2rem  #00000038;
+    // }
 
 
     &:active,

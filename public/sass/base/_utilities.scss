@@ -12,9 +12,10 @@
     }
 }
 
+
 .u-margin-bottom-medium{
     margin-bottom: 4rem;
-
+    
     @include respond(phone){ 
         margin-bottom: 2rem;
     }
@@ -23,9 +24,11 @@
 .u-margin-bottom-smallmedium{margin-bottom: 2rem;}
 .u-margin-bottom-small{margin-bottom: 1rem;}
 
+
+
 .u-margin-top-big{
     margin-top: 8rem;
-
+    
     @include respond(tab-port){
         margin-top: 2rem;
     }
@@ -33,12 +36,15 @@
 
 .u-margin-top-medium-large{
     margin-top: 6rem;
-
+    
     @include respond(phone){
         margin-top: 2rem;
     }
 }
 
+.u-margin-top-x-big{
+    margin-top: 12rem;
+}
 .u-margin-top-medium{margin-top: 4rem;}
 .u-margin-top-small-medium{margin-top: 3rem;}
 .u-margin-top-small{margin-top: 1.5rem;}
@@ -63,3 +69,7 @@
 .u-text-small{font-size: .8rem !important;}
 
 .u-text-medium-weight{font-weight: 500;}
+
+.u-text-center{
+    text-align: center;
+}

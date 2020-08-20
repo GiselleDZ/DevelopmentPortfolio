@@ -132,6 +132,10 @@ body {
     &--light{
         color: $light-blue;
     }
+
+    &--dark{
+        color: $darkest-blue;
+    }
     
     @include respond(phone){
         font-size: 1.4rem;
@@ -142,12 +146,21 @@ body {
 
 .paragraph{
     font-size: 1.2rem;
+    width: 100%;
     margin-bottom: 3rem;
-    letter-spacing: .05rem;
     font-weight: 300;
 
     &--light{
         color: $light-blue;
+    }
+
+    &--medium{
+        color: $dark-blue;
+    }
+
+    &--dark{
+        color: $darkest-blue;
+        font-weight: 500;
     }
 
     @include respond(tab-land){ 

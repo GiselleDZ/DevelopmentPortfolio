@@ -7,7 +7,7 @@ export default class Header extends Component {
                 <div className="header__shadow-wrapper"> 
                     <span className="header__shadow-wrapper--dot-shadow"></span>
                     <div className="header__text-box">
-                        <figure class="header__shape">
+                        <figure className="header__shape">
                             <img src="../../public/assets/imgs/blue-G.jpg" alt="blue Giselle" className="header__img" />
                         </figure>
                         <h1 className="heading-primary">
