@@ -35,6 +35,14 @@
         }
     }
 
+    [class^="col-1of5"]{
+        float: left;
+        
+        &:not(:last-child){
+            margin-right: $gutter-horizontal-sml;
+        }
+    }
+
     .col-1of2 {
         width: calc( (100% - #{$gutter-horizontal}) /2 );
     }
@@ -58,4 +66,9 @@
     .col-3of4{
         width: calc( 100% - ((100% - (#{$gutter-horizontal} * 3)) / 4) - #{$gutter-horizontal});
     }
+
+    .col-1of5{
+        width: calc((100% - (#{$gutter-horizontal-sml} * 4)) / 5 )
+    }
+
 }

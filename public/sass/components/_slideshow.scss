@@ -3,51 +3,93 @@
     padding: 4rem;
     position: relative;
     height: 60rem;
-    background-color: white;
+    background-color: $lightish-blue;
+    border: 1px solid $light-blue;
+    border-radius: $border-radius-sm;
+
+    @include basic-blue-shadow(.3);
 
     &__main{
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        // height: 60rem;
     }
     
     &__video-big{
+        object-fit: contain;
+        padding: 2rem;
         width: 100%;
-        height: 35rem;
+        height: 38rem;
         display: block;
-
+        margin: 0 auto;
+        animation: fadeIn ease-in-out .5s;   
     }
 
-    
-    
     &__img-big{
-        
+        object-fit: contain;
+        padding: 2rem;
+        max-height: 98%;
+        height: 36rem;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    &__image-wrap{
+        border: 1px solid $light-blue;
+        border-radius: $border-radius-sm;
+        background-color: white;
+        margin: 2rem 2rem 0 2rem;
+        height: 34rem;
+
+        animation: fadeIn ease-in-out .5s;
+    }
+
+    &__line{
+        position: absolute;
+        top: 39.2rem;
+        left: 0;
+        height: .2rem;
+        width: 100%;
+        background-color: $light-blue;
+        margin: 0 auto;
+
+        @include basic-blue-shadow(.1)
+
     }
     
     &__thumbs{
         position: absolute;
-        top: 32rem;
-        margin-top: 2rem;
+        top: 35rem;
+        left: 0;
+        margin-top: 6rem;
         width: 100%;
         display: block;
-        padding: 4rem;
-
-        &:not(:last-child){
-            padding-right: 2rem;
-        }
+        padding: 2rem;
     }
 
     &__thumb-wrap{
         width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        background-color: red;
-    }
+        height: 14rem;
+        background-color: white;
+        padding: 1rem;
+        text-align: center;
+        animation: fadeIn ease-in-out 1s;
+        border-radius: $border-radius-sm;
 
+        @include basic-blue-shadow(.1)
+    }
+    
     &__thumb{
-        height: 10rem;
-        
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+        height: 100%;
+        opacity: 60%;
+        border-radius: $border-radius-sm;
+
+        &--selected{
+            opacity: 100%;
+        }
     }
 }

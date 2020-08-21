@@ -1,28 +1,47 @@
 .projects{
-    background-color: $lightish-blue;
+    background-color: $medium-light-blue;
+    border-radius: $border-radius-sm;
+    border: 1px solid $medium-lightish-blue;
     width: 95%;
     margin: 0 auto;
-    height: 100vh;
+    height: 200vh;
+    position: relative;
+    @include basic-blue-shadow(.2);
 
 
     /// P R O J E C T S  
     &__pentimento{  
+        background-color: $medium-lightish-blue;
+        border-radius: $border-radius-sm;
+        border: 1px solid $lightish-blue;
+        margin: 3rem;;
+        width: 94.5%;
+        padding: 3rem 3rem 6rem 3rem;
+        position: absolute;
+
+        @include basic-blue-shadow(.2);
     }
-
-
 
     /// B A S E
     &__header{
-        text-align: center;
         margin: 0 auto;
-        margin-bottom: 8rem;
+        margin-bottom: 6rem;
         padding-top: 4rem
     }
 
     &__description{
         width: 100%;
-        background-color: $medium-light-blue;
-        padding: 4rem;
+        height: 60rem;
+        background-color: $lightish-blue;
+        border-radius: $border-radius-sm;
+        padding: 3rem;
+        border: 1px solid $light-blue;
+
+        &--short{
+            height: 30rem;
+        }
+
+        @include basic-blue-shadow(.3)
     }
 
 

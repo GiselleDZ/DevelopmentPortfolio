@@ -7,7 +7,7 @@
         text-decoration: none;
         letter-spacing: .3rem;
         padding: 1.5rem 3rem;
-        border-radius: $border-radius-big;
+        border-radius: $border-radius-sm;
         display: inline-block;
         font-size: 1.1rem;
         font-weight: 400;
@@ -34,8 +34,11 @@
 
     &--white {
         background-color: $light-blue;
-        font-weight: 600;
-        color: black;
+        font-weight: 800;
+        color: $darkest-blue;
+        border-radius: $border-radius-sm;
+
+        @include basic-blue-shadow(.3);
 
         &::after {
             background-color: $light-blue;
@@ -57,7 +60,7 @@
         display: inline-block;
         height: 100%;
         width: 100%;
-        border-radius: $border-radius-round;
+        border-radius: $border-radius-sm;
         position: absolute;
         top: 0;
         left: 0;

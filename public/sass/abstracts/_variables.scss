@@ -6,7 +6,7 @@ $black: #001141;
 
 $light-blue: #d0e2ff;
 $lightish-blue: #a6c8ff;
-
+$medium-lightish-blue: #92baff;
 $medium-light-blue: #78a9ff;
 $medium-blue: #4589ff;
 
@@ -35,9 +35,10 @@ $whiskey-tan-gradient: linear-gradient(to right bottom,
 
 //   G R I D    V A R I A B L E S
 $grid-width: 114rem;
-$gutter-vertical : 8rem;
-$gutter-vertical-small: 6rem;
+$gutter-vertical : 6rem;
+$gutter-vertical-small: 4rem;
 $gutter-horizontal: 6rem;
+$gutter-horizontal-sml: 2rem;
 
 
 //   F O N T    S I Z E
@@ -45,11 +46,11 @@ $default-font-size: 1.6rem;
 
 
 // B O X   S H A D O W
-$box-shadow-small-light: 0 1rem 2rem rgba($color: $black, $alpha: .15);
-$box-shadow-light: 0 1.5rem 4rem rgba($color: $black, $alpha: .15);
-$box-shadow-medium: 0 1.5rem 4rem rgba($color: $black, $alpha: .20);
-$box-shadow-dark: 0 1.5rem 4rem rgba($color: $black, $alpha: .25);
-$box-shadow-big-dark: 0 2rem 4rem rgba($color: $black, $alpha: .4);
+$box-shadow-small-light: 0 1rem 2rem rgba($color: $darkester-blue, $alpha: .15);
+$box-shadow-light: 0 1.5rem 4rem rgba($color: $darkester-blue, $alpha: .15);
+$box-shadow-medium: 0 1.5rem 4rem rgba($color: $darkester-blue, $alpha: .20);
+$box-shadow-dark: 0 1.5rem 4rem rgba($color: $darkester-blue, $alpha: .25);
+$box-shadow-big-dark: 0 2rem 4rem rgba($color: $darkester-blue, $alpha: .4);
 
 
 // C O M P O N E N T   V A R I A B L E S
@@ -64,6 +65,6 @@ $circle40: circle(40% at 40% 40%);
 
 // B O R D E R    R A D I U S 
 
-$border-radius-sm: 0rem;
+$border-radius-sm: .5rem;
 $border-radius-big: 0rem;
 $border-radius-round: 0rem;
