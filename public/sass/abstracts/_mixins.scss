@@ -25,7 +25,7 @@
 }
 
 @mixin basic-blue-shadow($opacity){
-    box-shadow: 0 1rem 2rem rgba($color: $darkester-blue, $alpha: $opacity);
+    box-shadow: 0 1rem 2rem rgba($color: $dark-blue, $alpha: $opacity);
 }
 
 

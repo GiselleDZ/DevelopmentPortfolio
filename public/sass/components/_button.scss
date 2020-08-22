@@ -9,8 +9,8 @@
         padding: 1.5rem 3rem;
         border-radius: $border-radius-sm;
         display: inline-block;
-        font-size: 1.1rem;
-        font-weight: 400;
+        font-size: 1.2rem;
+        font-weight: 600;
         transition: all .2s;
         position: relative;
         z-index: 1000;
@@ -29,19 +29,20 @@
         outline: none;
         transform: translateY(-.1rem);
         box-shadow: $box-shadow-light;
+        font-weight: 800;
     }
 
 
     &--white {
         background-color: $light-blue;
-        font-weight: 800;
-        color: $darkest-blue;
+        color: $dark-blue;
         border-radius: $border-radius-sm;
 
         @include basic-blue-shadow(.3);
 
         &::after {
             background-color: $light-blue;
+            font-weight: 800;
         }
     }
 

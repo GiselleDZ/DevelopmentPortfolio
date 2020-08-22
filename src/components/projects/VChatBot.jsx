@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-export default class Pentimento extends Component {
+export default class VChatBot extends Component {
     constructor(){   
         super() 
         this.state= {
@@ -13,7 +13,7 @@ export default class Pentimento extends Component {
     handleImage(e){
         e.preventDefault()
 
-        if (e.target.alt === "Pentimento Video"){
+        if (e.target.alt === "VChatBot Demo Video"){
             this.setState({
                 main: "video",
                 mainPhoto: ""
@@ -29,26 +29,29 @@ export default class Pentimento extends Component {
 
     render(){
         return(
-            <div className="projects__pentimento" id="pentimento">
+            <div className="projects__vchatbot" id="vchatbot">
                 <div className="projects__header">
-                    <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Pentimento </h1>
+                    <h1 className="heading-primary heading-primary--main heading-primary--shadow"> VChatBot </h1>
                 </div>
                 <div className="row">
                     <div className="col-1of3">
-                        <div className="projects__description">
+                        <div className="projects__description projects__description--short">
                             <p className="paragraph paragraph--dark paragraph--big">
-                                Pentimento is a mobile-first web application for finding and uploading street art around New York City. It was created for artists, historians, and art enthusiasts to keep track of ephemeral pieces that may be here today but gone tomorrow.
+                                 Vi Chat Bot is an app developed during NYC Coders for Black Lives Matter Hackathon. The app was created to help the Center for Racial Justice in Education disseminate their learning resources, by engaging their community in conversation, and facilitating access with a chat bot built-in to their website, as well as Facebook Messenger.   
                             </p>
                             <p className="paragraph paragraph--dark paragraph--big">
-                                Pentimeto was built during the Grace Hopper Software Engineering program, as the Capstone project. The team members were Angie Spears, Giselle Zatonyl, Saj King, and Chelsea Church.
+                                The bot was trained using Google's DialogFlow API, integrated into a PWA React.js application, using BotCopy.
                             </p>
-                            <a href="https://pentimentostreet.herokuapp.com/" 
+                            <p className="paragraph paragraph--dark paragraph--big">
+                                The project was comprised of Developers : Youssouf da Silva, Liang Liang, Vanessa Corlette, Giselle Zatonyl, and Jessica Choi; Project Manager: Marc Luna; Graphic Designer: Rae Shambrook
+                            </p>
+                            <a href="http://vi-bot.surge.sh/" 
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="btn btn--white u-margin-top-small-medium">
                                 Project Site
                             </a>
-                            <a href="https://github.com/Phantom-Blue/phantom-blue" 
+                            <a href="https://github.com/HackforBLM/v-chat-bot" 
                                 rel="noopener noreferrer"
                                 target="_blank"
 
@@ -62,7 +65,7 @@ export default class Pentimento extends Component {
                             <div className="slideshow__main">
                                 {
                                     this.state.main === "video" ? (
-                                        <iframe  src="https://www.youtube.com/embed/ZBzauWZc4Gk" 
+                                        <iframe  src="https://www.youtube.com/embed/UKclBnHiLiE" 
                                         frameBorder="0" 
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
@@ -80,8 +83,8 @@ export default class Pentimento extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/pentimento/video.jpg" 
-                                                alt="Pentimento Video" 
+                                                src="../../../public/assets/imgs/vchatbot/v-homepage.jpg" 
+                                                alt="VChatBot Home" 
                                                 className="slideshow__thumb"
                                             />
                                         </div>
@@ -89,8 +92,8 @@ export default class Pentimento extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)} 
-                                                src="../../../public/assets/imgs/pentimento/homepage.jpg"  
-                                                alt="Pentimento Homepage" 
+                                                src="../../../public/assets/imgs/vchatbot/v-how.jpg"  
+                                                alt="VChatBot How" 
                                                 className="slideshow__thumb"
                                             />
                                         </div>
@@ -98,8 +101,8 @@ export default class Pentimento extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">    
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/pentimento/artgallery.jpg" 
-                                                alt="Pentimento Gallery View" 
+                                                src="../../../public/assets/imgs/vchatbot/v-why.jpg" 
+                                                alt="VChatBot Why" 
                                                 className="slideshow__thumb"
                                             />
                                         </div>
@@ -107,8 +110,8 @@ export default class Pentimento extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/pentimento/map.jpg" 
-                                                alt="Pentimento Map" 
+                                                src="../../../public/assets/imgs/VChatBot/v-footer.jpg" 
+                                                alt="VChatBot Footer" 
                                                 className="slideshow__thumb"
                                             />
                                         </div>
@@ -116,8 +119,8 @@ export default class Pentimento extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/pentimento/mapart.jpg" 
-                                                alt="Pentimento Map Pin Artwork" 
+                                                src="../../../public/assets/imgs/vchatbot/v-video.jpg" 
+                                                alt="VChatBot Demo Video" 
                                                 className="slideshow__thumb"
                                             />
                                         </div>
@@ -125,67 +128,51 @@ export default class Pentimento extends Component {
                                 </div>
                             </div>
                         </div>
+                        <div className="projects__description projects__description--xxx-short">
+                            <div className="projects__tech-logos u-margin-top-small">
+                                <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__logo-img projects_logo-img--sq"/>
+                                <img src="../../public/assets/greyscale-logos/html5.png" alt="html5 logo" className="projects__logo-img projects_logo-img--sq"/>
+                                <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__logo-img projects_logo-img--sq"/>
+                                <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__logo-img projects_logo-img--sq"/>
+                                <img src="../../public/assets/greyscale-logos/sass.png" alt="sass logo" className="projects__logo-img projects_logo-img--sq"/>
+                                <img src="../../public/assets/greyscale-logos/googlecloud.png" alt="googlecloud logo" className="projects__logo-img projects_logo-img--sq"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--x-short">
+                        <div className="projects__description projects__description--xxm-short">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 My role
                             </h3>
                             <ul className="list">
                                 <li className="list__item">
-                                    Designed relational database schema.
+                                    Researched the best chat bot technology for our purpose and how to use it. Eventually selected Google DialogFlow from three similar options.
                                 </li>
                                 <li className="list__item">
-                                    Designed API calls for Artworks, and location using Axios on the front end.
+                                    Designed conversation pattern to use for different directions the user could take during interactions. 
                                 </li>
                                 <li className="list__item">
-                                    Managed Artwork and Location State on the front end, using Redux, and Secure Local Storage respectively.
+                                    Trained the bot using Google DialogFlow Platform
                                 </li>
                                 <li className="list__item">
-                                    Constructed server responses and error handling on the back end, using Express and Sequelize.
-                                </li>
-                                <li className="list__item">
-                                    Composed map and search bars using React and MapboxGL API
-                                </li>
-                                <li className="list__item">
-                                    Deviced Artwork Slideshows using React
+                                    Integrated the bot into our Node.js React environment.
                                 </li>
                             </ul>
                         </div>
-                        <div className="projects__description projects__description--xx-short u-margin-top-medium">
-                            <div className="projects__tech-logos u-margin-top-small">
-                                <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__logo-img projects__logo-img--md u-margin-left-medium"/>
-                                <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__logo-img projects__logo-img"/>
-                                <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__logo-img projects__logo-img"/>
-                                <img src="../../public/assets/greyscale-logos/postgresql.png" alt="postgresql logo" className="projects__logo-img projects__logo-img"/>
-                                <img src="../../public/assets/greyscale-logos/mapbox.png" alt="mapbox logo" className="projects__logo-img projects__logo-img--xl"/>
-                                <img src="../../public/assets/greyscale-logos/sequelize.png" alt="sequelize logo" className="projects__logo-img projects__logo-img--md"/>
-                                <img src="../../public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="projects__logo-img projects__logo-img--xxl"/>
-                            </div>
-                        </div>
                     </div>
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--short">
+                        <div className="projects__description projects__description--xxm-short">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>
                             <ul className="list">
                                 <li className="list__item">
-                                    We were asked to create our app in two weeks, and in a way, our ambition hurt us the most in these circumstances. 
-                                    We were too excited to learn and use the MapboxGL API, and did not plan for growth in the architecture of our map component. Ultimately, the map had to be revised a few times to accomodate new features. It is an understatement 
-                                    to say I understand the value of designing for growth. Planning and brainstorming for future proofing is an extremely important task in the development process.
-                                </li>
-                                <li className="list__item">
-                                    Another great challanges brought on by our map sutation was a team mate disagreement on the features to keep, 
-                                    as our deadlines loomed closer and the debugging tasks grew. The feature in question was "Nearby Artworks", which 
-                                    as our map stood, couldn't accormodate it. Our map was doing too many things. We resolved it by calling a team meeting,
-                                    and brainstorming solutions, how to alter the map component to fit this feature and was it worth the trouble. 
-                                    Our team meeting was fruitful, and after moving a few parts around, and making others efficient, we were able to keep the feature.
+                                    Our biggest challenge was the integration of our bot. Initially, we used DialogFlow's Facebook integration into our stand-alone page. This presented two problems, we were unable to customize the chat box UI, and created a Facebook dependency we thought would
+                                    ultimately be problematic. We kept the Facebook integration, and additionally duplicated our conversation training data on a stand alone integration we could use on our Vi site, as well as on the Center for Racial Justice Site.
                                 </li>
                             </ul>
-                            
                         </div>
                     </div>
                 </div>

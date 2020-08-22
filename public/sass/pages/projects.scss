@@ -4,7 +4,8 @@
     border: 1px solid $medium-lightish-blue;
     width: 95%;
     margin: 0 auto;
-    height: 200vh;
+    margin-bottom: 4rem;
+    height: 600vh;
     position: relative;
     @include basic-blue-shadow(.2);
 
@@ -14,23 +15,61 @@
         background-color: $medium-lightish-blue;
         border-radius: $border-radius-sm;
         border: 1px solid $lightish-blue;
-        margin: 3rem;;
-        width: 94.5%;
+        margin: 3rem;
+        width: 95.5%;
         padding: 3rem 3rem 6rem 3rem;
         position: absolute;
+        display: inline-block;
 
-        @include basic-blue-shadow(.2);
+        @include basic-blue-shadow(.5);
+    }
+
+    &__vchatbot{  
+        background-color: $medium-lightish-blue;
+        border-radius: $border-radius-sm;
+        border: 1px solid $lightish-blue;
+        margin: 3rem;
+        width: 95.5%;
+        padding: 3rem 3rem 6rem 3rem;
+        position: absolute;
+        top: 188rem;
+        display: inline-block;
+
+        @include basic-blue-shadow(.5);
+    }
+
+    &__coocucachew{  
+        background-color: $medium-lightish-blue;
+        border-radius: $border-radius-sm;
+        border: 1px solid $lightish-blue;
+        margin: 3rem;
+        width: 95.5%;
+        padding: 3rem 3rem 6rem 3rem;
+        position: absolute;
+        top: 365rem;
+
+        display: inline-block;
+
+        @include basic-blue-shadow(.5);
     }
 
     /// B A S E
     &__header{
         margin: 0 auto;
+        max-width: $grid-width;
         margin-bottom: 6rem;
-        padding-top: 4rem
+        padding: 3rem;
+        background-color: $lightish-blue;
+        border-radius: $border-radius-sm;
+        border: 1px solid $light-blue;
+
+        @include basic-blue-shadow(.5);
     }
 
     &__description{
         width: 100%;
+        max-width: $grid-width;
+        margin: 0 auto;
         height: 60rem;
         background-color: $lightish-blue;
         border-radius: $border-radius-sm;
@@ -38,10 +77,58 @@
         border: 1px solid $light-blue;
 
         &--short{
-            height: 30rem;
+            height: 80rem;
         }
 
-        @include basic-blue-shadow(.3)
+        &--xm-short{
+            height: 65rem;
+        }
+
+        &--x-short{
+            height: 55rem;
+        }
+
+        &--xxm-short{
+            height: 48rem;
+        }
+
+        &--xx-short{
+            height: 19rem;
+            margin-top: 6rem;
+        }
+
+        &--xxx-short{
+            height: 15rem;
+            margin-top: 5rem;
+        }
+
+        @include basic-blue-shadow(.5)
+    }
+
+    &__tech-logos{
+        text-align: center;
+    }
+
+    &__logo-img{
+        height: 4rem;
+        margin-bottom: 2rem;
+
+        &--md{
+            height: 3rem;
+        }
+
+        &--xl{
+            height: 2rem;
+        }
+
+        &--xxl{
+            height: 2rem;
+        }
+
+        &:not(:last-child){
+            margin-right: 6rem;
+        }
+
     }
 
 

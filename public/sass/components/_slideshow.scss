@@ -7,7 +7,7 @@
     border: 1px solid $light-blue;
     border-radius: $border-radius-sm;
 
-    @include basic-blue-shadow(.3);
+    @include basic-blue-shadow(.5);
 
     &__main{
         position: absolute;
@@ -54,8 +54,6 @@
         background-color: $light-blue;
         margin: 0 auto;
 
-        @include basic-blue-shadow(.1)
-
     }
     
     &__thumbs{
@@ -77,7 +75,7 @@
         animation: fadeIn ease-in-out 1s;
         border-radius: $border-radius-sm;
 
-        @include basic-blue-shadow(.1)
+        @include basic-blue-shadow(.4)
     }
     
     &__thumb{
