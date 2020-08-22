@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const autoprefixer = require("autoprefixer")
 
 module.exports = function(_env, argv) {
   const isProduction = argv.mode === "production";
@@ -35,7 +36,7 @@ module.exports = function(_env, argv) {
           test: /\.css$/,
           use: [
             isProduction ? MiniCssExtractPlugin.loader : "style-loader",
-            "css-loader"
+            "css-loader", "postcss-loader"
           ]
         },
         {
@@ -54,7 +55,7 @@ module.exports = function(_env, argv) {
               options: {
                 sourceMap: true
               }
-            }
+            },
           ]
         },
         {
@@ -89,6 +90,13 @@ module.exports = function(_env, argv) {
           filename: "assets/css/[name].[contenthash:8].css",
           chunkFilename: "assets/css/[name].[contenthash:8].chunk.css"
         }),
+        new webpack.LoaderOptionsPlugin({
+          options: {
+              postcss: [
+                  autoprefixer()
+              ]
+          }
+      }),
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, "public/index.html"),
         inject: true

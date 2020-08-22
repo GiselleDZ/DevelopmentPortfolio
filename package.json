@@ -8,12 +8,29 @@
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development",
     "devserver": "live-server",
-    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w",
-    "start:dev": "npm-run-all --parallel dev compile:sass"
+    "watch:sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "start:dev": "npm-run-all --parallel dev watch:sass",
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.css",
+    "prefix:css": "postcss public/css/style.css --use autoprefixer -o public/css/style.prefix.css",
+    "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "build:all": "npm-run-all --parallel build:css build "
   },
+  "browserslist": [
+    "last 10 versions",
+    "> 5%",
+    "IE 10"
+  ],
   "dependencies": {
+    "i": "^0.3.6",
+    "npm": "^6.14.8",
+    "postcss": "^7.0.32",
     "react": "^16.9.0",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
@@ -26,6 +43,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.6.0",
     "@svgr/webpack": "^4.3.2",
+    "axios": "^0.20.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "css-loader": "^3.2.0",
@@ -35,6 +53,10 @@
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "redux": "^4.0.5",
     "resolve-url-loader": "^3.1.1",
     "sass-loader": "^9.0.3",
     "style-loader": "^1.0.0",
