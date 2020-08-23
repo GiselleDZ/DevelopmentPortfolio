@@ -1,1 +1,1 @@
-web: npm run build:all
+web: webpack --mode production
