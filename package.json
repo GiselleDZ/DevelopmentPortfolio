@@ -5,6 +5,7 @@
   "author": "Michael Pontus <m.pontus@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "node server.js", 
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development",
     "devserver": "live-server",
@@ -14,7 +15,8 @@
     "prefix:css": "postcss public/css/style.css --use autoprefixer -o public/css/style.prefix.css",
     "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
-    "build:all": "npm-run-all --parallel build:css build "
+    "build:all": "npm-run-all --parallel build:css build ",
+    "heroku-postbuild": "webpack -p"
   },
   "browserslist": [
     "last 10 versions",
@@ -47,6 +49,7 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "css-loader": "^3.2.0",
+    "express": "^4.17.1",
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
