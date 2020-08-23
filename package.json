@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node server.js", 
+    "heroku-prebuild": "npm install --dev",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development",
     "devserver": "live-server",
