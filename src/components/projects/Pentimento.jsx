@@ -23,7 +23,6 @@ export default class Pentimento extends Component {
                 main: "photo",
                 mainPhoto: e.target.src
             })
-
         }
     }
 
@@ -45,7 +44,7 @@ export default class Pentimento extends Component {
                             <a href="https://pentimentostreet.herokuapp.com/" 
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                className="btn btn--white u-margin-top-small-medium">
+                                className="btn btn--white u-margin-top-small">
                                 Project Site
                             </a>
                             <a href="https://github.com/Phantom-Blue/phantom-blue" 
@@ -129,7 +128,7 @@ export default class Pentimento extends Component {
                 </div>
                 <div className="row">
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--x-short">
+                        <div className="projects__description projects__description--50">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 My role
                             </h3>
@@ -167,7 +166,7 @@ export default class Pentimento extends Component {
                         </div>
                     </div>
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--short">
+                        <div className="projects__description projects__description--75">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>

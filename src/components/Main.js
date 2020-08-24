@@ -11,11 +11,11 @@ class Main extends Component {
     }
 
     componentDidMount(){
-        const name = 'Pentimento'
-        const deleteName = 'Tensor Three'
-        this.props.getAllSP()
-        this.props.getOneSP(name)
-        this.props.removeSP(deleteName)
+        // const name = 'Pentimento'
+        // const deleteName = 'Tensor Three'
+        // this.props.getAllSP()
+        // this.props.getOneSP(name)
+        // this.props.removeSP(deleteName)
     }
 
     render(){

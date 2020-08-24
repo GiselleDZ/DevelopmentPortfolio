@@ -43,7 +43,7 @@ export default class VChatBot extends Component {
                                 The bot was trained using Google's DialogFlow API, integrated into a PWA React.js application, using BotCopy.
                             </p>
                             <p className="paragraph paragraph--dark paragraph--big">
-                                The project was comprised of Developers : Youssouf da Silva, Liang Liang, Vanessa Corlette, Giselle Zatonyl, and Jessica Choi; Project Manager: Marc Luna; Graphic Designer: Rae Shambrook
+                                The project was comprised of Developers : Youssouf da Silva, Liang Liang, Vanessa Corlette, Giselle Zatonyl, and Jessica Choi; Project Manager: Marc Luna; UI/UX Designer: Rae Shambrook
                             </p>
                             <a href="http://vi-bot.surge.sh/" 
                                 rel="noopener noreferrer"
@@ -142,7 +142,7 @@ export default class VChatBot extends Component {
                 </div>
                 <div className="row">
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--xxm-short">
+                        <div className="projects__description projects__description--40">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 My role
                             </h3>
@@ -163,7 +163,7 @@ export default class VChatBot extends Component {
                         </div>
                     </div>
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--xxm-short">
+                        <div className="projects__description projects__description--40">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>

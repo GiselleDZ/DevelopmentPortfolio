@@ -9,4 +9,8 @@ app.use(express.static(__dirname));
 // send the user to index html page inspite of the url
 app.use(express.static(__dirname + '/dist'));
 
+//set up redirect to main domain
+// response.redirect(301, 'https://dev.gisellezatonyl.com');
+
+
 app.listen(port);

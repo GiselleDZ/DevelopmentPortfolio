@@ -175,14 +175,13 @@ body {
 
 
 .list{
-    margin-left: 3rem;
+    margin: 0 3rem 0 3rem;
 
     &__item{
         list-style: square;
         font-size: 1.7rem;
         font-weight: 400;
-        letter-spacing: .1rem;
-        line-height: 2.8rem;
+        line-height: 2.4rem;
         color: $darkester-blue;
         
         &:not(:last-child){

@@ -24,6 +24,18 @@
     height: 100%;
 }
 
+@mixin frosted-glass-box ($color){
+    border-radius: $border-radius-sm;
+    // border: 1px solid $white;
+    background-color: $color;
+    // background-color: rgba($color: $white, $alpha: .15);
+    // backdrop-filter: blur(.5rem);
+    // -webkit-backdrop-filter: blur(.5rem);
+    -webkit-font-smoothing: antialiased;
+
+    @include basic-blue-shadow(.5)
+}
+
 @mixin basic-blue-shadow($opacity){
     box-shadow: 0 1rem 2rem rgba($color: $dark-blue, $alpha: $opacity);
 }

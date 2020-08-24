@@ -1,8 +1,8 @@
 {
-  "name": "webpack-react",
+  "name": "giselle-zatonyl-programming",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Michael Pontus <m.pontus@gmail.com>",
+  "author": "Giselle Zatonyl <gz@gisellezatonyl.com>",
   "license": "MIT",
   "scripts": {
     "start": "node server.js",

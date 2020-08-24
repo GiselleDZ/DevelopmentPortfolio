@@ -93,10 +93,10 @@ export default class Intro extends Component {
                                 </button>
                             </div>
                             <div className="col-1of2">
-                                <button href="#projects"
+                                <a href="#projects"
                                 className="card__button-container--right btn-text btn-text--medium u-margin-bottom-medium">
                                     View Projects &#x21B4;
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>

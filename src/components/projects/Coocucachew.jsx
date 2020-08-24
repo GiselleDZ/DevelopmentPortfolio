@@ -30,10 +30,7 @@ export default class Coocucachew extends Component {
                                 Coocucachew is an e-commere site selling cookies, cupcakes, cake pops and chocolate. Coocucachew features many types of these products, which a user may browse, add to cart and check out using Stripe.
                             </p>
                             <p className="paragraph paragraph--dark paragraph--big">
-                                Coocucachew was built using React, Redux, Express, PostgreSQL, and Sequelize.
-                            </p>
-                            <p className="paragraph paragraph--dark paragraph--big">
-                                The team that created Coocucachew is: Adrianna Winkelman, Gisele (Yunshu) Xiao, Michelle Broomes, Giselle Zatonyl.
+                                Coocucachew was built using React, Redux, Express, PostgreSQL, and Sequelize. The team that created Coocucachew is: Adrianna Winkelman, Gisele (Yunshu) Xiao, Michelle Broomes, Giselle Zatonyl.
                             </p>
                             <a href="https://coocucachewstreet.herokuapp.com/" 
                                 rel="noopener noreferrer"
@@ -45,7 +42,7 @@ export default class Coocucachew extends Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
 
-                                className="btn btn--white u-margin-top-small u-margin-bottom-small">
+                                className="btn btn--white u-margin-top-small-medium u-margin-bottom-small">
                                 Github Repository
                             </a>
                         </div>
@@ -111,8 +108,22 @@ export default class Coocucachew extends Component {
                     </div>
                 </div>
                 <div className="row">
+                    <div className="projects__description projects__description--xxx-short">
+                        <div className="projects__tech-logos u-margin-top-small-medium">
+                            <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__logo-img projects_logo-img--md"/>
+                            <img src="../../public/assets/greyscale-logos/html5.png" alt="html5 logo" className="projects__logo-img"/>
+                            <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__logo-img"/>
+                            <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__logo-img"/>
+                            <img src="../../public/assets/greyscale-logos/redux.png" alt="redux logo" className="projects__logo-img"/>
+                            <img src="../../public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="projects__logo-img projects__logo-img--xl"/>
+                            <img src="../../public/assets/greyscale-logos/postgresql.png" alt="postgresql logo" className="projects__logo-img projects__logo-img--sq"/>
+                            <img src="../../public/assets/greyscale-logos/sequelize.png" alt="sequelize logo" className="projects__logo-img projects__logo-img--sq"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--xxm-short">
+                        <div className="projects__description projects__description--x-short">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 My role
                             </h3>
@@ -121,10 +132,10 @@ export default class Coocucachew extends Component {
                                     Designed relational database schema.
                                 </li>
                                 <li className="list__item">
-                                    Designed API calls for products using Axios on the front end.
+                                    Designed API calls for adding, deleting, and updating products, using Axios on the front end.
                                 </li>
                                 <li className="list__item">
-                                    Managed products state on the front end, using Redux, and Secure Local Storage respectively.
+                                    Managed products state on the front end, using Redux, and Secure Local Storage.
                                 </li>
                                 <li className="list__item">
                                     Constructed server responses and error handling on the back end, using Express and Sequelize.
@@ -136,7 +147,7 @@ export default class Coocucachew extends Component {
                         </div>
                     </div>
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--xm-short">
+                        <div className="projects__description projects__description--x-short">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>
