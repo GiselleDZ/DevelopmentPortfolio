@@ -5,23 +5,28 @@ export default class Pentimento extends Component {
         super() 
         this.state= {
             main: "video",
-            mainPhoto: ""
+            mainPhoto: "",
+            alt: "Demo Video"
         }
         this.handleImage = this.handleImage.bind(this)
     }
 
     handleImage(e){
         e.preventDefault()
+        let imageSrc = e.target.src
+        let mainSrc = imageSrc.slice(0, (imageSrc.length - 10)).concat(".JPG")
 
         if (e.target.alt === "Pentimento Video"){
             this.setState({
                 main: "video",
-                mainPhoto: ""
+                mainPhoto: "",
+                alt: e.target.alt
             })
         }   else {
             this.setState({
                 main: "photo",
-                mainPhoto: e.target.src
+                mainPhoto: mainSrc,
+                alt: e.target.alt
             })
         }
     }
@@ -68,7 +73,7 @@ export default class Pentimento extends Component {
                                         className="slideshow__video-big" />
                                     ) : (
                                         <div className="slideshow__image-wrap">
-                                            <img src={this.state.mainPhoto} alt="img" className="slideshow__img-big"/>
+                                            <img src={this.state.mainPhoto} alt={this.state.alt} className="slideshow__img-big"/>
                                         </div>
                                     )
                                 }
@@ -79,7 +84,7 @@ export default class Pentimento extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/pentimento/video.jpg" 
+                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/video-thumb.jpg" 
                                                 alt="Pentimento Video" 
                                                 className="slideshow__thumb"
                                             />
@@ -88,7 +93,7 @@ export default class Pentimento extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)} 
-                                                src="../../../public/assets/imgs/pentimento/homepage.jpg"  
+                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/homepage-thumb.jpg"  
                                                 alt="Pentimento Homepage" 
                                                 className="slideshow__thumb"
                                             />
@@ -97,7 +102,7 @@ export default class Pentimento extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">    
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/pentimento/artgallery.jpg" 
+                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/artgallery-thumb.jpg" 
                                                 alt="Pentimento Gallery View" 
                                                 className="slideshow__thumb"
                                             />
@@ -106,7 +111,7 @@ export default class Pentimento extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/pentimento/map.jpg" 
+                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/map-thumb.jpg" 
                                                 alt="Pentimento Map" 
                                                 className="slideshow__thumb"
                                             />
@@ -115,7 +120,7 @@ export default class Pentimento extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/pentimento/mapart.jpg" 
+                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/mapart-thumb.jpg" 
                                                 alt="Pentimento Map Pin Artwork" 
                                                 className="slideshow__thumb"
                                             />

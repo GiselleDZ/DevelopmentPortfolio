@@ -26,11 +26,7 @@
 
 @mixin frosted-glass-box ($color){
     border-radius: $border-radius-sm;
-    // border: 1px solid $white;
     background-color: $color;
-    // background-color: rgba($color: $white, $alpha: .15);
-    // backdrop-filter: blur(.5rem);
-    // -webkit-backdrop-filter: blur(.5rem);
     -webkit-font-smoothing: antialiased;
 
     @include basic-blue-shadow(.5)

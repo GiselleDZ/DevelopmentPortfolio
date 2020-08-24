@@ -4,8 +4,8 @@ export default class ThirdCultMasks extends Component {
     constructor(){   
         super() 
         this.state= {
-            mainPhoto: "../../../public/assets/imgs/thirdcult/homepage.jpg",
-            alt: "Third Cult Homepahe"
+            mainPhoto: "http://www.gisellezatonyl.com/images/dev/thirdcult/homepage.JPG",
+            alt: "Third Cult Homepage"
         }
         this.handleImage = this.handleImage.bind(this)
     }
@@ -13,7 +13,7 @@ export default class ThirdCultMasks extends Component {
     handleImage(e){
         e.preventDefault()
         let imageSrc = e.target.src
-        let mainSrc = imageSrc.slice(0, (imageSrc.length - 10)).concat(".jpg")
+        let mainSrc = imageSrc.slice(0, (imageSrc.length - 10)).concat(".JPG")
 
         this.setState({
             mainPhoto: mainSrc,
@@ -25,13 +25,13 @@ export default class ThirdCultMasks extends Component {
         return(
             <div className="projects__ThirdCultMasks projects__section" id="thirdcultmasks">
                 <div className="projects__header">
-                    <h1 className="heading-primary heading-primary--main heading-primary--shadow"> ThirdCultMasks </h1>
+                    <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Third Cult Masks </h1>
                 </div>
                 <div className="row">
                     <div className="col-1of3">
                         <div className="projects__description">
                             <p className="paragraph paragraph--dark paragraph--big">
-                                Third Cult Masks is an e-commere flyer site made to singularly advertize Third Cult's high end masks to retailers that may want to purchase them as wholesale.
+                                Third Cult Masks is a site made to singularly advertize Third Cult's high end masks to retailers that may want to purchase them as wholesale.
                             </p>
                             <p className="paragraph paragraph--dark paragraph--big">
                                 ThirdCultMasks was built using primarily vanilla Javascript, CSS3 SASS and Express. It was created by Giselle Zatonyl.
@@ -66,7 +66,7 @@ export default class ThirdCultMasks extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)} 
-                                                src="../../../public/assets/imgs/thirdcult/homepage-thumb.jpg"  
+                                                src="http://www.gisellezatonyl.com/images/dev/thirdcult/homepage-thumb.jpg"  
                                                 alt="Third Cult masks site homepage" 
                                                 className="slideshow__thumb"
                                             />
@@ -75,7 +75,7 @@ export default class ThirdCultMasks extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">    
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/thirdcult/details-thumb.jpg" 
+                                                src="http://www.gisellezatonyl.com/images/dev/thirdcult/details-thumb.jpg" 
                                                 alt="Third Cult masks details section" 
                                                 className="slideshow__thumb"
                                             />
@@ -84,7 +84,7 @@ export default class ThirdCultMasks extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/thirdcult/features-thumb.jpg" 
+                                                src="http://www.gisellezatonyl.com/images/dev/thirdcult/features-thumb.jpg" 
                                                 alt="Third Cult feature cards section" 
                                                 className="slideshow__thumb"
                                             />
@@ -93,7 +93,7 @@ export default class ThirdCultMasks extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/thirdcult/masks-thumb.jpg" 
+                                                src="http://www.gisellezatonyl.com/images/dev/thirdcult/masks-thumb.jpg" 
                                                 alt="Third Cult Masks section depicting three masks" 
                                                 className="slideshow__thumb"
                                             />
@@ -102,7 +102,7 @@ export default class ThirdCultMasks extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/thirdcult/reviews-thumb.jpg" 
+                                                src="http://www.gisellezatonyl.com/images/dev/thirdcult/reviews-thumb.jpg" 
                                                 alt="Third Cult Mask Reviews section" 
                                                 className="slideshow__thumb"
                                             />
@@ -124,7 +124,7 @@ export default class ThirdCultMasks extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                {/* <div className="row">
                     <div className="col-1of2">
                         <div className="projects__description projects__description--x-short">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
@@ -169,7 +169,7 @@ export default class ThirdCultMasks extends Component {
                             
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             
         )

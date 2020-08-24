@@ -16,6 +16,14 @@ export default class Projects extends Component {
                         <div className="projects__card-thumbs">
                             <div className="row">
                                 <div className="col-1of5">
+                                    <a href="#thirdcultmasks" className="projects__card-thumbs__thumb-wrapper">
+                                        <img src="../../../public/assets/imgs/thirdcult/homepage-thumb.jpg" alt="" className="projects__card-thumbs__thumb-wrapper projects__card-thumbs__thumb-wrapper--thumb-image"/>
+                                        <h3 className="heading-tertiary projects__card-thumbs__thumb-wrapper projects__card-thumbs__thumb-wrapper--thumb-title">
+                                            Third Cvlt Masks
+                                        </h3>
+                                    </a>
+                                </div>
+                                <div className="col-1of5">
                                     <a href="#pentimento" className="projects__card-thumbs__thumb-wrapper">
                                         <img src="../../../public/assets/imgs/pentimento/video-thumb.jpg"  alt="Pentimento Demo Video Thumbnail" className="projects__card-thumbs__thumb-wrapper projects__card-thumbs__thumb-wrapper--thumb-image"/>
                                         <h3 className="heading-tertiary  projects__card-thumbs__thumb-wrapper projects__card-thumbs__thumb-wrapper--thumb-title">
@@ -44,14 +52,6 @@ export default class Projects extends Component {
                                         <img src="../../../public/assets/imgs/g-dev-site/devsite-homepage-thumb.jpg" alt="Programming Website Homepage Thumbnail" className="projects__card-thumbs__thumb-wrapper projects__card-thumbs__thumb-wrapper--thumb-image"/>
                                         <h3 className="heading-tertiary  projects__card-thumbs__thumb-wrapper projects__card-thumbs__thumb-wrapper--thumb-title">
                                         Programming Portfolio
-                                        </h3>
-                                    </a>
-                                </div>
-                                <div className="col-1of5">
-                                    <a href="#thirdcultmasks" className="projects__card-thumbs__thumb-wrapper">
-                                        <img src="../../../public/assets/imgs/thirdcult/homepage-thumb.jpg" alt="" className="projects__card-thumbs__thumb-wrapper projects__card-thumbs__thumb-wrapper--thumb-image"/>
-                                        <h3 className="heading-tertiary projects__card-thumbs__thumb-wrapper projects__card-thumbs__thumb-wrapper--thumb-title">
-                                            Third Cvlt Masks
                                         </h3>
                                     </a>
                                 </div>

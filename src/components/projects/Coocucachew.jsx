@@ -4,7 +4,7 @@ export default class Coocucachew extends Component {
     constructor(){   
         super() 
         this.state= {
-            mainPhoto: "../../../public/assets/imgs/coocucachew/gif1.gif"
+            mainPhoto: "http://www.gisellezatonyl.com/images/dev/coocucachew/gif1.gif"
         }
         this.handleImage = this.handleImage.bind(this)
     }
@@ -60,7 +60,7 @@ export default class Coocucachew extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)} 
-                                                src="../../../public/assets/imgs/coocucachew/gif1.gif"  
+                                                src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif1.gif"  
                                                 alt="Site walk-through part 1" 
                                                 className="slideshow__thumb"
                                             />
@@ -69,7 +69,7 @@ export default class Coocucachew extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">    
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/coocucachew/gif2.gif" 
+                                                src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif2.gif" 
                                                 alt="Site walk-through part 2" 
                                                 className="slideshow__thumb"
                                             />
@@ -78,7 +78,7 @@ export default class Coocucachew extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/coocucachew/gif3.gif" 
+                                                src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif3.gif" 
                                                 alt="Site walk-through part 3" 
                                                 className="slideshow__thumb"
                                             />
@@ -87,7 +87,7 @@ export default class Coocucachew extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/coocucachew/gif4.gif" 
+                                                src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif4.gif" 
                                                 alt="Site walk-through part 4" 
                                                 className="slideshow__thumb"
                                             />
@@ -96,7 +96,7 @@ export default class Coocucachew extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/coocucachew/main.png" 
+                                                src="http://www.gisellezatonyl.com/images/dev/coocucachew/main.png" 
                                                 alt="Coocucachew Landing" 
                                                 className="slideshow__thumb"
                                             />

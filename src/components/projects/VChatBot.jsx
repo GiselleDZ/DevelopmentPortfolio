@@ -5,7 +5,8 @@ export default class VChatBot extends Component {
         super() 
         this.state= {
             main: "video",
-            mainPhoto: ""
+            mainPhoto: "",
+            alt: "Demo Video"
         }
         this.handleImage = this.handleImage.bind(this)
     }
@@ -13,15 +14,20 @@ export default class VChatBot extends Component {
     handleImage(e){
         e.preventDefault()
 
+        let imageSrc = e.target.src
+        let mainSrc = imageSrc.slice(0, (imageSrc.length - 10)).concat(".JPG")
+
         if (e.target.alt === "VChatBot Demo Video"){
             this.setState({
                 main: "video",
-                mainPhoto: ""
+                mainPhoto: "",
+                alt: e.target.alt
             })
         }   else {
             this.setState({
                 main: "photo",
-                mainPhoto: e.target.src
+                mainPhoto: mainSrc,
+                alt: e.target.alt
             })
 
         }
@@ -31,7 +37,7 @@ export default class VChatBot extends Component {
         return(
             <div className="projects__vchatbot projects__section" id="vchatbot">
                 <div className="projects__header">
-                    <h1 className="heading-primary heading-primary--main heading-primary--shadow"> VChatBot </h1>
+                    <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Vi Chat Bot </h1>
                 </div>
                 <div className="row">
                     <div className="col-1of3">
@@ -72,7 +78,7 @@ export default class VChatBot extends Component {
                                         className="slideshow__video-big" />
                                     ) : (
                                         <div className="slideshow__image-wrap">
-                                            <img src={this.state.mainPhoto} alt="img" className="slideshow__img-big"/>
+                                            <img src={this.state.mainPhoto} alt={this.state.alt} className="slideshow__img-big"/>
                                         </div>
                                     )
                                 }
@@ -83,7 +89,7 @@ export default class VChatBot extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/vchatbot/v-homepage.jpg" 
+                                                src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-homepage-thumb.jpg" 
                                                 alt="VChatBot Home" 
                                                 className="slideshow__thumb"
                                             />
@@ -92,7 +98,7 @@ export default class VChatBot extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)} 
-                                                src="../../../public/assets/imgs/vchatbot/v-how.jpg"  
+                                                src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-how-thumb.jpg"  
                                                 alt="VChatBot How" 
                                                 className="slideshow__thumb"
                                             />
@@ -101,7 +107,7 @@ export default class VChatBot extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">    
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/vchatbot/v-why.jpg" 
+                                                src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-why-thumb.jpg" 
                                                 alt="VChatBot Why" 
                                                 className="slideshow__thumb"
                                             />
@@ -110,7 +116,7 @@ export default class VChatBot extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/VChatBot/v-footer.jpg" 
+                                                src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-footer-thumb.jpg" 
                                                 alt="VChatBot Footer" 
                                                 className="slideshow__thumb"
                                             />
@@ -119,7 +125,7 @@ export default class VChatBot extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/vchatbot/v-video.jpg" 
+                                                src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-video-thumb.jpg" 
                                                 alt="VChatBot Demo Video" 
                                                 className="slideshow__thumb"
                                             />
