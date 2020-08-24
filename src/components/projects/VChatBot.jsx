@@ -29,7 +29,7 @@ export default class VChatBot extends Component {
 
     render(){
         return(
-            <div className="projects__vchatbot" id="vchatbot">
+            <div className="projects__vchatbot projects__section" id="vchatbot">
                 <div className="projects__header">
                     <h1 className="heading-primary heading-primary--main heading-primary--shadow"> VChatBot </h1>
                 </div>

@@ -928,81 +928,18 @@ body {
   width: 95%;
   margin: 0 auto;
   margin-bottom: 4rem;
-  height: 600vh;
+  height: 900vh;
   position: relative;
   box-shadow: 0 1rem 2rem rgba(15, 98, 254, 0.2); }
-  .projects__intro {
-    margin: 3rem;
-    padding: 3rem;
-    border-radius: 0.5rem;
-    background-color: #92baff;
-    -webkit-font-smoothing: antialiased;
-    box-shadow: 0 1rem 2rem rgba(15, 98, 254, 0.5); }
-  .projects__intro-card {
-    margin: 8rem;
-    border-radius: 0.5rem;
-    background-color: #a6c8ff;
-    -webkit-font-smoothing: antialiased;
-    box-shadow: 0 1rem 2rem rgba(15, 98, 254, 0.5);
-    padding: 6rem;
-    text-align: center; }
-  .projects__card-thumbs {
-    margin: 0 auto;
-    width: 80%;
-    height: 28rem;
-    padding: 3rem;
-    padding-top: 6rem;
-    border-radius: 0.5rem;
-    background-color: #d0e2ff;
-    -webkit-font-smoothing: antialiased;
-    box-shadow: 0 1rem 2rem rgba(15, 98, 254, 0.5); }
-    .projects__card-thumbs__thumb-wrapper {
-      position: relative;
-      text-align: center;
-      width: 14rem;
-      padding: 1rem; }
-      .projects__card-thumbs__thumb-wrapper--thumb-image {
-        max-width: 100%;
-        max-height: 100%;
-        height: 10rem;
-        object-fit: contain;
-        background-color: white;
-        border-radius: 0.5rem; }
-      .projects__card-thumbs__thumb-wrapper--thumb-title {
-        position: absolute;
-        top: 3rem;
-        margin: 0 auto; }
-  .projects__pentimento {
+  .projects__section {
     background-color: #92baff;
     border-radius: 0.5rem;
     border: 1px solid #a6c8ff;
     margin: 3rem;
+    margin-bottom: 8rem;
     width: 95.5%;
     padding: 3rem 3rem 6rem 3rem;
-    position: absolute;
-    display: inline-block;
-    box-shadow: 0 1rem 2rem rgba(15, 98, 254, 0.5); }
-  .projects__vchatbot {
-    background-color: #92baff;
-    border-radius: 0.5rem;
-    border: 1px solid #a6c8ff;
-    margin: 3rem;
-    width: 95.5%;
-    padding: 3rem 3rem 6rem 3rem;
-    position: absolute;
-    display: inline-block;
-    top: 188rem;
-    box-shadow: 0 1rem 2rem rgba(15, 98, 254, 0.5); }
-  .projects__coocucachew {
-    background-color: #92baff;
-    border-radius: 0.5rem;
-    border: 1px solid #a6c8ff;
-    margin: 3rem;
-    width: 95.5%;
-    padding: 3rem 3rem 6rem 3rem;
-    position: absolute;
-    top: 365rem;
-    display: inline-block;
+    display: block;
     box-shadow: 0 1rem 2rem rgba(15, 98, 254, 0.5); }
   .projects__header {
     -webkit-font-smoothing: antialiased;
@@ -1015,7 +952,7 @@ body {
     border: 1px solid #d0e2ff;
     box-shadow: 0 1rem 2rem rgba(15, 98, 254, 0.5); }
     .projects__header--small {
-      max-width: 40rem; }
+      max-width: 80rem; }
   .projects__description {
     width: 100%;
     max-width: 114rem;
@@ -1048,6 +985,48 @@ body {
     .projects__description--xxx-short {
       height: 15rem;
       margin-top: 5rem; }
+  .projects__intro {
+    margin: 3rem;
+    padding: 3rem;
+    margin-bottom: 8rem;
+    height: 100vh;
+    border-radius: 0.5rem;
+    background-color: #92baff;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: 0 1rem 2rem rgba(15, 98, 254, 0.5); }
+  .projects__intro-card {
+    margin: 8rem;
+    border-radius: 0.5rem;
+    background-color: #a6c8ff;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: 0 1rem 2rem rgba(15, 98, 254, 0.5);
+    padding: 6rem;
+    text-align: center; }
+  .projects__card-thumbs {
+    margin: 0 auto;
+    width: 90%;
+    height: 25rem;
+    padding: 3rem;
+    padding-top: 6rem;
+    border-radius: 0.5rem;
+    background-color: #d0e2ff;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: 0 1rem 2rem rgba(15, 98, 254, 0.5); }
+    .projects__card-thumbs__thumb-wrapper {
+      position: relative;
+      width: 14rem;
+      padding: 1rem; }
+      .projects__card-thumbs__thumb-wrapper--thumb-image {
+        max-width: 100%;
+        max-height: 100%;
+        height: 10rem;
+        object-fit: contain;
+        background-color: white;
+        border-radius: 0.5rem; }
+      .projects__card-thumbs__thumb-wrapper--thumb-title {
+        position: absolute;
+        top: 3rem;
+        left: 1rem; }
   .projects__tech-logos {
     text-align: center; }
   .projects__logo-img {

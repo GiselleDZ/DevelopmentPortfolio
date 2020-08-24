@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Pentimento from './Pentimento'
 import Coocucachew from './Coocucachew'
 import VChatBot from './VChatBot'
+import ThirdCultMasks from "./ThirdCultMasks"
 
 export default class Projects extends Component {
     render(){
@@ -47,8 +48,8 @@ export default class Projects extends Component {
                                     </a>
                                 </div>
                                 <div className="col-1of5">
-                                    <a href="#thirdcultflyer" className="projects__card-thumbs__thumb-wrapper">
-                                        <img src="" alt="" className="projects__card-thumbs__thumb-wrapper projects__card-thumbs__thumb-wrapper--thumb-image"/>
+                                    <a href="#thirdcultmasks" className="projects__card-thumbs__thumb-wrapper">
+                                        <img src="../../../public/assets/imgs/thirdcult/homepage-thumb.jpg" alt="" className="projects__card-thumbs__thumb-wrapper projects__card-thumbs__thumb-wrapper--thumb-image"/>
                                         <h3 className="heading-tertiary projects__card-thumbs__thumb-wrapper projects__card-thumbs__thumb-wrapper--thumb-title">
                                             Third Cvlt Masks
                                         </h3>
@@ -59,6 +60,8 @@ export default class Projects extends Component {
                         
                     </div>
                 </div>
+                
+                <ThirdCultMasks />
                 <Pentimento />
                 <VChatBot />
                 <Coocucachew />

@@ -1,48 +1,54 @@
 import React, { Component } from "react"
 
-export default class Coocucachew extends Component {
+export default class ThirdCultMasks extends Component {
     constructor(){   
         super() 
         this.state= {
-            mainPhoto: "../../../public/assets/imgs/coocucachew/gif1.gif"
+            mainPhoto: "../../../public/assets/imgs/thirdcult/homepage.jpg",
+            alt: "Third Cult Homepahe"
         }
         this.handleImage = this.handleImage.bind(this)
     }
 
     handleImage(e){
         e.preventDefault()
+        let imageSrc = e.target.src
+        let mainSrc = imageSrc.slice(0, (imageSrc.length - 10)).concat(".jpg")
 
         this.setState({
-            mainPhoto: e.target.src
+            mainPhoto: mainSrc,
+            alt: e.target.alt
         })
     }
 
     render(){
         return(
-            <div className="projects__coocucachew  projects__section" id="coocucachew">
+            <div className="projects__ThirdCultMasks projects__section" id="thirdcultmasks">
                 <div className="projects__header">
-                    <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Coocucachew </h1>
+                    <h1 className="heading-primary heading-primary--main heading-primary--shadow"> ThirdCultMasks </h1>
                 </div>
                 <div className="row">
                     <div className="col-1of3">
                         <div className="projects__description">
                             <p className="paragraph paragraph--dark paragraph--big">
-                                Coocucachew is an e-commere site selling cookies, cupcakes, cake pops and chocolate. Coocucachew features many types of these products, which a user may browse, add to cart and check out using Stripe.
+                                Third Cult Masks is an e-commere flyer site made to singularly advertize Third Cult's high end masks to retailers that may want to purchase them as wholesale.
                             </p>
                             <p className="paragraph paragraph--dark paragraph--big">
-                                Coocucachew was built using React, Redux, Express, PostgreSQL, and Sequelize. The team that created Coocucachew is: Adrianna Winkelman, Gisele (Yunshu) Xiao, Michelle Broomes, Giselle Zatonyl.
+                                ThirdCultMasks was built using primarily vanilla Javascript, CSS3 SASS and Express. It was created by Giselle Zatonyl.
                             </p>
-                            <a href="https://coocucachewstreet.herokuapp.com/" 
+                            <p className="paragraph paragraph--dark paragraph--big">
+                                Visit on a desktop browser, and you will notice a large percentage of the elements are animated. This project created largely to practice animating CSS3, SASS and minimal Javascript.
+                            </p>
+                            <a href="https://thirdcult-masks.herokuapp.com/" 
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="btn btn--white u-margin-top-small">
                                 Project Site
                             </a>
-                            <a href="https://github.com/Coocucachew/coocucachew" 
+                            <a href="https://github.com/GiselleDZ/ThirdCvltMasks" 
                                 rel="noopener noreferrer"
                                 target="_blank"
-
-                                className="btn btn--white u-margin-top-small-medium u-margin-bottom-small">
+                                className="btn btn--white u-margin-top-small u-margin-bottom-small">
                                 Github Repository
                             </a>
                         </div>
@@ -51,7 +57,7 @@ export default class Coocucachew extends Component {
                         <div className="slideshow">
                             <div className="slideshow__main">
                                 <div className="slideshow__image-wrap">
-                                    <img src={this.state.mainPhoto} alt="img" className="slideshow__img-big"/>
+                                    <img src={this.state.mainPhoto} alt={this.state.alt} className="slideshow__img-big"/>
                                 </div>
                             </div>
                             <div className="slideshow__line"></div>
@@ -60,8 +66,8 @@ export default class Coocucachew extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)} 
-                                                src="../../../public/assets/imgs/coocucachew/gif1.gif"  
-                                                alt="Site walk-through part 1" 
+                                                src="../../../public/assets/imgs/thirdcult/homepage-thumb.jpg"  
+                                                alt="Third Cult masks site homepage" 
                                                 className="slideshow__thumb"
                                             />
                                         </div>
@@ -69,8 +75,8 @@ export default class Coocucachew extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">    
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/coocucachew/gif2.gif" 
-                                                alt="Site walk-through part 2" 
+                                                src="../../../public/assets/imgs/thirdcult/details-thumb.jpg" 
+                                                alt="Third Cult masks details section" 
                                                 className="slideshow__thumb"
                                             />
                                         </div>
@@ -78,8 +84,8 @@ export default class Coocucachew extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/coocucachew/gif3.gif" 
-                                                alt="Site walk-through part 3" 
+                                                src="../../../public/assets/imgs/thirdcult/features-thumb.jpg" 
+                                                alt="Third Cult feature cards section" 
                                                 className="slideshow__thumb"
                                             />
                                         </div>
@@ -87,8 +93,8 @@ export default class Coocucachew extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/coocucachew/gif4.gif" 
-                                                alt="Site walk-through part 4" 
+                                                src="../../../public/assets/imgs/thirdcult/masks-thumb.jpg" 
+                                                alt="Third Cult Masks section depicting three masks" 
                                                 className="slideshow__thumb"
                                             />
                                         </div>
@@ -96,8 +102,8 @@ export default class Coocucachew extends Component {
                                     <div className="col-1of5">
                                         <div className="slideshow__thumb-wrap">
                                             <img onClick={(e) => this.handleImage(e)}
-                                                src="../../../public/assets/imgs/coocucachew/main.png" 
-                                                alt="Coocucachew Landing" 
+                                                src="../../../public/assets/imgs/thirdcult/reviews-thumb.jpg" 
+                                                alt="Third Cult Mask Reviews section" 
                                                 className="slideshow__thumb"
                                             />
                                         </div>
@@ -112,12 +118,9 @@ export default class Coocucachew extends Component {
                         <div className="projects__tech-logos u-margin-top-small-medium">
                             <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__logo-img projects_logo-img--md"/>
                             <img src="../../public/assets/greyscale-logos/html5.png" alt="html5 logo" className="projects__logo-img"/>
-                            <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__logo-img"/>
                             <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__logo-img"/>
-                            <img src="../../public/assets/greyscale-logos/redux.png" alt="redux logo" className="projects__logo-img"/>
+                            <img src="../../public/assets/greyscale-logos/sass.png" alt="sass logo" className="projects__logo-img"/>
                             <img src="../../public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="projects__logo-img projects__logo-img--xl"/>
-                            <img src="../../public/assets/greyscale-logos/postgresql.png" alt="postgresql logo" className="projects__logo-img projects__logo-img--sq"/>
-                            <img src="../../public/assets/greyscale-logos/sequelize.png" alt="sequelize logo" className="projects__logo-img projects__logo-img--sq"/>
                         </div>
                     </div>
                 </div>
