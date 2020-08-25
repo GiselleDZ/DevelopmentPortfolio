@@ -37,7 +37,7 @@ export default class Intro extends Component {
     render(){
         return(
             <section className="intro">
-                <div className={this.state.cardClass} id="HiHello">
+                <div className={this.state.cardClass} id="intro">
                     <div className="card__side card__side--back">
                         <div className="card__tech-logos">
                             <div className="card__wide-logos">

@@ -1,6 +1,23 @@
 import React, { Component } from "react"
 
 export default class Navigation extends Component {
+    constructor(){
+        super()
+        this.toggleNav = this.toggleNav.bind(this)
+    }
+
+    toggleNav(e){
+        e.preventDefault()
+
+        const checkbox = document.getElementById('navi-toggle')
+
+        if(checkbox.checked === true){
+            checkbox.checked = false
+        } else {
+            checkbox.checked = true
+        }
+    }
+
     render(){
         return(
             <div className="navigation">
@@ -13,23 +30,32 @@ export default class Navigation extends Component {
                 </label>
                 <div className="navigation__background">&nbsp;</div>
                 <nav className="navigation__nav">
-                    <ul className="navigation__list">
+                    <ol className="navigation__list">
                         <li className="navigation__items">
-                            <a href="#section-about" className="navigation__link"><span>01</span>Placeholder</a>
+                            <a href="#HiHello" onClick={e => this.toggleNav(e)} className="navigation__link">Hello</a>
                         </li>
                         <li className="navigation__items">
-                            <a href="#section-features" className="navigation__link"><span>02</span>Placeholder</a>
+                            <a href="#intro" onClick={e => this.toggleNav(e)} className="navigation__link">Intro</a>
                         </li>
                         <li className="navigation__items">
-                            <a href="#section-masks" className="navigation__link"><span>03</span>Placeholder</a>
+                            <a href="#projects" onClick={e => this.toggleNav(e)} className="navigation__link">Projects Index</a>
                         </li>
                         <li className="navigation__items">
-                            <a href="#section-stories" className="navigation__link"><span>04</span>Placeholder</a>
+                            <a href="#thirdcultmasks" onClick={e => this.toggleNav(e)} className="navigation__link navigation__link--small">Third Cult Masks</a>
                         </li>
                         <li className="navigation__items">
-                            <a href="#section-wholesale" className="navigation__link"><span>05</span>Placeholder</a>
+                            <a href="#pentimento" onClick={e => this.toggleNav(e)} className="navigation__link navigation__link--small">Pentimento</a>
                         </li>
-                    </ul>
+                        <li className="navigation__items">
+                            <a href="#vchatbot" onClick={e => this.toggleNav(e)} className="navigation__link navigation__link--small">Vi Chat Bot</a>
+                        </li>
+                        <li className="navigation__items">
+                            <a href="#coocucachew" onClick={e => this.toggleNav(e)} className="navigation__link navigation__link--small">Coocucachew</a>
+                        </li>
+                        <li className="navigation__items">
+                            <a href="#footer" onClick={e => this.toggleNav(e)} className="navigation__link navigation__link--small">contact</a>
+                        </li>
+                    </ol>
                 </nav>
             </div>
         )

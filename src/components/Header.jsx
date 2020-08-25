@@ -3,7 +3,7 @@ import React, { Component } from "react"
 export default class Header extends Component {
     render(){
         return(
-            <header className="header">
+            <header className="header" id="HiHello">
                 <div className="header__shadow-wrapper"> 
                     <span className="header__shadow-wrapper--dot-shadow"></span>
                     <div className="header__text-box">
@@ -20,7 +20,7 @@ export default class Header extends Component {
                         </h1>
                     </div>
                     <div className="header__button">
-                        <a href="#HiHello" className="btn btn--black-button btn--animated">
+                        <a href="#intro" className="btn btn--black-button btn--animated">
                             Hi, Nice to meet you 🡓 
                         </a>
                     </div>
