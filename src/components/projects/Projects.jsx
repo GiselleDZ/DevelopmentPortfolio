@@ -7,7 +7,7 @@ import ThirdCultMasks from "./ThirdCultMasks"
 export default class Projects extends Component {
     render(){
         return(
-            <div className="projects" id="projects">
+            <section className="projects" id="projects">
                 <div className="projects__intro">
                     <div className="projects__intro-card">
                         <div className="projects__header projects__header--small">
@@ -65,7 +65,7 @@ export default class Projects extends Component {
                 <Pentimento />
                 <VChatBot />
                 <Coocucachew />
-            </div>
+            </section>
         )
     }
 }

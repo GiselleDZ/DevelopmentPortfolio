@@ -25,10 +25,9 @@
     "IE 10"
   ],
   "dependencies": {
-    "i": "^0.3.6",
     "express": "^4.17.1",
+    "i": "^0.3.6",
     "npm": "^6.14.8",
-    "postcss": "^7.0.32",
     "react": "^16.9.0",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
@@ -58,6 +57,8 @@
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",

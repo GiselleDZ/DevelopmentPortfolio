@@ -20,7 +20,7 @@ class Main extends Component {
 
     render(){
         const { softwareProjects } = this.props
-        console.log(softwareProjects)
+        // console.log(softwareProjects)
         return(
             <div> 
             </div>

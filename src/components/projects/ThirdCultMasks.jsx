@@ -23,7 +23,7 @@ export default class ThirdCultMasks extends Component {
 
     render(){
         return(
-            <div className="projects__ThirdCultMasks projects__section" id="thirdcultmasks">
+            <section className="projects__ThirdCultMasks projects__section" id="thirdcultmasks">
                 <div className="projects__header">
                     <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Third Cult Masks </h1>
                 </div>
@@ -170,7 +170,7 @@ export default class ThirdCultMasks extends Component {
                         </div>
                     </div>
                 </div> */}
-            </div>
+            </section>
             
         )
     }

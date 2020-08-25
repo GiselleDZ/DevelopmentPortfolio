@@ -33,7 +33,7 @@ export default class Pentimento extends Component {
 
     render(){
         return(
-            <div className="projects__pentimento  projects__section" id="pentimento">
+            <section className="projects__pentimento  projects__section" id="pentimento">
                 <div className="projects__header">
                     <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Pentimento </h1>
                 </div>
@@ -193,7 +193,7 @@ export default class Pentimento extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             
         )
     }

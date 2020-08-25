@@ -19,7 +19,7 @@ export default class Coocucachew extends Component {
 
     render(){
         return(
-            <div className="projects__coocucachew  projects__section" id="coocucachew">
+            <section className="projects__coocucachew  projects__section" id="coocucachew">
                 <div className="projects__header">
                     <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Coocucachew </h1>
                 </div>
@@ -167,7 +167,7 @@ export default class Coocucachew extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             
         )
     }

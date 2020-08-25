@@ -7,8 +7,6 @@ export default class Navigation extends Component {
     }
 
     toggleNav(e){
-        e.preventDefault()
-
         const checkbox = document.getElementById('navi-toggle')
 
         if(checkbox.checked === true){
