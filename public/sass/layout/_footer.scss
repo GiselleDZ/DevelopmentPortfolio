@@ -1,5 +1,6 @@
 .footer{
     background-color: $black;
+    border-radius: $border-radius-sm;;
     padding: 8rem 0;
     font-size: 1.4rem;
 
@@ -9,7 +10,8 @@
     }
     
     &__logo{
-        width: 10rem;
+        width: 5rem;
+        opacity: .8;
         -webkit-filter: drop-shadow(.5rem 1rem 1rem $black);
         filter: drop-shadow(.5rem 1rem 1rem $black);
         transition: all .5s;

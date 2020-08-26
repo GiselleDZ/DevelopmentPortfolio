@@ -36,6 +36,10 @@
     box-shadow: 0 1rem 2rem rgba($color: $dark-blue, $alpha: $opacity);
 }
 
+@mixin dark-blue-shadow($opacity){
+    box-shadow: 0 1rem 2rem rgba($color: $darkest-blue, $alpha: $opacity);
+}
+
 
 
 @mixin dither-shadow{

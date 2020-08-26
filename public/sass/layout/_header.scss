@@ -1,14 +1,4 @@
-.header {
-    height: 95vh;
-    background-color: $light-blue;
-    position: relative;
-
-    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 90%);
-
-    @include respond(tab-port){
-        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90%);
-    }
-    
+.header {   
     &__logo-box {
         position: absolute;
         top: 4rem;
@@ -55,10 +45,9 @@
 
     &__button{
         position: absolute;
-        // top: 45rem;
-        // left: 40%;
-
-        @include center-axis(120%, 50%);
+        top: 80%;
+        left: 58%;
+        animation: moveInDepths ease-in .6s;
         
     }
 }
