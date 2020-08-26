@@ -68,26 +68,3 @@ export default class Header extends Component {
         )
     }
 }
-
-
-// old header
-{/* <h1 className="header-composition__name">Giselle Zatonyl</h1>
-<h2 className="header-composition__title">Software Engineer</h2> */}
-{/* <div className="header-composition__logo">
-    <img src="http://gisellezatonyl.com/images/dev/logos/G-logomark-w-sm.png" alt="Giselle Zatonyl Logo Mark" className="header-composition__logo--image"/>
-</div> */}
-
-{/* <h1 className="heading-primary">
-<div className="header__shadow-wrapper"> 
-<span className="header__shadow-wrapper--dot-shadow"></span>
-<figure className="header-composition__shape">
-<img src="../../public/assets/imgs/blue-G-300.jpg" alt="blue Giselle" className="header__img" />
-</figure>
-<span className="heading-primary--main">
-Giselle Zatonyl
-</span>
-<span className="heading-primary--sub u-margin-left-small">
-Fullstack Software Engineer
-</span>
-</div>
-    </h1> */}
