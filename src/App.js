@@ -4,7 +4,7 @@ import Navigation from './components/Navigation'
 import Header from './components/Header'
 import Intro from './components/Intro'
 import Projects from './components/projects/Projects'
-import Main from './components/Main'
+// import Main from './components/Main'
 import "../public/css/style.css"
 
 
@@ -13,7 +13,7 @@ const App = () => {
     <div className="body">
         <Navigation />
         <Header />
-        <Main />
+        {/* <Main /> */}
         <Intro />
         <Projects />
         <Footer />

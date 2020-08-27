@@ -42,13 +42,13 @@ export default class VChatBot extends Component {
                 <div className="row">
                     <div className="col-1of3">
                         <div className="projects__description projects__description--short">
-                            <p className="paragraph paragraph--dark paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--big">
                                  Vi Chat Bot is an app developed during NYC Coders for Black Lives Matter Hackathon. The app was created to help the Center for Racial Justice in Education disseminate their learning resources, by engaging their community in conversation, and facilitating access with a chat bot built-in to their website, as well as Facebook Messenger.   
                             </p>
-                            <p className="paragraph paragraph--dark paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--big">
                                 The bot was trained using Google's DialogFlow API, integrated into a PWA React.js application, using BotCopy.
                             </p>
-                            <p className="paragraph paragraph--dark paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--big">
                                 The project was comprised of Developers : Youssouf da Silva, Liang Liang, Vanessa Corlette, Giselle Zatonyl, and Jessica Choi; Project Manager: Marc Luna; UI/UX Designer: Rae Shambrook
                             </p>
                             <a href="http://vi-bot.surge.sh/" 
@@ -135,20 +135,32 @@ export default class VChatBot extends Component {
                             </div>
                         </div>
                         <div className="projects__description projects__description--xxx-short">
-                            <div className="projects__tech-logos u-margin-top-small">
-                                <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__logo-img projects_logo-img--sq"/>
-                                <img src="../../public/assets/greyscale-logos/html5.png" alt="html5 logo" className="projects__logo-img projects_logo-img--sq"/>
-                                <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__logo-img projects_logo-img--sq"/>
-                                <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__logo-img projects_logo-img--sq"/>
-                                <img src="../../public/assets/greyscale-logos/sass.png" alt="sass logo" className="projects__logo-img projects_logo-img--sq"/>
-                                <img src="../../public/assets/greyscale-logos/googlecloud.png" alt="googlecloud logo" className="projects__logo-img projects_logo-img--sq"/>
+                            <div className="projects__tech-logos">
+                                <div className="projects__tech-logos__wrapper">
+                                     <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                     <img src="../../public/assets/greyscale-logos/html5.png" alt="html5 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/sass.png" alt="sass logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/googlecloud.png" alt="googlecloud logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--40">
+                    <div className="projects__description projects__description--35">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 My role
                             </h3>
@@ -169,7 +181,7 @@ export default class VChatBot extends Component {
                         </div>
                     </div>
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--40">
+                        <div className="projects__description projects__description--35">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>

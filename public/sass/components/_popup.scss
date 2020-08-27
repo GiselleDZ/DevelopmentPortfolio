@@ -5,7 +5,7 @@
     top: 0%;
     left: 0%;
     background-color: rgba($black, .8);
-    z-index: 5000;
+    z-index: 5000;  
     opacity: 0;
     visibility: hidden;
     transition: all .2s;
@@ -14,6 +14,7 @@
     &__content{
         width: 75%;
         height: 50rem;
+        border: 1px solid $medium-blue;
         background-color: $darkest-blue;
         box-shadow: $box-shadow-dark;
         border-radius: $border-radius-sm;

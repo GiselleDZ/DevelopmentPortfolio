@@ -40,10 +40,10 @@ export default class Pentimento extends Component {
                 <div className="row">
                     <div className="col-1of3">
                         <div className="projects__description">
-                            <p className="paragraph paragraph--dark paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--big">
                                 Pentimento is a mobile-first web application for finding and uploading street art around New York City. It was created for artists, historians, and art enthusiasts to keep track of ephemeral pieces that may be here today but gone tomorrow.
                             </p>
-                            <p className="paragraph paragraph--dark paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--big">
                                 Pentimeto was built during the Grace Hopper Software Engineering program, as the Capstone project. The team members were Angie Spears, Giselle Zatonyl, Saj King, and Chelsea Church.
                             </p>
                             <a href="https://pentimentostreet.herokuapp.com/" 
@@ -131,9 +131,34 @@ export default class Pentimento extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="projects__description projects__description--xx-short u-margin-top-medium u-margin-bottom-medium">
+                    <div className="projects__tech-logos u-margin-top-small">
+                        <div className="projects__tech-logos__wrapper">
+                            <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img u-margin-left-medium"/>
+                        </div>
+                        <div className="projects__tech-logos__wrapper">
+                            <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                        </div>
+                        <div className="projects__tech-logos__wrapper">
+                            <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                        </div>
+                        <div className="projects__tech-logos__wrapper">
+                            <img src="../../public/assets/greyscale-logos/postgresql.png" alt="postgresql logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                        </div>
+                        <div className="projects__tech-logos__wrapper">
+                            <img src="../../public/assets/greyscale-logos/mapbox.png" alt="mapbox logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                        </div>
+                        <div className="projects__tech-logos__wrapper">
+                            <img src="../../public/assets/greyscale-logos/sequelize.png" alt="sequelize logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                        </div>
+                        <div className="projects__tech-logos__wrapper">
+                            <img src="../../public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                        </div>
+                    </div>
+                </div>
                 <div className="row">
-                    <div className="col-1of2">
-                        <div className="projects__description projects__description--50">
+                    <div className="col-1of2 u-margin-top-medium-large">
+                        <div className="projects__description projects__description--45">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 My role
                             </h3>
@@ -158,20 +183,9 @@ export default class Pentimento extends Component {
                                 </li>
                             </ul>
                         </div>
-                        <div className="projects__description projects__description--xx-short u-margin-top-medium">
-                            <div className="projects__tech-logos u-margin-top-small">
-                                <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__logo-img projects__logo-img--md u-margin-left-medium"/>
-                                <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__logo-img projects__logo-img"/>
-                                <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__logo-img projects__logo-img"/>
-                                <img src="../../public/assets/greyscale-logos/postgresql.png" alt="postgresql logo" className="projects__logo-img projects__logo-img"/>
-                                <img src="../../public/assets/greyscale-logos/mapbox.png" alt="mapbox logo" className="projects__logo-img projects__logo-img--xl"/>
-                                <img src="../../public/assets/greyscale-logos/sequelize.png" alt="sequelize logo" className="projects__logo-img projects__logo-img--md"/>
-                                <img src="../../public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="projects__logo-img projects__logo-img--xxl"/>
-                            </div>
-                        </div>
                     </div>
-                    <div className="col-1of2">
-                        <div className="projects__description projects__description--75">
+                    <div className="col-1of2 u-margin-top-medium-large">
+                        <div className="projects__description projects__description--60">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>

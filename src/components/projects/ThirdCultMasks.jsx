@@ -30,13 +30,13 @@ export default class ThirdCultMasks extends Component {
                 <div className="row">
                     <div className="col-1of3">
                         <div className="projects__description">
-                            <p className="paragraph paragraph--dark paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--big">
                                 Third Cult Masks is a site made to singularly advertize Third Cult's high end masks to retailers that may want to purchase them as wholesale.
                             </p>
-                            <p className="paragraph paragraph--dark paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--big">
                                 ThirdCultMasks was built using primarily vanilla Javascript, CSS3 SASS and Express. It was created by Giselle Zatonyl.
                             </p>
-                            <p className="paragraph paragraph--dark paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--big">
                                 Visit on a desktop browser, and you will notice a large percentage of the elements are animated. This project created largely to practice animating CSS3, SASS and minimal Javascript.
                             </p>
                             <a href="https://thirdcult-masks.herokuapp.com/" 
@@ -115,12 +115,26 @@ export default class ThirdCultMasks extends Component {
                 </div>
                 <div className="row">
                     <div className="projects__description projects__description--xxx-short">
-                        <div className="projects__tech-logos u-margin-top-small-medium">
-                            <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__logo-img projects_logo-img--md"/>
-                            <img src="../../public/assets/greyscale-logos/html5.png" alt="html5 logo" className="projects__logo-img"/>
-                            <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__logo-img"/>
-                            <img src="../../public/assets/greyscale-logos/sass.png" alt="sass logo" className="projects__logo-img"/>
-                            <img src="../../public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="projects__logo-img projects__logo-img--xl"/>
+                        <div className="projects__tech-logos">
+                            <div className="projects__tech-logos__wrapper">
+                                <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                            </div>
+                            <div className="projects__tech-logos__wrapper">
+
+                                <img src="../../public/assets/greyscale-logos/html5.png" alt="html5 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                            </div>
+                            <div className="projects__tech-logos__wrapper">
+                                
+                                <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                            </div>
+                            <div className="projects__tech-logos__wrapper">
+                                
+                                <img src="../../public/assets/greyscale-logos/sass.png" alt="sass logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                            </div>
+                            <div className="projects__tech-logos__wrapper">
+                                
+                                <img src="../../public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="projects__tech-logos__wrapper  projects__tech-logos__wrapper--logo-img"/>
+                            </div>
                         </div>
                     </div>
                 </div>

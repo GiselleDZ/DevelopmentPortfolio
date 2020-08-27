@@ -1,8 +1,8 @@
 .footer{
-    background-color: $black;
-    border-radius: $border-radius-sm;;
+    background-color: $darkest-blue;
     padding: 8rem 0;
     font-size: 1.4rem;
+    margin-top: 10rem;
 
     &__logo-box{
         text-align: center;
@@ -10,7 +10,7 @@
     }
     
     &__logo{
-        width: 5rem;
+        width: 4rem;
         opacity: .8;
         -webkit-filter: drop-shadow(.5rem 1rem 1rem $black);
         filter: drop-shadow(.5rem 1rem 1rem $black);
@@ -24,9 +24,7 @@
             filter: drop-shadow(.5rem 2rem 1rem $black);
         }
     }
-    
-    &__navigation{
-    }
+
     
     &__line-nav{
         border-top: 1px solid $lightish-blue;

@@ -14,22 +14,26 @@
     &__header{
         text-align: left;
         max-width: $grid-width;
-        margin-bottom: 2rem;
-        padding: 5rem;
+        margin: 10rem 0 2rem 5rem;
 
         &--small{
             max-width: 80rem;
+            margin-left: 0;
         }
     }
 
     &__description{
-        background-color: white;
+        position: relative;
+        z-index: 10;
         width: 100%;
         max-width: $grid-width;
         margin: 0 auto;
         height: 60rem;
         padding: 3rem;
-        border: 1px solid $light-blue;
+        border: 1px solid $medium-light-blue;
+        background-color: rgba($color: $darkester-blue, $alpha: .8);
+
+        @include basic-blue-shadow(.5);
 
         &--short{height: 80rem;}
 
@@ -39,13 +43,24 @@
 
         &--x-short{height: 55rem;}
 
+        &--60{height: 60rem}
+
+        &--55{height: 55rem}
+
         &--50{height: 50rem;}
 
-        &--xxm-short{height: 48rem;}
+        &--48{height: 48rem;}
+
+        &--45{height: 45rem}
+
+        &--44{height: 44rem;}
 
         &--40{height: 40rem;}
 
-        &--44{height: 44rem;}
+        &--35{height: 35rem;}
+
+        &--30{height: 30rem;}
+
 
         &--xx-short{
             height: 19rem;
@@ -60,32 +75,113 @@
         @include basic-blue-shadow(.2)
     }
 
-    &__background{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: -1.5%;
-        left: 0;
-        opacity: .7;
+    &__shapes{
+        position: relative;
+        z-index: 0;
     }
 
-    &__card{
+    &__background{
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        top: -60%;
+        left: 10rem;
+        opacity: .7;
+
+        &--2{
+            width: 80%;
+            height: 80%;
+            top: 90rem; 
+            left: -50rem;
+        }
+
+        &--3{
+            width: 50%;
+            height: 50%;
+            top: 150rem; 
+            left: -25rem;
+            opacity: .4;
+        }
+
+        &--4{
+            width: 60%;
+            height: 60%;
+            top: 165rem; 
+            left: 60rem;
+            opacity: .8;
+        }
+
+        &--5{
+            width: 50%;
+            height: 50%;
+            top: 250rem; 
+            left: 110rem;
+            transform: rotate(90deg);
+        }
+
+        &--6{
+            width: 80%;
+            height: 80%;
+            top: 250rem; 
+            left: -20rem;
+        }
+
+        &--7{
+            width: 50%;
+            height: 50%;
+            top: 340rem; 
+            left: -10rem;
+        }
+
+        &--2{
+            width: 80%;
+            height: 80%;
+            top: 90rem; 
+            left: 50rem;
+        }
+
+        &--2{
+            width: 80%;
+            height: 80%;
+            top: 90rem; 
+            left: 50rem;
+        }
+
+
+        &--2{
+            width: 80%;
+            height: 80%;
+            top: 90rem; 
+            left: 50rem;
+        }
+    }
+
+    &__intro{
+        position: relative;
         margin: 12rem;
         width: 80%;
         padding: 4rem;
         text-align: center;
+        margin-bottom: 40rem;
+        
+        &--button{
+            position: absolute;
+            top: 100%;
+            right: 4%;
+        }
     }
+    
 
-    &__card-thumbs{
+    &__intro-thumbs{
         margin: 0 auto;
         width: 100%;
         height: 25rem;;
-        padding: 3rem;
-        padding-top: 6rem;
+        padding-top: 4rem;
+        padding-bottom: 8rem;
         
         &__thumb-wrapper{
             position: relative;
-            width: 16rem;
+            width: 14rem;
             padding: 1rem;
             transition: all ease-in .4s;
 
@@ -117,30 +213,20 @@
     }
 
     &__tech-logos{
-        text-align: center;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem;
+        
+        &__wrapper{
+            max-width: 8rem;
+            max-height: 5rem;
+
+            &__logo-img{
+        
+            }
+        }
     }
-
-    &__logo-img{
-        height: 4rem;
-        margin-bottom: 2rem;
-
-        &--md{
-            height: 3rem;
-        }
-
-        &--xl{
-            height: 2rem;
-        }
-
-        &--xxl{
-            height: 2rem;
-        }
-
-        &:not(:last-child){
-            margin-right: 6rem;
-        }
-
-    }
-
-
 }

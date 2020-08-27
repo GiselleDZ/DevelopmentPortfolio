@@ -72,13 +72,16 @@ export default class Intro extends Component {
                                     <h3 className="heading-quaternary--dark u-margin-bottom-small">
                                         Hi, Hello!
                                     </h3>
-                                    <p className="paragraph--dark">
-                                        I'm a Full Stack Software Engineer. I used to work as a Graphic Designer, but Design tech couldn't keep up with my desire to automate, improve systems, and get under the hood, so here I am, spending all my time working with the tech I love. I'm interested in creating memorable user experiences with engaging functionality, captivating design, state-of-the-art tech, and agile code.
+                                    <p className="paragraph--dark u-margin-bottom-small">
+                                        I'm a Full Stack Software Engineer. I used to work as a Graphic Designer, but Design tech couldn't keep up with my desire to automate, improve systems, and get under the hood. So here I am, spending all my time working with the tech I love. 
+                                    </p>
+                                    <p className="paragraph--dark u-margin-bottom-small">
+                                    I'm interested in creating memorable user experiences with engaging functionality, captivating design, state-of-the-art tech, and agile code. My current aim is to master Javascript, while familiarizing myself with C++ and Python. 
                                     </p>
                                 </div>
                                 <div className="card__text">
-                                    <p className="paragraph--dark u-margin-top-small">
-                                        As a part-time human, I love hiking in nature, abstract music and all kinds of fitness. I was born in Buenos Aires, Argentina. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Send me a message!
+                                    <p className="paragraph--dark u-margin-bottom-small">
+                                        As a human, I love hiking in nature, abstract music, advocating for BIPOC and LGBT rights, and all kinds of fitness. I was born in Buenos Aires, Argentina. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Send me a message!
                                     </p>
                                 </div>
                             </div>
@@ -88,7 +91,7 @@ export default class Intro extends Component {
                                 <div className="col-1of2">
                                     <a
                                         onClick={() => this.handleFlip() } 
-                                        className="card__button-container--left btn-text btn-text--white u-margin-bottom-medium">
+                                        className="card__button-container--left btn btn--white u-margin-bottom-medium">
                                             { this.state.text } &#x219F;
                                     </a>
                                 </div>
