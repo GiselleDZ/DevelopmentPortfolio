@@ -8,8 +8,10 @@ export default class Projects extends Component {
     render(){
         return(
             <section className="projects" id="projects">
-                <div className="projects__intro">
-                    <div className="projects__intro-card">
+                    <div className="projects__background">
+                        <img src="http://gisellezatonyl.com/images/dev/shapes/svg-composition-3-01.svg" alt="composition of abstract shapes"/>
+                    </div>
+                    <div className="projects__card">
                         <div className="projects__header projects__header--small">
                             <h2 className="heading-primary heading-primary--main heading-primary--shadow ">Projects</h2> 
                         </div>
@@ -59,7 +61,6 @@ export default class Projects extends Component {
                         </div>
                         
                     </div>
-                </div>
                 
                 <ThirdCultMasks />
                 <Pentimento />

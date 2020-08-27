@@ -11,7 +11,7 @@ body {
 
     &--main{
         font-family: "Playfair Display", serif;
-        color: $darker-blue;
+        color: $white;
         display: block;
         font-size: 7rem;
         font-weight: 900;
@@ -54,7 +54,7 @@ body {
     }
 
     &--shadow{
-        text-shadow: 0 1rem 1rem $medium-blue;
+        text-shadow: 0 .5rem 1rem $dark-blue;
     }
 }
 

@@ -1,58 +1,33 @@
 .projects{
-    background-color: $medium-light-blue;
-    border-radius: $border-radius-sm;
-    border: 1px solid $medium-lightish-blue;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 4rem;
     position: relative;
-    @include basic-blue-shadow(.2);
 
     &__section{
-        background-color: $medium-lightish-blue;
-        border-radius: $border-radius-sm;
-        border: 1px solid $lightish-blue;
-        margin: 3rem;
-        margin-bottom: 8rem;
-        width: 95.5%;
-        padding: 3rem 3rem 6rem 3rem;
+        width: 100%;
         display: block;
-
-        @include basic-blue-shadow(.5);
     }
 
     /// P R O J E C T S  
-    &__pentimento{}
 
-    &__vchatbot{}
-
-    &__coocucachew{}
-
-    /// B A S E
     &__header{
-        -webkit-font-smoothing: antialiased;
-        margin: 0 auto;
+        text-align: left;
         max-width: $grid-width;
-        margin-bottom: 6rem;
-        padding: 3rem;
-        background-color: $lightish-blue;
-        border-radius: $border-radius-sm;
-        border: 1px solid $light-blue;
+        margin-bottom: 2rem;
+        padding: 5rem;
 
         &--small{
             max-width: 80rem;
         }
-
-        @include basic-blue-shadow(.5);
     }
 
     &__description{
+        background-color: white;
         width: 100%;
         max-width: $grid-width;
         margin: 0 auto;
         height: 60rem;
-        background-color: $lightish-blue;
-        border-radius: $border-radius-sm;
         padding: 3rem;
         border: 1px solid $light-blue;
 
@@ -82,41 +57,38 @@
             margin-top: 5rem;
         }
 
-        @include basic-blue-shadow(.5)
+        @include basic-blue-shadow(.2)
     }
 
-    &__intro{
-        margin: 3rem;
-        padding: 3rem;
-        margin-bottom: 8rem;
-        height: 100vh;
-        @include frosted-glass-box($medium-lightish-blue);
-    
+    &__background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -1.5%;
+        left: 0;
+        opacity: .7;
     }
 
-    &__intro-card{
-        margin: 8rem;
-
-        @include frosted-glass-box($lightish-blue);
-
-        padding: 6rem;
+    &__card{
+        margin: 12rem;
+        width: 80%;
+        padding: 4rem;
         text-align: center;
-        
     }
 
     &__card-thumbs{
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
         height: 25rem;;
         padding: 3rem;
         padding-top: 6rem;
         
-        @include frosted-glass-box($light-blue);
-    
         &__thumb-wrapper{
             position: relative;
-            width: 14rem;
+            width: 16rem;
             padding: 1rem;
+            transition: all ease-in .4s;
+
             
             &--thumb-image{
                 max-width: 100%;
@@ -129,8 +101,17 @@
         
             &--thumb-title{
                 position: absolute;
+                color: white;
                 top: 3rem;
-                left: 1rem
+                left: 1rem;
+            }
+
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+
+            &:hover{
+                transform: scale(1.1);
             }
         }
     }
