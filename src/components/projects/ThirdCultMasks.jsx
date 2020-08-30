@@ -5,7 +5,8 @@ export default class ThirdCultMasks extends Component {
         super() 
         this.state= {
             mainPhoto: "http://www.gisellezatonyl.com/images/dev/thirdcult/homepage.JPG",
-            alt: "Third Cult Homepage"
+            alt: "Third Cult Homepage",
+            thumb: "slideshow__thumb"
         }
         this.handleImage = this.handleImage.bind(this)
     }
@@ -17,7 +18,7 @@ export default class ThirdCultMasks extends Component {
 
         this.setState({
             mainPhoto: mainSrc,
-            alt: e.target.alt
+            alt: e.target.alt,
         })
     }
 
@@ -42,13 +43,13 @@ export default class ThirdCultMasks extends Component {
                             <a href="https://thirdcult-masks.herokuapp.com/" 
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                className="btn btn--white u-margin-top-small">
+                                className="btn btn--white btn--white--small u-margin-top-small">
                                 Project Site
                             </a>
                             <a href="https://github.com/GiselleDZ/ThirdCvltMasks" 
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                className="btn btn--white u-margin-top-small u-margin-bottom-small">
+                                className="btn btn--white btn--white--small u-margin-top-small u-margin-bottom-small">
                                 Github Repository
                             </a>
                         </div>
@@ -68,7 +69,7 @@ export default class ThirdCultMasks extends Component {
                                             <img onClick={(e) => this.handleImage(e)} 
                                                 src="http://www.gisellezatonyl.com/images/dev/thirdcult/homepage-thumb.jpg"  
                                                 alt="Third Cult masks site homepage" 
-                                                className="slideshow__thumb"
+                                                className={this.state.thumb}
                                             />
                                         </div>
                                     </div>
@@ -77,7 +78,7 @@ export default class ThirdCultMasks extends Component {
                                             <img onClick={(e) => this.handleImage(e)}
                                                 src="http://www.gisellezatonyl.com/images/dev/thirdcult/details-thumb.jpg" 
                                                 alt="Third Cult masks details section" 
-                                                className="slideshow__thumb"
+                                                className={this.state.thumb}
                                             />
                                         </div>
                                     </div>
@@ -86,7 +87,7 @@ export default class ThirdCultMasks extends Component {
                                             <img onClick={(e) => this.handleImage(e)}
                                                 src="http://www.gisellezatonyl.com/images/dev/thirdcult/features-thumb.jpg" 
                                                 alt="Third Cult feature cards section" 
-                                                className="slideshow__thumb"
+                                                className={this.state.thumb}
                                             />
                                         </div>
                                     </div>
@@ -95,7 +96,7 @@ export default class ThirdCultMasks extends Component {
                                             <img onClick={(e) => this.handleImage(e)}
                                                 src="http://www.gisellezatonyl.com/images/dev/thirdcult/masks-thumb.jpg" 
                                                 alt="Third Cult Masks section depicting three masks" 
-                                                className="slideshow__thumb"
+                                                className={this.state.thumb}
                                             />
                                         </div>
                                     </div>
@@ -104,7 +105,7 @@ export default class ThirdCultMasks extends Component {
                                             <img onClick={(e) => this.handleImage(e)}
                                                 src="http://www.gisellezatonyl.com/images/dev/thirdcult/reviews-thumb.jpg" 
                                                 alt="Third Cult Mask Reviews section" 
-                                                className="slideshow__thumb"
+                                                className={this.state.thumb}
                                             />
                                         </div>
                                     </div>
@@ -114,7 +115,7 @@ export default class ThirdCultMasks extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="projects__description projects__description--xxx-short">
+                    <div className="projects__description projects__description--15">
                         <div className="projects__tech-logos">
                             <div className="projects__tech-logos__wrapper">
                                 <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
@@ -140,7 +141,7 @@ export default class ThirdCultMasks extends Component {
                 </div>
                 {/* <div className="row">
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--x-short">
+                        <div className="projects__description projects__description--55">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 My role
                             </h3>
@@ -164,7 +165,7 @@ export default class ThirdCultMasks extends Component {
                         </div>
                     </div>
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--x-short">
+                        <div className="projects__description projects__description--55">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>

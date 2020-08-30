@@ -30,10 +30,10 @@ export default class Navigation extends Component {
                 <nav className="navigation__nav">
                     <ol className="navigation__list">
                         <li className="navigation__items">
-                            <a href="#HiHello" onClick={e => this.toggleNav(e)} className="navigation__link">Hello</a>
+                            <a href="#HiHello" onClick={e => this.toggleNav(e)} className="navigation__link">Welcome</a>
                         </li>
                         <li className="navigation__items">
-                            <a href="#intro" onClick={e => this.toggleNav(e)} className="navigation__link">Intro</a>
+                            <a href="#intro" onClick={e => this.toggleNav(e)} className="navigation__link">Introduction</a>
                         </li>
                         <li className="navigation__items">
                             <a href="#projects" onClick={e => this.toggleNav(e)} className="navigation__link">Projects Index</a>
@@ -51,7 +51,7 @@ export default class Navigation extends Component {
                             <a href="#coocucachew" onClick={e => this.toggleNav(e)} className="navigation__link navigation__link--small">Coocucachew</a>
                         </li>
                         <li className="navigation__items">
-                            <a href="#footer" onClick={e => this.toggleNav(e)} className="navigation__link navigation__link--small">contact</a>
+                            <a href="#footer" onClick={e => this.toggleNav(e)} className="navigation__link navigation__link--small">Contact</a>
                         </li>
                     </ol>
                 </nav>

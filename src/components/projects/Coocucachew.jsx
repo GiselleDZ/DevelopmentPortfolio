@@ -108,7 +108,7 @@ export default class Coocucachew extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="projects__description projects__description--xxx-short">
+                    <div className="projects__description projects__description--15">
                         <div className="projects__tech-logos">
                             <div className="projects__tech-logos__wrapper">
                                  <img src="../../public/assets/greyscale-logos/node.png" 
@@ -179,7 +179,7 @@ export default class Coocucachew extends Component {
                         </div>
                     </div>
                     <div className="col-1of2">
-                        <div className="projects__description projects__description--48">
+                        <div className="projects__description projects__description--40">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>

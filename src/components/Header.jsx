@@ -60,13 +60,8 @@ export default class Header extends Component {
                         </div>
                     </div>
                     <div className="header__button">
-                        {/* <figure class="header__button--shape">
-                            <img src="public\assets\imgs\blue-G-300.jpg" 
-                                alt="Photo of Giselle in Blue" 
-                                class="header__button--img" />
-                        </figure> */}
-                        <a href="#intro" className="btn btn--black-button">
-                            Hi, nice to meet you 🡓 
+                        <a href="#intro" className="btn btn--black">
+                            Hi, thanks for stopping by 🡓 
                         </a>
                     </div>
             </header>

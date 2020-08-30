@@ -1,8 +1,8 @@
 .header-composition{
     position: relative;
-    height: 100vh;
-    width: 100%;
+    height: 80vh;
     background-color: $darker-blue;
+    margin: 5rem 0 25rem 0;
 
     &__text-box {
         text-align: center;
@@ -28,33 +28,33 @@
             mix-blend-mode: overlay;
         }
         &--name {
-            animation: moveInMarxist ease-in .9s ;
+            animation: moveInMarxist ease-out 1.2s ;
         }
         &--shape-4,
         &--shape-7,
         &--circle{
-            animation: moveInMarxist ease-in .7s ;
+            animation: moveInMarxist ease-out 1s ;
         }
         &--title,
         &--background-2,
         &--shape-2,
         &--logo {
-            animation: moveInCeiling ease-in .6s ;
+            animation: moveInCeiling ease-out .9s ;
         }
         &--shape-3{
-            animation: moveInFloor .5s ease-in;
+            animation: moveInFloor .8s ease-out;
         }
         &--background-1{
             perspective: 150rem;
-            animation: implode ease-in .5s ;
+            animation: implode ease-out .8s ;
         }
         &--shape-1,
         &--shape-6 {
-            animation: moveInFloor .4s ease-in;
+            animation: moveInFloor .7s ease-out;
         }
         &--shape-5,
         &--shape-8{
-            animation: moveInDictator ease-in .7s ;
+            animation: moveInDictator ease-out 1s ;
         }
     }
 

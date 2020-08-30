@@ -1,6 +1,14 @@
 import React, { Component } from "react"
 
 export default class Footer extends Component {
+    constructor(){
+        super()
+        this.handleContact = this.handleContact.bind(this)
+    }
+
+    handleContact(){
+
+    }
     
     render(){
         return(
@@ -43,8 +51,6 @@ export default class Footer extends Component {
                 <section className="popup" id="contactpopup">
                     <div className="popup__content">
                         <div className="popup__left">
-                            {/* <img src="./thirdcvlt-imgs/mask1.jpg" alt="white mask on white mask, atop grey whethered wood" className="popup__left--img" />
-                            <img src="./thirdcvlt-imgs/mask8.jpg" alt="black on black mask, atop grey whethered wood" className=" popup__left--img" /> */}
                         </div>
                         <div className="popup__right">
                             <a href="#section-masks" className="popup__close">&times;</a>
@@ -56,7 +62,6 @@ export default class Footer extends Component {
                             </h3>
                             <p className="popup__text u-margin-bottom-medium">
                             </p>
-                            {/* <button className="btn btn--white">a good cta</button> */}
                         </div>
                     </div>
                 </ section>

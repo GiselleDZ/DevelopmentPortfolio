@@ -9,8 +9,7 @@
     margin-bottom: 10rem;
 
 
-    // F R O N T   S I D E    S T Y L I N G 
-
+    // S I D E   F O R M A T T I N G 
     &__side{
         margin-top: 16rem;
         height: $card-height;
@@ -30,37 +29,18 @@
 
     // F U N C T I O N A L I T Y
     //card flips whole 360 to retain right side viewing, while the sides flip-180 to be seen or hidden
-
-    &--flip {
-        transform: rotateY(360deg);
-    }
-
-    &--flip &__side--back{
-        transform: rotateY(0deg);
-    }
-
-    &--flip &__side--front{
-        transform: rotateY(180deg);
-    }
-
-    
-    &--no-flip {
-        transform: rotateY(0);
-    }
-    
-    &__side--back{
-        transform: rotateY(-180deg)
-
-    }
-
-    &__side--front{
-        transform: rotateY(0);
-    }
+    &--flip {transform: rotateY(360deg);}
+    &--flip &__side--back{transform: rotateY(0deg);}
+    &--flip &__side--front{transform: rotateY(180deg);}
+    &--no-flip {transform: rotateY(0);}
+    &__side--back{transform: rotateY(-180deg)}
+    &__side--front{transform: rotateY(0);}
 
 
 
+
+    //F R O N T    S T Y L I N G
     &__about{
-        
         padding: 2rem;
         padding-top: 3rem;
         margin: 0 auto;
@@ -71,55 +51,55 @@
         margin: 0 auto;
     }
 
-    
 
     // B A C K   S I D E    S T Y L I N G
-
     &__tech-logos{
         background-color: white;
         margin: 0 auto;
         width: 100%;
         height: 150%;
-        padding: 6rem 8rem 8rem 8rem;
+        padding: 4rem 8rem 8rem 8rem;
         border: 1px solid $medium-blue;
         text-align: center;
     }
 
     &__logo-img{
-        height: 3rem;
         margin: 1.5rem;
-
-        &--sq{
-            height: 3.2rem;
-        }
-
-        &--wide{
-            height: 2.5rem
-        }
-
-        &--x-wide{
-            height: 2rem;
-        }
+        max-height: 3.2rem;
+        max-width: 6rem;
 
         &:not(:last-child){
             margin-right: 6rem;
         }
     }
 
+    &__headshot{
+        position: relative;
+        top: 2rem;
+        width: 12rem;
+        height: 12rem;
+        float: right;
+        clip-path: $circle40;
+        shape-outside: $circle70;
+        box-shadow: $box-shadow-light;
+    }
+    
+    &__image{
+        height: 90%;
+    }
+
     &__button-container{
         position: absolute;
         width: 100%;
-        top: 54rem;
+        top: 50rem;
         margin: 0 auto;
         margin-top: 10rem;
 
         &--right{
-            position: absolute;
-            right: -158%;
+            right: -46%;
         }
 
         &--left{
-            position: absolute;
             left: 0;
         }
     }

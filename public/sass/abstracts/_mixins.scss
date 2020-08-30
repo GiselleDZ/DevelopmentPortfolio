@@ -101,11 +101,10 @@
 }
 
 @mixin dither-primary-button-hover{
-
     &:hover{
         transform: translateY(-.2rem);
-        box-shadow: 0 1rem 2rem rgba($color: $black, $alpha: .2);
 
+        @include dark-blue-shadow(.7);
 
         &::after{
             transform: scale(1.05);

@@ -4,66 +4,11 @@
         top: 4rem;
         left: 4rem;
     }
-
-    &__logo {
-        height: 3.5rem;
-    }
     
-    
-    &__shadow-wrapper {
-        width: 70%;
-        height: 37rem;
-        top: 10rem;
-        margin: 0 auto;
-        
-        @include dither-shadow;
-    }
-    
-    &__text-box {
-        background-color: $white;
-        border: 1px solid $dark-blue;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        padding: 4rem 0 4rem 0;
-        
-        @include center-axis(50%, 50%);
-
-    }
-
-    &__shape{
-        width: 14rem;
-        height: 14rem;
-        clip-path: $circle50;
-        margin: 0 auto;
-    }
-
-    &__img{
-        width: 100%;
-    }
-
     &__button{
         position: absolute;
         top: 75%;
-        left: 50%;
-        animation: moveInDepths ease-in .6s;
-
-        @include dark-blue-shadow(.5);
-
-        &--shape{
-            position: fixed;
-            width: 50%;
-            height: 50%;
-            clip-path: $circle50;
-    
-            @include center-axis(-70%, 100%);
-        }
-    
-        &--img{
-            width: 80%;
-
-            @include center-axis(50%, 50%);
-        }
+        left: 45%;
+        animation: moveInDepths ease-out .9s;
     }
 }

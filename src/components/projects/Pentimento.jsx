@@ -131,8 +131,8 @@ export default class Pentimento extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="projects__description projects__description--xx-short u-margin-top-medium u-margin-bottom-medium">
-                    <div className="projects__tech-logos u-margin-top-small">
+                <div className="projects__description projects__description--15">
+                    <div className="projects__tech-logos">
                         <div className="projects__tech-logos__wrapper">
                             <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img u-margin-left-medium"/>
                         </div>
@@ -185,7 +185,7 @@ export default class Pentimento extends Component {
                         </div>
                     </div>
                     <div className="col-1of2 u-margin-top-medium-large">
-                        <div className="projects__description projects__description--60">
+                        <div className="projects__description projects__description--55">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>

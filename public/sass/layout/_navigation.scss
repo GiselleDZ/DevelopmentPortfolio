@@ -72,7 +72,7 @@
     }
 
     &__items{
-        margin: 2rem;
+        margin: 1rem;
     }
 
     &__link{
@@ -80,31 +80,20 @@
         &:link,
         &:visited {
            display: inline-block;
-           font-size: 3rem;
+           font-size: 2rem;
            font-weight: 300;
            color: $medium-light-blue;
            text-decoration: none;
-           text-transform: uppercase;
-           padding: 1rem;
+           padding: .5rem;
            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $medium-light-blue 50%);
            background-size: 240%; 
-           transition: all .8s;
-
-           span{
-               margin-right: 2rem;
-               display: inline-block;
-           }
+           transition: all .5s;
        }
 
        &:hover{
            background-position: 100%;
            color: $darkester-blue;
-           transform: translateX(1rem);
-       }
-
-       &--small{
-           font-size: 1rem; 
-           font-weight: 600;
+           transform: translateX(.5rem);
        }
     }
     

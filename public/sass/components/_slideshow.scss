@@ -69,6 +69,7 @@
         animation: fadeIn ease-in-out 1s;
 
         @include basic-blue-shadow(.2)
+
     }
     
     &__thumb{
@@ -77,13 +78,16 @@
         max-height: 100%;
         height: 100%;
         opacity: 60%;
-        fill-opacity: 60%;
+        transition: opacity .5s;
 
         border-radius: $border-radius-sm;
 
         &--selected{
             opacity: 100%;
-            fill-opacity: 100%;
+        }
+
+        &:hover{
+            opacity: 100%;
         }
     }
 }
