@@ -41,7 +41,7 @@ export default class VChatBot extends Component {
                 </div>
                 <div className="row">
                     <div className="col-1of3">
-                        <div className="projects__description projects__description--80">
+                        <div className="projects__description projects__description--75">
                             <p className="paragraph paragraph--light paragraph--big">
                                  Vi Chat Bot is an app developed during NYC Coders for Black Lives Matter Hackathon. The app was created to help the Center for Racial Justice in Education disseminate their learning resources, by engaging their community in conversation, and facilitating access with a chat bot built-in to their website, as well as Facebook Messenger.   
                             </p>
