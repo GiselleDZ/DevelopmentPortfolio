@@ -130,7 +130,7 @@
 // - phone
 // - tab-port
 // - tab-land
-// - big-desktop
+// - desktop
 
 // responsive adaptation order :
 
@@ -140,9 +140,12 @@
 @mixin respond ($breakpoint) {
 
     /// D E S K T O P   F I R S T   O R D E R -- lg > sml
-    
     @if $breakpoint == big-desktop {
-        @media (min-width: 112.5em) { @content }; //1800px // 12px
+        @media (min-width: 112.5em) { @content }; //1800px // 16px
+    }
+    
+    @if $breakpoint == desktop {
+        @media (min-width: 87.5em) { @content }; //1400px // 12px
     }
     
     @if $breakpoint == tab-land {

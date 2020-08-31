@@ -35,11 +35,11 @@ export default class Pentimento extends Component {
         return(
             <section className="projects__pentimento  projects__section" id="pentimento">
                 <div className="row">
-                    <div className="projects__header">
+                    <div className="projects__header projects__header--titles">
                         <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Pentimento </h1>
                     </div>
                     <div className="col-1of3">
-                        <div className="projects__description">
+                        <div className="projects__description projects__description--60">
                             <p className="paragraph paragraph--light paragraph--big">
                                 Pentimento is a mobile-first web application for finding and uploading street art around New York City. It was created for artists, historians, and art enthusiasts to keep track of ephemeral pieces that may be here today but gone tomorrow.
                             </p>
@@ -157,7 +157,7 @@ export default class Pentimento extends Component {
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 My role
                             </h3>
-                            <ul className="list">
+                            <ul className="list u-margin-bottom-medium">
                                 <li className="list__item">
                                     Designed relational database schema.
                                 </li>
@@ -184,7 +184,7 @@ export default class Pentimento extends Component {
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>
-                            <ul className="list">
+                            <ul className="list u-margin-bottom-medium">
                                 <li className="list__item">
                                     We were asked to create our app in two weeks, and in a way, our ambition hurt us the most in these circumstances. 
                                     We were too excited to learn and use the MapboxGL API, and did not plan for growth in the architecture of our map component. Ultimately, the map had to be revised a few times to accomodate new features. It is an understatement 

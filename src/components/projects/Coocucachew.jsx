@@ -21,11 +21,11 @@ export default class Coocucachew extends Component {
         return(
             <section className="projects__coocucachew  projects__section" id="coocucachew">
                 <div className="row">
-                    <div className="projects__header">
+                    <div className="projects__header projects__header--titles">
                         <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Coocucachew </h1>
                     </div>
                     <div className="col-1of3">
-                        <div className="projects__description">
+                        <div className="projects__description projects__description--60">
                             <p className="paragraph paragraph--light paragraph--big">
                                 Coocucachew is an e-commere site selling cookies, cupcakes, cake pops and chocolate. Coocucachew features many types of these products, which a user may browse, add to cart and check out using Stripe.
                             </p>
@@ -147,7 +147,7 @@ export default class Coocucachew extends Component {
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 My role
                             </h3>
-                            <ul className="list">
+                            <ul className="list u-margin-bottom-medium">
                                 <li className="list__item">
                                     Designed relational database schema.
                                 </li>
@@ -171,7 +171,7 @@ export default class Coocucachew extends Component {
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>
-                            <ul className="list">
+                            <ul className="list u-margin-bottom-medium">
                                 <li className="list__item">
                                     Our biggest challenge laid in a planning oversight. With only one week to build our e-commerce site, we overlooked the need for the integration of a user who does not have an account or is not logged in. Ultimately, we resolved it by integrating local storage.
                                 </li>

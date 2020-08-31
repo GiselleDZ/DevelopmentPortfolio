@@ -37,25 +37,22 @@ export default class VChatBot extends Component {
         return(
             <section className="projects__vchatbot projects__section" id="vchatbot">
                 <div className="row">
-                    <div className="projects__header">
+                    <div className="projects__header projects__header--titles">
                         <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Vi Chat Bot </h1>
                     </div>
                     <div className="col-1of3">
-                        <div className="projects__description projects__description--75">
+                        <div className="projects__description projects__description--60">
                             <p className="paragraph paragraph--light paragraph--big">
-                                 Vi Chat Bot is an app developed during NYC Coders for Black Lives Matter Hackathon. The app was created to help the Center for Racial Justice in Education disseminate their learning resources, by engaging their community in conversation, and facilitating access with a chat bot built-in to their website, as well as Facebook Messenger.   
+                                 Vi Chat Bot is an app developed during NYC Coders for Black Lives Matter Hackathon. The app was created to help the Center for Racial Justice in Education disseminate their learning resources, by engaging their community in conversation, and facilitating access with a chat bot built-in to their website, as well as Facebook Messenger. The bot was trained using Google's DialogFlow API, integrated into a PWA React.js application, using BotCopy.
                             </p>
                             <p className="paragraph paragraph--light paragraph--big">
-                                The bot was trained using Google's DialogFlow API, integrated into a PWA React.js application, using BotCopy.
-                            </p>
-                            <p className="paragraph paragraph--light paragraph--big">
-                                The project was comprised of Developers : Youssouf da Silva, Liang Liang, Vanessa Corlette, Giselle Zatonyl, and Jessica Choi; Project Manager: Marc Luna; UI/UX Designer: Rae Shambrook
+                                Developers : Youssouf da Silva, Liang Liang, Vanessa Corlette, Giselle Zatonyl, and Jessica Choi; Project Manager: Marc Luna; UI/UX Designer: Rae Shambrook
                             </p>
                             <div className="projects__description--buttons">
                                 <a href="http://vi-bot.surge.sh/" 
                                     rel="noopener noreferrer"
                                     target="_blank"
-                                    className="btn btn--white u-margin-top-small-medium">
+                                    className="btn btn--white u-margin-top-small">
                                     Project Site
                                 </a>
                                 <a href="https://github.com/HackforBLM/v-chat-bot" 
@@ -127,50 +124,52 @@ export default class VChatBot extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="projects__description projects__description--15">
-                            <div className="projects__tech-logos">
-                                <div className="projects__tech-logos__wrapper">
-                                     <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                                </div>
-                                <div className="projects__tech-logos__wrapper">
-                                     <img src="../../public/assets/greyscale-logos/html5.png" alt="html5 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                                </div>
-                                <div className="projects__tech-logos__wrapper">
-                                    <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                                </div>
-                                <div className="projects__tech-logos__wrapper">
-                                    <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                                </div>
-                                <div className="projects__tech-logos__wrapper">
-                                    <img src="../../public/assets/greyscale-logos/sass.png" alt="sass logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                                </div>
-                                <div className="projects__tech-logos__wrapper">
-                                    <img src="../../public/assets/greyscale-logos/googlecloud.png" alt="googlecloud logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                                </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="projects__description projects__description--15">
+                        <div className="projects__tech-logos">
+                            <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                            </div>
+                            <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/html5.png" alt="html5 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                            </div>
+                            <div className="projects__tech-logos__wrapper">
+                                <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                            </div>
+                            <div className="projects__tech-logos__wrapper">
+                                <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                            </div>
+                            <div className="projects__tech-logos__wrapper">
+                                <img src="../../public/assets/greyscale-logos/sass.png" alt="sass logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                            </div>
+                            <div className="projects__tech-logos__wrapper">
+                                <img src="../../public/assets/greyscale-logos/googlecloud.png" alt="googlecloud logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-1of2">
-                    <div className="projects__description projects__description--35">
+                        <div className="projects__description projects__description--35">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 My role
                             </h3>
-                            <ul className="list">
-                                <li className="list__item">
-                                    Researched the best chat bot technology for our purpose and how to use it. Eventually selected Google DialogFlow from three similar options.
-                                </li>
-                                <li className="list__item">
-                                    Designed conversation pattern to use for different directions the user could take during interactions. 
-                                </li>
-                                <li className="list__item">
-                                    Trained the bot using Google DialogFlow Platform
-                                </li>
-                                <li className="list__item">
-                                    Integrated the bot into our Node.js React environment.
-                                </li>
-                            </ul>
+                            <ul className="list u-margin-bottom-medium">
+                                    <li className="list__item">
+                                        Researched the best chat bot technology for our purpose and how to use it. Eventually selected Google DialogFlow from three similar options.
+                                    </li>
+                                    <li className="list__item">
+                                        Designed conversation pattern to use for different directions the user could take during interactions. 
+                                    </li>
+                                    <li className="list__item">
+                                        Trained the bot using Google DialogFlow Platform
+                                    </li>
+                                    <li className="list__item">
+                                        Integrated the bot into our Node.js React environment.
+                                    </li>
+                                </ul>
                         </div>
                     </div>
                     <div className="col-1of2">
@@ -178,7 +177,7 @@ export default class VChatBot extends Component {
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>
-                            <ul className="list">
+                            <ul className="list u-margin-bottom-medium">
                                 <li className="list__item">
                                     Our biggest challenge was the integration of our bot. Initially, we used DialogFlow's Facebook integration into our stand-alone page. This presented two problems, we were unable to customize the chat box UI, and created a Facebook dependency we thought would
                                     ultimately be problematic. We kept the Facebook integration, and additionally duplicated our conversation training data on a stand alone integration we could use on our Vi site, as well as on the Center for Racial Justice Site.
