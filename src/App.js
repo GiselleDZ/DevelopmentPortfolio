@@ -13,7 +13,6 @@ const App = () => {
     <div className="body">
         <Navigation />
         <Header />
-        {/* <Main /> */}
         <Intro />
         <Projects />
         <Footer />

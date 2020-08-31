@@ -133,6 +133,8 @@
 // - big-desktop
 
 // responsive adaptation order :
+
+// TOP > DOWN
 // base > typography > general layout > grid > layout > components
 
 @mixin respond ($breakpoint) {

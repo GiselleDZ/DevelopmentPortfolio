@@ -2,7 +2,7 @@
     position: relative;
     height: 80vh;
     background-color: $darker-blue;
-    margin: 5rem 0 25rem 0;
+    margin: 5rem 0 15rem 0;
 
     &__text-box {
         text-align: center;
@@ -55,6 +55,21 @@
         &--shape-5,
         &--shape-8{
             animation: moveInDictator ease-out 1s ;
+        }
+    }
+
+    &__button{
+        position: absolute;
+        top: 82%;
+        left: 50%;
+        animation: moveInDepths ease-out .9s;
+
+        @include respond(tab-port){
+            top: 68%;
+        }
+
+        @include respond(phone){
+            left: 30%;
         }
     }
 

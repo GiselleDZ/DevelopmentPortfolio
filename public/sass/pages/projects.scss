@@ -13,12 +13,12 @@
 
     &__header{
         text-align: left;
-        max-width: $grid-width;
-        margin: 10rem 0 4rem 13%;
+        max-width: 90rem;
+        margin: 10rem 0 4rem 0%;
 
         &--small{
             max-width: 80rem;
-            margin-left: 0;
+            margin: 10rem 0 4rem 0%;
         }
     }
 
@@ -28,7 +28,6 @@
         width: 100%;
         max-width: $grid-width;
         margin: 0 auto;
-        height: 60rem;
         padding: 3rem;
         border: 1px solid $medium-light-blue;
         background-color: rgba($color: $darkester-blue, $alpha: .8);
@@ -179,9 +178,8 @@
         text-align: center;
         
         &--button{
-            position: absolute;
-            top: 100%;
-            right: 3.5%;
+            float: right;
+            margin: 4rem -3rem 0 0;
         }
     }
     
@@ -189,15 +187,18 @@
     &__intro-thumbs{
         margin: 0 auto;
         width: 90%;
-        height: 25rem;;
         padding-top: 4rem;
         padding-bottom: 8rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
         
         &__thumb-wrapper{
             position: relative;
             width: 14rem;
             padding: 1rem;
             transition: all ease-in .4s;
+            margin-bottom: 3rem;;
 
             
             &--thumb-image{
@@ -212,13 +213,18 @@
             &--thumb-title{
                 position: absolute;
                 color: white;
-                top: 3rem;
-                left: 1rem;
+                top: 12rem;
                 font-size: 1.2rem;
             }
 
-            &:hover{
-                transform: scale(1.1);
+            @media (any-hover: hover){
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+
+            &:not(:last-child){
+                margin-right: 2rem;;
             }
         }
     }
