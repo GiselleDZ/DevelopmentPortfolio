@@ -14,7 +14,7 @@
     &__header{
         text-align: left;
         max-width: 90rem;
-        margin: 10rem 0 4rem 0%;
+        margin: 0rem 0 4rem 0%;
 
         &--small{
             max-width: 80rem;
@@ -31,6 +31,10 @@
         padding: 3rem;
         border: 1px solid $medium-light-blue;
         background-color: rgba($color: $darkester-blue, $alpha: .8);
+
+        @include respond(tab-port){
+            padding: 1rem;
+        }
 
         &--80{height: 80rem;}
         &--75{height: 75rem;}
@@ -64,6 +68,23 @@
             height: 90%;
             top: -10rem;
             left: 10rem;
+
+            @include respond(tab-land){
+                width: 120%;
+                height: 120%;
+                left: 0;
+            }
+
+            @include respond(tab-port){
+               top: 0 ;
+               left: -10rem;
+            }
+
+            @include respond(phone){
+                width: 300%;
+                height: 300%;
+                left: -100%;
+            }
         }
 
         &--2{
@@ -173,13 +194,23 @@
     &__intro{
         position: relative;
         width: 70%;
-        margin: 12rem 15% 40rem 15%;
+        margin: 12rem 15% 45rem 15%;
         padding: 4rem;
         text-align: center;
+
+        @include respond(tab-port){
+            padding: 2rem;
+        }
         
         &--button{
             float: right;
             margin: 4rem -3rem 0 0;
+
+            @include respond(tab-port){
+                margin: 4rem -1rem 0 0;
+            }
+
+
         }
     }
     
@@ -187,18 +218,26 @@
     &__intro-thumbs{
         margin: 0 auto;
         width: 90%;
-        padding-top: 4rem;
-        padding-bottom: 8rem;
+        padding: 4rem 0 8rem 0;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
+
+        @include respond(tab-land){
+            padding: 1rem 0 2rem 0;
+        }
         
         &__thumb-wrapper{
             position: relative;
             width: 14rem;
             padding: 1rem;
             transition: all ease-in .4s;
-            margin-bottom: 3rem;;
+            text-align: center;
+
+            @include respond(tab-land){
+                width: 20rem;
+                margin: 1rem;
+            }
 
             
             &--thumb-image{
@@ -208,23 +247,28 @@
                 object-fit: contain;
                 background-color: white;
                 border-radius: $border-radius-sm;
+
+                @include respond(tab-land){
+                    height: 16rem;
+                }
             }
         
             &--thumb-title{
                 position: absolute;
                 color: white;
+                width: 90%;
                 top: 12rem;
                 font-size: 1.2rem;
+
+                @include respond(tab-land){
+                    top: 17rem;
+                }
             }
 
             @media (any-hover: hover){
                 &:hover{
                     transform: scale(1.1);
                 }
-            }
-
-            &:not(:last-child){
-                margin-right: 2rem;;
             }
         }
     }

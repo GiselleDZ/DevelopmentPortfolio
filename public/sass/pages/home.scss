@@ -4,7 +4,6 @@
 }
 
 .intro{
-    height: 100vh;
 
     &__card-container{
         position: absolute;
@@ -18,10 +17,8 @@
 
     &__shape{
         position: absolute;
-        // display: fixed;
+        display: fixed;
         z-index: 0;
-        width: 105%;
-        height: 105%;
         opacity: .9;
 
         &--main{
