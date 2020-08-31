@@ -28,6 +28,15 @@
         &--main{
             left: -5.5%;
             top: 20%;
+
+            @include respond(tab-port){
+                left: -20%;
+                top: 15%;   
+            }
+        }
+
+        @include respond(tab-port){
+            width: 100%;    
         }
     }
 }

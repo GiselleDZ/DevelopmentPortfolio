@@ -8,6 +8,10 @@
     margin-top: 10rem;
     margin-bottom: 10rem;
 
+    @include respond(tab-port){
+        width: 90%;    
+    }
+
 
     // S I D E   F O R M A T T I N G 
     &__side{
@@ -97,6 +101,11 @@
 
         &--right{
             float: right;
+
+            @include respond(tab-port){
+                float: left; 
+                margin-top: -5rem;
+            }
         }
 
         &--left{
