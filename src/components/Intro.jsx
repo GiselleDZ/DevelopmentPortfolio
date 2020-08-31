@@ -106,9 +106,9 @@ export default class Intro extends Component {
                         </div>
                     </div>
                 </div>
-                {/* <div className="intro__shape">
+                <div className="intro__shape">
                     <img className="intro__shape intro__shape--main" src="http://gisellezatonyl.com/images/dev/shapes/composition-02.svg"></img>
-                </div> */}
+                </div>
             </section>
         )
     }
