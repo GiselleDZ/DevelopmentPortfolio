@@ -58,7 +58,7 @@ export default class Footer extends Component {
                                 Under construction ¯\_(ツ)_/¯
                             </h2>
                             <h3 className="heading-tertiary u-margin-bottom-small">
-                                Please e-mail gz@gisellezatonyl.com
+                                Please e-mail gisellezatonyl@gmail.com
                             </h3>
                             <p className="popup__text u-margin-bottom-medium">
                             </p>

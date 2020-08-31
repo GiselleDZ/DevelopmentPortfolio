@@ -46,19 +46,21 @@ export default class Pentimento extends Component {
                             <p className="paragraph paragraph--light paragraph--big">
                                 Pentimeto was built during the Grace Hopper Software Engineering program, as the Capstone project. The team members were Angie Spears, Giselle Zatonyl, Saj King, and Chelsea Church.
                             </p>
-                            <a href="https://pentimentostreet.herokuapp.com/" 
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                className="btn btn--white u-margin-top-small">
-                                Project Site
-                            </a>
-                            <a href="https://github.com/Phantom-Blue/phantom-blue" 
-                                rel="noopener noreferrer"
-                                target="_blank"
+                            <div className="projects__description--buttons">
+                                <a href="https://pentimentostreet.herokuapp.com/" 
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    className="btn btn--white u-margin-top-small-medium">
+                                    Project Site
+                                </a>
+                                <a href="https://github.com/Phantom-Blue/phantom-blue" 
+                                    rel="noopener noreferrer"
+                                    target="_blank"
 
-                                className="btn btn--white u-margin-top-small-medium u-margin-bottom-small">
-                                Github Repository
-                            </a>
+                                    className="btn btn--white u-margin-top-small-medium ">
+                                    Github Repository
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div className="col-2of3">
@@ -72,61 +74,54 @@ export default class Pentimento extends Component {
                                         allowFullScreen
                                         className="slideshow__video-big" />
                                     ) : (
-                                        <div className="slideshow__image-wrap">
-                                            <img src={this.state.mainPhoto} alt={this.state.alt} className="slideshow__img-big"/>
-                                        </div>
+                                        <img src={this.state.mainPhoto} alt={this.state.alt} className="slideshow__img-big"/>
+                                    
                                     )
                                 }
                             </div>
                             <div className="slideshow__line"></div>
                             <div className="slideshow__thumbs">
-                                <div className="row">
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/video-thumb.jpg" 
-                                                alt="Pentimento Video" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)} 
-                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/homepage-thumb.jpg"  
-                                                alt="Pentimento Homepage" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">    
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/artgallery-thumb.jpg" 
-                                                alt="Pentimento Gallery View" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/map-thumb.jpg" 
-                                                alt="Pentimento Map" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/mapart-thumb.jpg" 
-                                                alt="Pentimento Map Pin Artwork" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
+                              
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/pentimento/video-thumb.jpg" 
+                                        alt="Pentimento Video" 
+                                        className="slideshow__thumb"
+                                    />
                                 </div>
+                            
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)} 
+                                        src="http://www.gisellezatonyl.com/images/dev/pentimento/homepage-thumb.jpg"  
+                                        alt="Pentimento Homepage" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                            
+                                <div className="slideshow__thumb-wrap">    
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/pentimento/artgallery-thumb.jpg" 
+                                        alt="Pentimento Gallery View" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                            
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/pentimento/map-thumb.jpg" 
+                                        alt="Pentimento Map" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                            
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/pentimento/mapart-thumb.jpg" 
+                                        alt="Pentimento Map Pin Artwork" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                               
                             </div>
                         </div>
                     </div>

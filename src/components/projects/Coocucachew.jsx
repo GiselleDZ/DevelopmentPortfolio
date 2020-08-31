@@ -32,76 +32,64 @@ export default class Coocucachew extends Component {
                             <p className="paragraph paragraph--light paragraph--big">
                                 Coocucachew was built using React, Redux, Express, PostgreSQL, and Sequelize. The team that created Coocucachew is: Adrianna Winkelman, Gisele (Yunshu) Xiao, Michelle Broomes, Giselle Zatonyl.
                             </p>
-                            <a href="https://coocucachewstreet.herokuapp.com/" 
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                className="btn btn--white u-margin-top-small">
-                                Project Site
-                            </a>
-                            <a href="https://github.com/Coocucachew/coocucachew" 
-                                rel="noopener noreferrer"
-                                target="_blank"
+                            <div className="projects__description--buttons">
+                                <a href="https://coocucachewstreet.herokuapp.com/" 
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    className="btn btn--white u-margin-top-small-medium">
+                                    Project Site
+                                </a>
+                                <a href="https://github.com/Coocucachew/coocucachew" 
+                                    rel="noopener noreferrer"
+                                    target="_blank"
 
-                                className="btn btn--white u-margin-top-small-medium u-margin-bottom-small">
-                                Github Repository
-                            </a>
+                                    className="btn btn--white u-margin-top-small-medium">
+                                    Github Repository
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div className="col-2of3">
                         <div className="slideshow">
                             <div className="slideshow__main">
-                                <div className="slideshow__image-wrap">
-                                    <img src={this.state.mainPhoto} alt="img" className="slideshow__img-big"/>
-                                </div>
+                                <img src={this.state.mainPhoto} alt="img" className="slideshow__img-big"/>
                             </div>
                             <div className="slideshow__line"></div>
                             <div className="slideshow__thumbs">
-                                <div className="row">
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)} 
-                                                src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif1.gif"  
-                                                alt="Site walk-through part 1" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">    
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif2.gif" 
-                                                alt="Site walk-through part 2" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif3.gif" 
-                                                alt="Site walk-through part 3" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif4.gif" 
-                                                alt="Site walk-through part 4" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/coocucachew/main.png" 
-                                                alt="Coocucachew Landing" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)} 
+                                        src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif1.gif"  
+                                        alt="Site walk-through part 1" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                                <div className="slideshow__thumb-wrap">    
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif2.gif" 
+                                        alt="Site walk-through part 2" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif3.gif" 
+                                        alt="Site walk-through part 3" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif4.gif" 
+                                        alt="Site walk-through part 4" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/coocucachew/main.png" 
+                                        alt="Coocucachew Landing" 
+                                        className="slideshow__thumb"
+                                    />
                                 </div>
                             </div>
                         </div>

@@ -7,27 +7,36 @@ body {
 }
 
 .heading-primary {
-    width: 100%;
-
+    font-family: "Playfair Display", serif;
+    color: $white;
+    display: block;
+    animation: moveInLeft ease-in .5s;
+    
     &--main{
-        font-family: "Playfair Display", serif;
-        color: $white;
-        display: block;
         font-size: 7rem;
         font-weight: 900;
         letter-spacing: .4rem;
         line-height: 9rem;
-        animation: moveInLeft .5s;
-        animation-timing-function: ease-in;
-        
+
         @include respond(tab-port){ 
             letter-spacing: .7rem;
             font-size: 8rem;
         }
-        
         @include respond(phone){ 
             letter-spacing: .5rem;
             font-size: 7rem;
+        }
+    }
+
+    &--sub{
+        font-size: 6rem;
+        font-weight: 900;
+        letter-spacing: .4rem;
+        line-height: 9rem;
+
+        @include respond(tab-port){ 
+            letter-spacing: .3rem;
+            font-size: 5rem;
         }
     }
 
@@ -126,6 +135,14 @@ body {
     margin-bottom: 2rem;
     font-weight: 300;
 
+    @include respond(tab-port){ 
+        font-size: 1.4rem;
+    }
+    
+    @include respond(phone){
+        font-size: 1.6rem;
+    }
+
     &--light{
         color: $light-blue;
     }
@@ -153,15 +170,13 @@ body {
     &--big{
         font-size: 1.3rem;
         line-height: 2.5rem;
+
+        @include respond(tab-port){ 
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+        }
     }
     
-    @include respond(tab-port){ 
-        font-size: 1.4rem;
-    }
-    
-    @include respond(phone){
-        font-size: 1.6rem;
-    }
 }
 
 

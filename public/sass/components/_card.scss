@@ -2,6 +2,8 @@
     perspective: 300rem;
     -moz-perspective: 150rem;
     position: relative;
+    top:0;
+    left:0;
     height: $card-height;
     width: 60%;
     margin: 0 auto;
@@ -9,7 +11,7 @@
     margin-bottom: 10rem;
 
     @include respond(tab-port){
-        width: 90%;    
+        width: 80%;    
     }
 
 

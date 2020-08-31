@@ -13,12 +13,21 @@
 
     &__header{
         text-align: left;
-        max-width: 90rem;
         margin: 15rem 0 4rem 0%;
+
+        @include respond(tab-port){
+            margin: 15rem 0 2rem 15%;
+        }
 
         &--small{
             max-width: 80rem;
             margin: 10rem 0 4rem 0%;
+
+            @include respond(tab-port){
+                margin: 15rem 0 4rem 15%;
+            }
+        }
+        &--titles{
         }
     }
 
@@ -33,25 +42,39 @@
         background-color: rgba($color: $darkester-blue, $alpha: .8);
 
         @include respond(tab-port){
-            padding: 1rem;
+            width: 70%;
+            padding: 3rem;
         }
 
-        &--80{height: 80rem;}
-        &--75{height: 75rem;}
-        &--65{height: 65rem;}
-        &--60{height: 60rem}
-        &--55{height: 55rem}
-        &--50{height: 50rem;}
-        &--48{height: 48rem;}
-        &--45{height: 45rem}
-        &--44{height: 44rem;}
-        &--40{height: 40rem;}
-        &--35{height: 35rem;}
-        &--30{height: 30rem;}
-        &--19{height: 19rem;}
-        &--15{height: 15rem;}
+        @include respond(big-desktop){
+            margin: 4rem -1rem 0 0;
+            
+            &--80{height: 80rem;}
+            &--75{height: 75rem;}
+            &--65{height: 65rem;}
+            &--60{height: 60rem}
+            &--55{height: 55rem}
+            &--50{height: 50rem;}
+            &--48{height: 48rem;}
+            &--45{height: 45rem}
+            &--44{height: 44rem;}
+            &--40{height: 40rem;}
+            &--35{height: 35rem;}
+            &--30{height: 30rem;}
+            &--19{height: 19rem;}
+            &--15{height: 15rem;}
+        }
 
-        @include basic-blue-shadow(.5)
+
+        @include basic-blue-shadow(.5);
+
+        @include respond(tab-port){
+            &--buttons{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
     }
 
     &__shapes{
@@ -197,9 +220,12 @@
         margin: 12rem 15% 45rem 15%;
         padding: 4rem;
         text-align: center;
-
+        
         @include respond(tab-port){
             padding: 2rem;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 30%;
         }
         
         &--button{
@@ -207,7 +233,7 @@
             margin: 4rem -3rem 0 0;
 
             @include respond(tab-port){
-                margin: 4rem -1rem 0 0;
+                margin: 6rem -3rem 0 0;
             }
 
 
@@ -233,10 +259,11 @@
             padding: 1rem;
             transition: all ease-in .4s;
             text-align: center;
+            justify-content: center;
 
             @include respond(tab-land){
                 width: 20rem;
-                margin: 1rem;
+                margin: 1rem 3rem 1rem 1rem;
             }
 
             

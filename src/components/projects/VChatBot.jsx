@@ -51,19 +51,21 @@ export default class VChatBot extends Component {
                             <p className="paragraph paragraph--light paragraph--big">
                                 The project was comprised of Developers : Youssouf da Silva, Liang Liang, Vanessa Corlette, Giselle Zatonyl, and Jessica Choi; Project Manager: Marc Luna; UI/UX Designer: Rae Shambrook
                             </p>
-                            <a href="http://vi-bot.surge.sh/" 
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                className="btn btn--white u-margin-top-small-medium">
-                                Project Site
-                            </a>
-                            <a href="https://github.com/HackforBLM/v-chat-bot" 
-                                rel="noopener noreferrer"
-                                target="_blank"
+                            <div className="projects__description--buttons">
+                                <a href="http://vi-bot.surge.sh/" 
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    className="btn btn--white u-margin-top-small-medium">
+                                    Project Site
+                                </a>
+                                <a href="https://github.com/HackforBLM/v-chat-bot" 
+                                    rel="noopener noreferrer"
+                                    target="_blank"
 
-                                className="btn btn--white u-margin-top-small-medium u-margin-bottom-small">
-                                Github Repository
-                            </a>
+                                    className="btn btn--white u-margin-top-small-medium ">
+                                    Github Repository
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div className="col-2of3">
@@ -77,60 +79,51 @@ export default class VChatBot extends Component {
                                         allowFullScreen
                                         className="slideshow__video-big" />
                                     ) : (
-                                        <div className="slideshow__image-wrap">
-                                            <img src={this.state.mainPhoto} alt={this.state.alt} className="slideshow__img-big"/>
-                                        </div>
+                                        <img src={this.state.mainPhoto} alt={this.state.alt} className="slideshow__img-big"/>
+                                
                                     )
                                 }
                             </div>
                             <div className="slideshow__line"></div>
                             <div className="slideshow__thumbs">
-                                <div className="row">
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-homepage-thumb.jpg" 
-                                                alt="VChatBot Home" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)} 
-                                                src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-how-thumb.jpg"  
-                                                alt="VChatBot How" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">    
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-why-thumb.jpg" 
-                                                alt="VChatBot Why" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-footer-thumb.jpg" 
-                                                alt="VChatBot Footer" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-video-thumb.jpg" 
-                                                alt="VChatBot Demo Video" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-homepage-thumb.jpg" 
+                                        alt="VChatBot Home" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                        
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)} 
+                                        src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-how-thumb.jpg"  
+                                        alt="VChatBot How" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                        
+                                <div className="slideshow__thumb-wrap">    
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-why-thumb.jpg" 
+                                        alt="VChatBot Why" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                        
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-footer-thumb.jpg" 
+                                        alt="VChatBot Footer" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                        
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/vchatbot/v-video-thumb.jpg" 
+                                        alt="VChatBot Demo Video" 
+                                        className="slideshow__thumb"
+                                    />
                                 </div>
                             </div>
                         </div>

@@ -7,11 +7,18 @@
     background-color: rgba($color: $darkester-blue, $alpha: .8);
     @include basic-blue-shadow(.5);
 
+    @include respond(tab-port){
+        width: 70%;
+        margin: 0 auto;
+    }
+
     &__main{
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
+        display: flex;
+        align-items: center;
     }
     
     &__video-big{
@@ -31,13 +38,7 @@
         height: 36rem;
         display: block;
         margin: 0 auto;
-    }
-    
-    &__image-wrap{
-        margin: 2rem 2rem 0 2rem;
-        max-height: 38rem;
 
-        animation: fadeIn ease-in-out .5s;
     }
 
     &__line{
@@ -55,10 +56,11 @@
         position: absolute;
         top: 35rem;
         left: 0;
-        margin-top: 6rem;
         width: 100%;
-        display: block;
+        display: flex;
+        flex-flow: row nowrap;
         padding: 2rem;
+        padding-top: 8rem;
     }
 
     &__thumb-wrap{
