@@ -41,7 +41,7 @@ export default class VChatBot extends Component {
                         <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Vi Chat Bot </h1>
                     </div>
                     <div className="col-1of3">
-                        <div className="projects__description projects__description--60">
+                        <div className="projects__description projects__description--65">
                             <p className="paragraph paragraph--light paragraph--big">
                                  Vi Chat Bot is an app developed during NYC Coders for Black Lives Matter Hackathon. The app was created to help the Center for Racial Justice in Education disseminate their learning resources, by engaging their community in conversation, and facilitating access with a chat bot built-in to their website, as well as Facebook Messenger. The bot was trained using Google's DialogFlow API, integrated into a PWA React.js application, using BotCopy.
                             </p>
@@ -59,7 +59,7 @@ export default class VChatBot extends Component {
                                     rel="noopener noreferrer"
                                     target="_blank"
 
-                                    className="btn btn--white u-margin-top-small-medium ">
+                                    className="btn btn--white u-margin-top-small">
                                     Github Repository
                                 </a>
                             </div>
@@ -127,25 +127,27 @@ export default class VChatBot extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="projects__description projects__description--15">
-                        <div className="projects__tech-logos">
-                            <div className="projects__tech-logos__wrapper">
-                                    <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                            </div>
-                            <div className="projects__tech-logos__wrapper">
-                                    <img src="../../public/assets/greyscale-logos/html5.png" alt="html5 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                            </div>
-                            <div className="projects__tech-logos__wrapper">
-                                <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                            </div>
-                            <div className="projects__tech-logos__wrapper">
-                                <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                            </div>
-                            <div className="projects__tech-logos__wrapper">
-                                <img src="../../public/assets/greyscale-logos/sass.png" alt="sass logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                            </div>
-                            <div className="projects__tech-logos__wrapper">
-                                <img src="../../public/assets/greyscale-logos/googlecloud.png" alt="googlecloud logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                    <div className="u-margin-bottom-mobile">
+                        <div className="projects__description projects__description--15">
+                            <div className="projects__tech-logos">
+                                <div className="projects__tech-logos__wrapper">
+                                        <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                        <img src="../../public/assets/greyscale-logos/html5.png" alt="html5 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/sass.png" alt="sass logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/googlecloud.png" alt="googlecloud logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
                             </div>
                         </div>
                     </div>

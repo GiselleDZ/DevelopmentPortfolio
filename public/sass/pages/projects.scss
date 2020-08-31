@@ -32,6 +32,7 @@
                 margin: 15rem 0 4rem 15%;
             }
         }
+
         &--titles{
             @include respond(big-desktop){
                 margin-top: 35rem;
@@ -64,7 +65,6 @@
             
         //     // &--80{height: 80rem;}
         //     // &--75{height: 75rem;}
-        //     // &--65{height: 65rem;}
         //     // &--60{height: 60rem}
         //     // &--55{height: 55rem}
         //     // &--50{height: 50rem;}
@@ -77,8 +77,22 @@
         //     // &--19{height: 19rem;}
         //     // &--15{height: 15rem;}
         // }
+        
+        &--65{
+            height: 60rem;
 
-        &--60{height: 60rem;}
+            @include respond(tab-port){
+                height: 42rem;
+            }
+        }
+
+        &--60{
+            height: 60rem;
+
+            @include respond(tab-port){
+                height: 37rem;
+            }
+        }
 
 
         @include basic-blue-shadow(.5);
@@ -337,6 +351,13 @@
         &__wrapper{
             max-width: 8rem;
             max-height: 5rem;
+            text-align: center;
+
+            @include respond(tab-port){
+                max-width: 6rem;
+                max-height: 4rem;
+            }
+            
 
             &__logo-img{
         

@@ -96,47 +96,49 @@ export default class Coocucachew extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="projects__description projects__description--15">
-                        <div className="projects__tech-logos">
-                            <div className="projects__tech-logos__wrapper">
-                                 <img src="../../public/assets/greyscale-logos/node.png" 
-                                 alt="node logo" 
-                                 className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/> 
-                            </div>
-                            <div className="projects__tech-logos__wrapper">
-                                <img src="../../public/assets/greyscale-logos/html5.png" 
-                                alt="html5 logo" 
-                                className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                            </div>
-                            <div className="projects__tech-logos__wrapper">
-                                <img src="../../public/assets/greyscale-logos/react.png" 
-                                alt="react logo" 
-                                className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                            </div>
-                            <div className="projects__tech-logos__wrapper">
-                                <img src="../../public/assets/greyscale-logos/css3.png" 
-                                alt="css3 logo" 
-                                className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                            </div>
-                            <div className="projects__tech-logos__wrapper">
-                                <img src="../../public/assets/greyscale-logos/redux.png" 
-                                alt="redux logo" 
-                                className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                            </div>
-                            <div className="projects__tech-logos__wrapper">
-                                <img src="../../public/assets/greyscale-logos/Expressjs.png" 
-                                alt="Expressjs logo" 
-                                className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
-                            </div>
-                            <div className="projects__tech-logos__wrapper">
-                                <img src="../../public/assets/greyscale-logos/postgresql.png" 
-                                alt="postgresql logo" 
-                                className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
-                            </div>
-                            <div className="projects__tech-logos__wrapper">
-                                <img src="../../public/assets/greyscale-logos/sequelize.png" 
-                                alt="sequelize logo" 
-                                className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                    <div className="u-margin-bottom-mobile">
+                        <div className="projects__description projects__description--15">
+                            <div className="projects__tech-logos">
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/node.png" 
+                                    alt="node logo" 
+                                    className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/> 
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/html5.png" 
+                                    alt="html5 logo" 
+                                    className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/react.png" 
+                                    alt="react logo" 
+                                    className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/css3.png" 
+                                    alt="css3 logo" 
+                                    className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/redux.png" 
+                                    alt="redux logo" 
+                                    className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/Expressjs.png" 
+                                    alt="Expressjs logo" 
+                                    className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/postgresql.png" 
+                                    alt="postgresql logo" 
+                                    className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/sequelize.png" 
+                                    alt="sequelize logo" 
+                                    className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -166,7 +168,7 @@ export default class Coocucachew extends Component {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-1of2">
+                    <div className="col-1of2 ">
                         <div className="projects__description projects__description--40">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges

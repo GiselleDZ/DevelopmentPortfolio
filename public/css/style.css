@@ -256,29 +256,32 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1rem; }
 
+.u-margin-top-small {
+  margin-top: 1.5rem; }
+
+.u-margin-top-small-medium {
+  margin-top: 3rem; }
+
+.u-margin-top-medium {
+  margin-top: 2rem; }
+
+.u-margin-top-medium-large {
+  margin-top: 6rem; }
+  @media (max-width: 56.25em) {
+    .u-margin-top-medium-large {
+      margin-top: 4rem; } }
+  @media (max-width: 37.5em) {
+    .u-margin-top-medium-large {
+      margin-top: 2rem; } }
+
 .u-margin-top-big {
   margin-top: 8rem; }
   @media (max-width: 56.25em) {
     .u-margin-top-big {
       margin-top: 2rem; } }
 
-.u-margin-top-medium-large {
-  margin-top: 6rem; }
-  @media (max-width: 37.5em) {
-    .u-margin-top-medium-large {
-      margin-top: 2rem; } }
-
 .u-margin-top-x-big {
   margin-top: 12rem; }
-
-.u-margin-top-medium {
-  margin-top: 4rem; }
-
-.u-margin-top-small-medium {
-  margin-top: 3rem; }
-
-.u-margin-top-small {
-  margin-top: 1.5rem; }
 
 .u-margin-left-small {
   padding-left: 1rem; }
@@ -297,6 +300,10 @@ body {
   @media (max-width: 56.25em) {
     .u-margin-left-bigger {
       margin-left: 5rem; } }
+
+@media (max-width: 56.25em) {
+  .u-margin-bottom-mobile {
+    margin-bottom: 4rem !important; } }
 
 .u-text-white {
   color: #edf5ff; }
@@ -723,7 +730,7 @@ body {
     margin-bottom: 6rem; }
     @media (max-width: 56.25em) {
       .row:not(:last-child) {
-        margin-bottom: 4rem !important; } }
+        margin-bottom: 0 !important; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
@@ -1079,8 +1086,16 @@ body {
       .projects__description {
         width: 100%;
         margin: 0 auto; } }
+    .projects__description--65 {
+      height: 60rem; }
+      @media (max-width: 56.25em) {
+        .projects__description--65 {
+          height: 42rem; } }
     .projects__description--60 {
       height: 60rem; }
+      @media (max-width: 56.25em) {
+        .projects__description--60 {
+          height: 37rem; } }
     @media (max-width: 56.25em) {
       .projects__description--buttons {
         display: flex;
@@ -1266,4 +1281,9 @@ body {
     padding: 2rem; }
     .projects__tech-logos__wrapper {
       max-width: 8rem;
-      max-height: 5rem; }
+      max-height: 5rem;
+      text-align: center; }
+      @media (max-width: 56.25em) {
+        .projects__tech-logos__wrapper {
+          max-width: 6rem;
+          max-height: 4rem; } }

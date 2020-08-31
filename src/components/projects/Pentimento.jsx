@@ -126,33 +126,37 @@ export default class Pentimento extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="projects__description projects__description--15">
-                    <div className="projects__tech-logos">
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img u-margin-left-medium"/>
-                        </div>
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                        </div>
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
-                        </div>
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/postgresql.png" alt="postgresql logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
-                        </div>
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/mapbox.png" alt="mapbox logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
-                        </div>
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/sequelize.png" alt="sequelize logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
-                        </div>
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                <div className="row">
+                    <div className="u-margin-bottom-mobile">
+                        <div className="projects__description projects__description--15">
+                            <div className="projects__tech-logos">
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img" />
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/postgresql.png" alt="postgresql logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/mapbox.png" alt="mapbox logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/sequelize.png" alt="sequelize logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-1of2 u-margin-top-medium-large">
+                    <div className="col-1of2">
                         <div className="projects__description projects__description--45">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 My role
@@ -179,7 +183,7 @@ export default class Pentimento extends Component {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-1of2 u-margin-top-medium-large">
+                    <div className="col-1of2">
                         <div className="projects__description projects__description--55">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
