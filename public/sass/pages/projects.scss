@@ -31,11 +31,20 @@
             @include respond(tab-port){
                 margin: 15rem 0 4rem 15%;
             }
+
+            @include respond(phone){
+                margin: 6rem 0 2rem 10%;
+            }
         }
 
         &--titles{
+
             @include respond(big-desktop){
                 margin-top: 35rem;
+            }
+
+            @include respond(phone){
+                margin: 35rem 0 1rem 10%;
             }
         }
     }
@@ -50,15 +59,21 @@
         border: 1px solid $medium-light-blue;
         background-color: rgba($color: $darkester-blue, $alpha: .8);
 
+        @include respond(big-desktop){
+            width: 100%;
+            margin: 0 auto;
+        }
+
         @include respond(tab-port){
             width: 70%;
             padding: 3rem;
         }
 
-        @include respond(big-desktop){
-            width: 100%;
-            margin: 0 auto;
+        @include respond(phone){
+            width: 80%;
+            padding: 3rem;
         }
+
 
         // @include respond(desktop){
         //     margin: 4rem -1rem 0 0;
@@ -84,6 +99,10 @@
             @include respond(tab-port){
                 height: 42rem;
             }
+
+            @include respond(tab-port){
+                height: 68rem;
+            }
         }
 
         &--60{
@@ -91,6 +110,10 @@
 
             @include respond(tab-port){
                 height: 37rem;
+            }
+
+            @include respond(tab-port){
+                height: 59rem;
             }
         }
 
@@ -101,6 +124,13 @@
             &--buttons{
                 display: flex;
                 justify-content: space-between;
+            }
+        }
+
+        @include respond(phone){
+            &--buttons{
+                display: flex;
+                flex-direction: column;
             }
         }
 
@@ -356,6 +386,11 @@
             @include respond(tab-port){
                 max-width: 6rem;
                 max-height: 4rem;
+            }
+
+            @include respond(phone){
+                max-width: 3rem;
+                max-height: 3rem;
             }
             
 

@@ -13,6 +13,11 @@
         margin: 0 auto;
     }
 
+    @include respond(phone){
+        width: 80%;
+        height: 40rem;
+    }
+
     &__main{
         position: absolute;
         top: 0;
@@ -29,7 +34,11 @@
         height: 38rem;
         display: block;
         margin: 0 auto;
-        animation: fadeIn ease-in-out .5s;   
+        animation: fadeIn ease-in-out .5s;
+
+        @include respond(phone){
+            height: 25rem;
+        }
     }
 
     &__img-big{
@@ -39,6 +48,11 @@
         height: 36rem;
         display: block;
         margin: 0 auto;
+
+        @include respond(phone){
+            max-width: 98%;
+            height: 25rem;
+        }
 
     }
 
@@ -51,6 +65,10 @@
         background-color: $medium-light-blue;
         margin: 0 auto;
 
+        @include respond(phone){
+            top: 26rem;
+        }
+
     }
     
     &__thumbs{
@@ -62,6 +80,10 @@
         flex-flow: row nowrap;
         padding: 2rem;
         padding-top: 7rem;
+
+        @include respond(phone){
+            top: 21rem;
+        }
     }
 
     &__thumb-wrap{
@@ -71,7 +93,11 @@
         text-align: center;
         animation: fadeIn ease-in-out 1s;
 
-        @include basic-blue-shadow(.2)
+        @include basic-blue-shadow(.2);
+
+        @include respond(phone){
+            height: 10rem;
+        }
 
     }
     

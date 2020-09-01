@@ -28,6 +28,11 @@
             @include respond(big-desktop){
                 margin-bottom: 30rem; 
             }
+
+            @include respond(phone){
+                width: 120%;
+                left: -9%;
+            }
         }
         &--shape-1{
             mix-blend-mode: overlay;

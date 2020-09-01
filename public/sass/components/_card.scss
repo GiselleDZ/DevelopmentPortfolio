@@ -14,6 +14,10 @@
         width: 80%;    
     }
 
+    @include respond(phone){
+        height: $card-height-phone;   
+    }
+
 
     // S I D E   F O R M A T T I N G 
     &__side{
@@ -30,6 +34,10 @@
         background-color: $white;
 
         @include basic-blue-shadow(.4);
+
+        @include respond(phone){
+            height: $card-height-phone;   
+        }
 
     }
 
@@ -67,6 +75,13 @@
         padding: 4rem 8rem 8rem 8rem;
         border: 1px solid $medium-blue;
         text-align: center;
+
+        @include respond(phone){
+            padding: 2rem;
+            padding-left: 4rem;;
+        }
+
+        
     }
 
     &__logo-img{
@@ -76,6 +91,17 @@
 
         &:not(:last-child){
             margin-right: 6rem;
+        }
+
+        @include respond(phone){
+            max-height: 4rem;
+            max-width: 7rem;
+            margin: 1rem;
+            margin-bottom: 2rem;
+
+            &:not(:last-child){
+                margin-right: 4rem;
+            }
         }
     }
 
@@ -100,6 +126,10 @@
         top: 50rem;
         margin: 0 auto;
         margin-top: 10rem;
+
+        @include respond(phone){
+            top: 65rem;
+        }
 
         &--right{
             float: right;

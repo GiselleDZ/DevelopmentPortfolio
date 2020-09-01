@@ -41,29 +41,25 @@ export default class Intro extends Component {
                     <div className={this.state.cardClass}>
                         <div className="card__side card__side--back">
                             <div className="card__tech-logos">
-                                <div className="card__logo-row">
                                     <img src="./public/assets/greyscale-logos/node.png" alt="node logo" className="card__logo-img "/>
                                     <img src="./public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="card__logo-img "/>
                                     <img src="../../public/assets/greyscale-logos/mongodb.png" alt="mongodb logo" className="card__logo-img "/>
                                     <img src="../../public/assets/greyscale-logos/sequelize.png" alt="sequelize logo" className="card__logo-img "/>
-                                </div>
-                                <div className="card__logo-row">
+               
                                     <img src="../../public/assets/greyscale-logos/postgresql.png" alt="postgresql logo" className="card__logo-img "/>
                                     <img src="../../public/assets/greyscale-logos/redux.png" alt="redux logo" className="card__logo-img "/>
                                     <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="card__logo-img "/>
                                     <img src="../../public/assets/greyscale-logos/github.png" alt="github logo" className="card__logo-img "/>
-                                </div>
-                                <div className="card__logo-row">
+                    
                                     <img src="../../public/assets/greyscale-logos/html5.png" alt="html5 logo" className="card__logo-img "/>
                                     <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="card__logo-img "/>
                                     <img src="../../public/assets/greyscale-logos/sass.png" alt="sass logo" className="card__logo-img "/>
-                                </div>
-                                <div className="card__logo-row">
+                           
                                     <img src="../../public/assets/greyscale-logos/threejs.png" alt="threejs logo" className="card__logo-img "/>
                                     <img src="../../public/assets/greyscale-logos/tensorflow.png" alt="tensorflow logo" className="card__logo-img "/>
                                     <img src="../../public/assets/greyscale-logos/googlecloud.png" alt="google cloud logo" className="card__logo-img "/>
                                     <img src="../../public/assets/greyscale-logos/mapbox.png" alt="mapbox logo" className="card__logo-img "/>
-                                </div>
+                        
                             </div>
                         </div>
                         <div className="card__side card__side--front">
@@ -82,7 +78,7 @@ export default class Intro extends Component {
                                 </div>
                                 <div className="card__text">
                                     <p className="paragraph--sm-dark u-margin-bottom-small">
-                                        As a human, I love hiking in nature, abstract music, advocating for BIPOC and LGBT rights, and all kinds of fitness. I was born in Buenos Aires, Argentina. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Send me a message!
+                                        As a human, I'm a sci-fi nerd, I love hiking in nature, abstract music, advocating for BIPOC and LGBT rights, and all kinds of fitness. I was born in Buenos Aires, Argentina. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Send me a message!
                                     </p>
                                 </div>
                             </div>

@@ -38,7 +38,7 @@ export default class VChatBot extends Component {
             <section className="projects__vchatbot projects__section" id="vchatbot">
                 <div className="row">
                     <div className="projects__header projects__header--titles">
-                        <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Vi Chat Bot </h1>
+                        <h1 className="heading-primary heading-primary--sub heading-primary--shadow"> Vi Chat Bot </h1>
                     </div>
                     <div className="col-1of3">
                         <div className="projects__description projects__description--65">
