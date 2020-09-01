@@ -12,6 +12,8 @@
     &__logo{
         width: 4rem;
         opacity: .8;
+        khtml-opacity: .8;
+        moz-opacity: .8;
         -webkit-filter: drop-shadow(.5rem 1rem 1rem $black);
         filter: drop-shadow(.5rem 1rem 1rem $black);
         transition: all .5s;

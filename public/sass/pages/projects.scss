@@ -144,6 +144,8 @@
     &__background{
         position: absolute;
         opacity: .7;
+        khtml-opacity: .7;
+        moz-opacity: .7;
 
         &--1{
             width: 90%;
@@ -165,7 +167,7 @@
             @include respond(phone){
                 width: 300%;
                 height: 300%;
-                left: -100%;
+                left: -130%;
             }
         }
 
@@ -175,12 +177,21 @@
             top: 90rem; 
             left: 70rem;
             opacity: .3;
+            khtml-opacity: .3;
+            moz-opacity: .3;
 
             @include respond(big-desktop){
                 width: 60%;
                 height: 60%;
                 top: 130rem; 
                 left: 130rem;
+            }
+
+            @include respond(tab-port){
+                width: 200%;
+                height: 200%;
+                top: 110rem; 
+                left: -5rem;
             }
         }
 
@@ -190,6 +201,20 @@
             top: 150rem; 
             left: -25rem;
             opacity: .4;
+            khtml-opacity: .4;
+            moz-opacity: .4;
+
+            @include respond(tab-port){
+                width: 60%;
+                top: 200rem;
+                left: -20rem;
+            }
+
+            @include respond(phone){
+                width: 100%;
+                top: 200rem;
+                left: -10rem;
+            }
         }
 
         &--4{
@@ -198,7 +223,22 @@
             top: 165rem; 
             left: 60rem;
             opacity: .5;
+            khtml-opacity: .5;
+            moz-opacity: .5;
+
+            
+            @include respond(tab-port){
+                width: 100%;
+                top: 85rem;
+                left: -5rem;
+            }
+            
+            @include respond(phone){
+                top: 155rem;
+            }
         }
+
+
 
         &--5{
             width: 50%;
@@ -206,6 +246,16 @@
             top: 250rem; 
             left: 90%;
             transform: rotate(90deg);
+
+            @include respond(tab-port){
+                width: 80%;
+                top: 300rem;
+            }
+
+            @include respond(phone){
+                width: 100%;
+                top: 250rem; 
+            }
         }
 
         &--6{
@@ -213,6 +263,15 @@
             height: 80%;
             top: 250rem; 
             left: -20rem;
+
+            @include respond(tab-port){
+                top: 280rem;
+                width: 300%;
+                transform: rotate(45deg);
+                opacity: .4;
+                khtml-opacity: .4;
+                moz-opacity: .4;
+            }
         }
 
         &--7{
@@ -221,6 +280,11 @@
             top: 340rem; 
             left: -25rem;
             transform: rotate(-20deg);
+
+            @include respond(tab-port){
+                width: 200%;
+                top: 380rem; 
+            }
         }
 
         &--8{
@@ -229,6 +293,10 @@
             top: 480rem; 
             left: 0%;
             transform: rotate(90deg);
+
+            @include respond(tab-port){
+                width: 200%;
+            }
         }
 
         &--9{
@@ -237,6 +305,14 @@
             top: 360rem; 
             left: 50rem;
             opacity: .5;
+            khtml-opacity: .5;
+            moz-opacity: .5;
+
+            @include respond(tab-port){
+                width: 300%;
+                left: 0rem;
+                top: 550rem;
+            }
         }
 
         &--10{
@@ -245,6 +321,14 @@
             top: 300rem; 
             left: 90%;
             opacity: .3;
+            khtml-opacity: .3;
+            moz-opacity: .3;
+
+            @include respond(tab-port){
+                width: 200%;
+                left: 0rem;
+                top: 650rem;
+            }
         }
 
         &--11{
@@ -253,6 +337,14 @@
             top: 460rem; 
             left: 70%;
             opacity: .3;
+            khtml-opacity: .3;
+            moz-opacity: .3;
+
+            @include respond(tab-port){
+                width: 160%;
+                left: -2rem;
+                top: 520rem;
+            }
         }
 
         &--12{
@@ -262,6 +354,13 @@
             left: 20%;
             transform: rotate(90deg);
             opacity: .5;
+            khtml-opacity: .5;
+            moz-opacity: .5;
+
+            @include respond(tab-port){
+                width: 200%;
+                left: 5rem;
+            }
         }
 
         &--13{
@@ -270,6 +369,13 @@
             top: 550rem; 
             left: -10%;
             opacity: .5;
+            khtml-opacity: .5;
+            moz-opacity: .5;
+
+            @include respond(tab-port){
+                width: 300%;
+                top: 840rem;
+            }
         }
 
         &--14{
@@ -277,6 +383,12 @@
             height: 60%;
             top: 595rem; 
             left: 50%;
+
+            @include respond(tab-port){
+                width: 200%;
+                top: 1040rem;
+                left: -50rem;
+            }
         }
     }
 
