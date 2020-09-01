@@ -30,6 +30,7 @@
 
             @include respond(phone){
                 width: 120%;
+                top: -10%;
                 left: -9%;
             }
         }
@@ -63,7 +64,7 @@
         }
         &--shape-5,
         &--shape-8{
-            animation: moveInDictator ease-out 1s ;
+            animation: moveInFascist ease-out 1s ;
         }
     }
 
@@ -78,6 +79,7 @@
         }
 
         @include respond(phone){
+            top: 52%;
             left: 30%;
         }
     }

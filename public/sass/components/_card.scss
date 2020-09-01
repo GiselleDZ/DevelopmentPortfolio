@@ -144,5 +144,23 @@
             float: left;
         }
     }
+
+    &__link{
+        font-weight: 600;
+        font-size: larger;
+        color: $dark-blue;
+        letter-spacing: .2rem;;
+        text-transform: uppercase;
+        text-decoration-style: wavy;
+        text-decoration-color: $dark-blue;
+        text-decoration-thickness: 1px;
+
+        @media (any-hover:hover){
+            :hover{
+                color: $darker-blue;
+            }
+        }
+
+    }
     
 }   

@@ -30,7 +30,7 @@
         }
 
         @include respond(phone){
-            top: 5.5%; 
+            top: 8%; 
         }
     }
 
@@ -56,7 +56,8 @@
         
         @include respond(phone){
             width: 180%;  
-            top: 5.5%;
+            top: 8%;
+            left: 5%;
         }
         
         &--main{

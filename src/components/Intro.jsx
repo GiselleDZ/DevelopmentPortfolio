@@ -11,6 +11,7 @@ export default class Intro extends Component {
             cardClass: "card card--no-flip"
         }
         this.handleFlip = this.handleFlip.bind(this)
+        this.noFlip = this.noFlip.bind(this)
     }
 
     handleFlip(e){
@@ -33,11 +34,18 @@ export default class Intro extends Component {
             })
         }
     }
+    noFlip(e){
+        e.stopPropagation()
+    }
 
     render(){
         return(
+
+            // Intro styling can be found in sass > pages > home 
             <section className="intro" id="intro">
                 <div className="intro__card-container">
+
+                {/* Card styling can be found in sass > components / card  */}
                     <div className={this.state.cardClass} onClick={() => this.handleFlip() } >
                         <div className="card__side card__side--back">
                             <div className="card__tech-logos">
@@ -78,7 +86,10 @@ export default class Intro extends Component {
                                 </div>
                                 <div className="card__text">
                                     <p className="paragraph--sm-dark u-margin-bottom-small">
-                                        As a human, I'm a sci-fi nerd, I love hiking in nature, abstract music, advocating for BIPOC and LGBT rights, and all kinds of fitness. I was born in Buenos Aires, Argentina. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Send me a message!
+                                        As a human, I'm a sci-fi nerd, I love hiking in nature, abstract music, advocating for BIPOC and LGBT rights, and all kinds of fitness. I was born in Buenos Aires, Argentina. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Find out more in &nbsp;
+                                        <a href="#biopopup" className="card__link" onClick={(e) => this.noFlip(e)}>
+                                             my bio
+                                        </a>!
                                     </p>
                                 </div>
                             </div>
@@ -105,6 +116,32 @@ export default class Intro extends Component {
                 <div className="intro__shape">
                     <img className="intro__shape intro__shape--main" src="http://gisellezatonyl.com/images/dev/shapes/composition-02.svg"></img>
                 </div>
+                <section className="popup" id="biopopup">
+                    <div className="popup__content popup__content--bio">
+                        <img src="public\assets\imgs\blue-G-300.jpg" alt="Giselle headshot in blue" className="popup__image--headshot"/>
+                        <a href="#intro" className="popup__close">&times;</a>
+                        <div className="popup__text--bio">
+                            <h2 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
+                                Hi again!
+                            </h2>
+                            <p className="popup__text--bio u-margin-bottom-small">
+                                So I'll get right down to it. For the previous 10 years, I worked as Graphic and Motion Designer for companies like CBRE, Gensler and Estee Lauder.</p>
+                            <p className="popup__text--bio u-margin-bottom-small">
+                                Simultaneously, I worked on side projects, focusing on 3D animation, which meant working with software engineers to develop interactive interfaces, for example, a future inspired Art Museum on the web, created in WebGL and ThreeJS. Or &nbsp; <a href="http://www.dream-space.net/artists/zatonyl/" className="popup__link">this project</a> &nbsp; I built for Dreamspace, in Unity. I even built my own &nbsp;<a href="http://www.dream-space.net/artists/zatonyl/" className="popup__link">art portfolio website</a>&nbsp; on Adobe Dreamweaver and Muse. Don't worry, I'll get to fixing it soon with my **actual development skills.
+                                Projects like these, drove me to really learn programming, so I joined the Grace Hopper Program to kick start my learning. I haven't stopped learning or creating since.
+                            </p>
+                            <p className="popup__text--bio u-margin-bottom-small">
+                                I look forward to creating user focused, agile products, and making a difference in the way technology affects and includes people.
+                            </p>
+                            <p className="popup__text--bio u-margin-bottom-small">
+                                Somethig not typically included in bios are stances on imperative social issues, but I feel that our current circumstances demand bolder action. As someone who is aware of the structures that make up our world, I have ideals to uphold while working in tech. I believe in net-neutrality, climate action, inclusion, reparations, and transparency. I expect teams and companies to actively work toward bettering our world, and anything less, would be a diservice.
+                            </p>
+                            <p className="popup__text--bio u-margin-bottom-small">
+                                If you would like to chat or have any questions, email me at gisellezatonyl@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </ section>
             </section>
         )
     }

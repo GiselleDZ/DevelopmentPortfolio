@@ -58,7 +58,7 @@
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
 
-@-webkit-keyframes moveInDictator {
+@-webkit-keyframes moveInFascist {
   0% {
     -webkit-transform: translateX(100%);
             transform: translateX(100%); }
@@ -66,7 +66,7 @@
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
 
-@keyframes moveInDictator {
+@keyframes moveInFascist {
   0% {
     -webkit-transform: translateX(100%);
             transform: translateX(100%); }
@@ -993,8 +993,8 @@ body {
       -webkit-animation: moveInFloor .7s ease-out;
               animation: moveInFloor .7s ease-out; }
     .header-composition__background--shape-5, .header-composition__background--shape-8 {
-      -webkit-animation: moveInDictator ease-out 1s;
-              animation: moveInDictator ease-out 1s; }
+      -webkit-animation: moveInFascist ease-out 1s;
+              animation: moveInFascist ease-out 1s; }
   .header-composition__button {
     position: absolute;
     top: 82%;

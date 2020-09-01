@@ -13,11 +13,11 @@
     transition: all .2s;
 
     @include respond(tab-land){
-        width: 66%;
+        width: 100%;
     }
 
     @include respond(phone){
-        width: 33%;
+        width: 100%;
     }
 
 
@@ -28,24 +28,28 @@
         background-color: $darkest-blue;
         box-shadow: $box-shadow-dark;
         border-radius: $border-radius-sm;
-        overflow: hidden;
         opacity: 0;
         khtml-opacity: 0;
         moz-opacity: 0;
         padding: 2rem;
         text-align: center;
-
+        
         @include center-axis(50%, 50%);
-
+        
         transform: translate(-50%, -50%) scale(.5);
         transition: all .4s .2s;
-
+        
         @include respond(tab-land){
+            overflow: auto;
             width: 75%;
+            height: 80rem;
         }
 
         @include respond(phone){
-            height: 80rem;
+        }
+
+        &--bio{
+            padding: 4rem;
         }
     }
 
@@ -55,11 +59,46 @@
         display: block;
         object-fit: cover;
         border: .1rem solid $medium-light-blue;
+
+        &--headshot{
+            float: right;
+            width: 40%;
+            padding: 2rem;
+            border: .1rem dashed $medium-light-blue;
+            margin: 0 0 4rem 4rem;
+
+            @include respond(phone){
+                margin: 0 0 1rem 1rem;
+            }
+        }
     }
     
     &__text{
         display: block;
-        padding: 4rem;
+        padding: 2rem;
+
+        &--bio{
+            letter-spacing: 1px;
+            text-align: left;
+            color: $lightish-blue;
+            font-size: small;
+
+        }
+    }
+
+    &__link{
+        font-weight: 500;
+        font-size: small;
+        color: $light-blue;
+        letter-spacing: .3rem;;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        @media (any-hover:hover){
+            :hover{
+                color: $lightish-blue
+            }
+        }
     }
 
 
