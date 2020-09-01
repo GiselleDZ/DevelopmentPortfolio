@@ -26,6 +26,25 @@
 
 
 
+.u-margin-top-small{margin-top: 1.5rem;}
+.u-margin-top-small-medium{margin-top: 3rem;}
+
+.u-margin-top-medium{
+    margin-top: 2rem;
+}
+
+.u-margin-top-medium-large{
+    margin-top: 6rem;
+    
+    @include respond(tab-port){
+        margin-top: 4rem;
+    }
+    
+    @include respond(phone){
+        margin-top: 2rem;
+    }
+}
+
 .u-margin-top-big{
     margin-top: 8rem;
     
@@ -34,20 +53,11 @@
     }
 }
 
-.u-margin-top-medium-large{
-    margin-top: 6rem;
-    
-    @include respond(phone){
-        margin-top: 2rem;
-    }
-}
-
 .u-margin-top-x-big{
     margin-top: 12rem;
 }
-.u-margin-top-medium{margin-top: 4rem;}
-.u-margin-top-small-medium{margin-top: 3rem;}
-.u-margin-top-small{margin-top: 1.5rem;}
+
+
 
 .u-margin-left-small{padding-left: 1rem;}
 .u-margin-left-small-medium{padding-left: 1rem;}
@@ -62,6 +72,15 @@
     }
 }
 
+
+
+// M O B I L E   S P E C I F I C   M A R G I N
+@include respond(tab-port){
+
+    .u-margin-bottom-mobile{
+        margin-bottom: 4rem !important;
+    }
+}
 
 .u-text-white{color: $white;}
 .u-text-lightest-gray{color: $light-blue;}

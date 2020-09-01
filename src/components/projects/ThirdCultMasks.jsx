@@ -25,12 +25,12 @@ export default class ThirdCultMasks extends Component {
     render(){
         return(
             <section className="projects__ThirdCultMasks projects__section" id="thirdcultmasks">
-                <div className="projects__header">
-                    <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Third Cult Masks </h1>
-                </div>
                 <div className="row">
+                    <div className="projects__header projects__header--titles">
+                        <h1 className="heading-primary heading-primary--sub heading-primary--shadow"> Third Cult Masks </h1>
+                    </div>
                     <div className="col-1of3">
-                        <div className="projects__description">
+                        <div className="projects__description projects__description--60">
                             <p className="paragraph paragraph--light paragraph--big">
                                 Third Cult Masks is a site made to singularly advertise Third Cult's high end masks to retailers that may want to purchase them as wholesale.
                             </p>
@@ -40,75 +40,67 @@ export default class ThirdCultMasks extends Component {
                             <p className="paragraph paragraph--light paragraph--big">
                                 Visit on a desktop browser, and you will notice a large percentage of the elements are animated. This project created largely to practice animating CSS3, SASS and minimal Javascript.
                             </p>
-                            <a href="https://thirdcult-masks.herokuapp.com/" 
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                className="btn btn--white btn--white--small u-margin-top-small">
-                                Project Site
-                            </a>
-                            <a href="https://github.com/GiselleDZ/ThirdCvltMasks" 
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                className="btn btn--white btn--white--small u-margin-top-small u-margin-bottom-small">
-                                Github Repository
-                            </a>
+                            <div className="projects__description--buttons">
+                                <a href="https://thirdcult-masks.herokuapp.com/" 
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    className="btn btn--white btn--white--small u-margin-top-small-medium">
+                                    Project Site
+                                </a>
+                                <a href="https://github.com/GiselleDZ/ThirdCvltMasks" 
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    className="btn btn--white btn--white--small u-margin-top-small-medium">
+                                    Github Repository
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div className="col-2of3">
-                        <div className="slideshow">
-                            <div className="slideshow__main">
-                                <div className="slideshow__image-wrap">
-                                    <img src={this.state.mainPhoto} alt={this.state.alt} className="slideshow__img-big"/>
-                                </div>
+                        <div className="slideshow slideshow__background">
+                            <div className="slideshow__main"> 
+                                <img src={this.state.mainPhoto} alt={this.state.alt} className="slideshow__img-big"/>
                             </div>
                             <div className="slideshow__line"></div>
                             <div className="slideshow__thumbs">
-                                <div className="row">
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)} 
-                                                src="http://www.gisellezatonyl.com/images/dev/thirdcult/homepage-thumb.jpg"  
-                                                alt="Third Cult masks site homepage" 
-                                                className={this.state.thumb}
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">    
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/thirdcult/details-thumb.jpg" 
-                                                alt="Third Cult masks details section" 
-                                                className={this.state.thumb}
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/thirdcult/features-thumb.jpg" 
-                                                alt="Third Cult feature cards section" 
-                                                className={this.state.thumb}
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/thirdcult/masks-thumb.jpg" 
-                                                alt="Third Cult Masks section depicting three masks" 
-                                                className={this.state.thumb}
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/thirdcult/reviews-thumb.jpg" 
-                                                alt="Third Cult Mask Reviews section" 
-                                                className={this.state.thumb}
-                                            />
-                                        </div>
-                                    </div>
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)} 
+                                        src="http://www.gisellezatonyl.com/images/dev/thirdcult/homepage-thumb.jpg"  
+                                        alt="Third Cult masks site homepage" 
+                                        className={this.state.thumb}
+                                    />
+                                </div>
+                        
+                                <div className="slideshow__thumb-wrap">    
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/thirdcult/details-thumb.jpg" 
+                                        alt="Third Cult masks details section" 
+                                        className={this.state.thumb}
+                                    />
+                                </div>
+                        
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/thirdcult/features-thumb.jpg" 
+                                        alt="Third Cult feature cards section" 
+                                        className={this.state.thumb}
+                                    />
+                                </div>
+                        
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/thirdcult/masks-thumb.jpg" 
+                                        alt="Third Cult Masks section depicting three masks" 
+                                        className={this.state.thumb}
+                                    />
+                                </div>
+                        
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/thirdcult/reviews-thumb.jpg" 
+                                        alt="Third Cult Mask Reviews section" 
+                                        className={this.state.thumb}
+                                    />
                                 </div>
                             </div>
                         </div>

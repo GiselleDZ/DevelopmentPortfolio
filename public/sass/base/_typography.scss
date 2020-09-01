@@ -7,49 +7,41 @@ body {
 }
 
 .heading-primary {
-    width: 100%;
-
+    font-family: "Playfair Display", serif;
+    color: $white;
+    display: block;
+    animation: moveInLeft ease-in .5s;
+    
     &--main{
-        font-family: "Playfair Display", serif;
-        color: $white;
-        display: block;
         font-size: 7rem;
         font-weight: 900;
         letter-spacing: .4rem;
         line-height: 9rem;
-        animation: moveInLeft .5s;
-        animation-timing-function: ease-in;
-        
+
         @include respond(tab-port){ 
-            letter-spacing: 1rem;
-            font-size: 3.3rem;
+            letter-spacing: .7rem;
+            font-size: 8rem;
         }
-        
         @include respond(phone){ 
             letter-spacing: .5rem;
-            font-size: 3rem;
+            font-size: 7rem;
         }
     }
 
     &--sub{
-        color: $dark-blue;
-        display: block;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        font-weight: 700;
-        letter-spacing: 1.1rem;
-        animation: moveInRight .5s ;
-        animation-timing-function: ease-in;
+        font-size: 6rem;
+        font-weight: 900;
+        letter-spacing: .4rem;
+        line-height: 9rem;
 
-        
         @include respond(tab-port){ 
-            letter-spacing: 1.5rem;
-            font-size: 3rem;
+            letter-spacing: .3rem;
+            font-size: 5rem;
         }
-        
-        @include respond(phone){ 
-            letter-spacing: 1rem;
-            font-size: 2rem;
+
+        @include respond(phone){
+            letter-spacing: .3rem;
+            font-size: 3.5rem;
         }
     }
 
@@ -88,6 +80,11 @@ body {
         font-size: 1.9rem;
         font-weight: 500;
         color: $lightish-blue;
+
+        @include respond(phone){
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+        }
 
     }
 
@@ -148,6 +145,14 @@ body {
     margin-bottom: 2rem;
     font-weight: 300;
 
+    @include respond(tab-port){ 
+        font-size: 1.4rem;
+    }
+    
+    @include respond(phone){
+        font-size: 1.6rem;
+    }
+
     &--light{
         color: $light-blue;
     }
@@ -165,6 +170,10 @@ body {
         color: $darkester-blue;
         font-weight: 500;
         font-size: 1.3rem;
+
+        @include respond(big-desktop){
+            font-size: 1.6rem;
+        }
     }
 
     &--dark{
@@ -175,15 +184,13 @@ body {
     &--big{
         font-size: 1.3rem;
         line-height: 2.5rem;
+
+        @include respond(tab-port){ 
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+        }
     }
     
-    @include respond(tab-port){ 
-        font-size: 1.4rem;
-    }
-    
-    @include respond(phone){
-        font-size: 1.6rem;
-    }
 }
 
 

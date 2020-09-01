@@ -3,7 +3,6 @@
     margin: 0 auto;
     margin-bottom: 4rem;
     position: relative;
-    // background-color: rgba($color: $darkester-blue, $alpha: .8);
 
     &__section{
         width: 100%;
@@ -14,12 +13,39 @@
 
     &__header{
         text-align: left;
-        max-width: $grid-width;
-        margin: 10rem 0 4rem 13%;
+        margin: 15rem 0 4rem 0%;
+        
+
+        @include respond(tab-port){
+            margin: 15rem 0 2rem 15%;
+        }
 
         &--small{
             max-width: 80rem;
-            margin-left: 0;
+            margin: 10rem 0 4rem 0%;
+
+            @include respond(big-desktop){
+                margin: 15rem 0 4rem 13%;
+            }
+
+            @include respond(tab-port){
+                margin: 15rem 0 4rem 15%;
+            }
+
+            @include respond(phone){
+                margin: 6rem 0 2rem 10%;
+            }
+        }
+
+        &--titles{
+
+            @include respond(big-desktop){
+                margin-top: 35rem;
+            }
+
+            @include respond(phone){
+                margin: 35rem 0 1rem 10%;
+            }
         }
     }
 
@@ -29,27 +55,85 @@
         width: 100%;
         max-width: $grid-width;
         margin: 0 auto;
-        height: 60rem;
         padding: 3rem;
         border: 1px solid $medium-light-blue;
         background-color: rgba($color: $darkester-blue, $alpha: .8);
 
-        &--80{height: 80rem;}
-        &--75{height: 75rem;}
-        &--65{height: 65rem;}
-        &--60{height: 60rem}
-        &--55{height: 55rem}
-        &--50{height: 50rem;}
-        &--48{height: 48rem;}
-        &--45{height: 45rem}
-        &--44{height: 44rem;}
-        &--40{height: 40rem;}
-        &--35{height: 35rem;}
-        &--30{height: 30rem;}
-        &--19{height: 19rem;}
-        &--15{height: 15rem;}
+        @include respond(big-desktop){
+            width: 100%;
+            margin: 0 auto;
+        }
 
-        @include basic-blue-shadow(.5)
+        @include respond(tab-port){
+            width: 70%;
+            padding: 3rem;
+        }
+
+        @include respond(phone){
+            width: 80%;
+            padding: 3rem;
+        }
+
+
+        // @include respond(desktop){
+        //     margin: 4rem -1rem 0 0;
+            
+        //     // &--80{height: 80rem;}
+        //     // &--75{height: 75rem;}
+        //     // &--60{height: 60rem}
+        //     // &--55{height: 55rem}
+        //     // &--50{height: 50rem;}
+        //     // &--48{height: 48rem;}
+        //     // &--45{height: 45rem}
+        //     // &--44{height: 44rem;}
+        //     // &--40{height: 40rem;}
+        //     // &--35{height: 35rem;}
+        //     // &--30{height: 30rem;}
+        //     // &--19{height: 19rem;}
+        //     // &--15{height: 15rem;}
+        // }
+        
+        &--65{
+            height: 60rem;
+
+            @include respond(tab-port){
+                height: 42rem;
+            }
+
+            @include respond(phone){
+                height: 68rem;
+            }
+        }
+
+        &--60{
+            height: 60rem;
+
+            @include respond(tab-port){
+                height: 37rem;
+            }
+
+            @include respond(phone){
+                height: 59rem;
+            }
+        }
+
+
+        @include basic-blue-shadow(.5);
+
+        @include respond(tab-port){
+            &--buttons{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        @include respond(phone){
+            &--buttons{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
     }
 
     &__shapes{
@@ -60,12 +144,31 @@
     &__background{
         position: absolute;
         opacity: .7;
+        khtml-opacity: .7;
+        moz-opacity: .7;
 
         &--1{
             width: 90%;
             height: 90%;
             top: -10rem;
             left: 10rem;
+
+            @include respond(tab-land){
+                width: 120%;
+                height: 120%;
+                left: 0;
+            }
+
+            @include respond(tab-port){
+               top: 0 ;
+               left: -10rem;
+            }
+
+            @include respond(phone){
+                width: 300%;
+                height: 300%;
+                left: -130%;
+            }
         }
 
         &--2{
@@ -74,6 +177,22 @@
             top: 90rem; 
             left: 70rem;
             opacity: .3;
+            khtml-opacity: .3;
+            moz-opacity: .3;
+
+            @include respond(big-desktop){
+                width: 60%;
+                height: 60%;
+                top: 130rem; 
+                left: 130rem;
+            }
+
+            @include respond(tab-port){
+                width: 200%;
+                height: 200%;
+                top: 110rem; 
+                left: -5rem;
+            }
         }
 
         &--3{
@@ -82,6 +201,20 @@
             top: 150rem; 
             left: -25rem;
             opacity: .4;
+            khtml-opacity: .4;
+            moz-opacity: .4;
+
+            @include respond(tab-port){
+                width: 60%;
+                top: 200rem;
+                left: -20rem;
+            }
+
+            @include respond(phone){
+                width: 100%;
+                top: 200rem;
+                left: -10rem;
+            }
         }
 
         &--4{
@@ -90,7 +223,22 @@
             top: 165rem; 
             left: 60rem;
             opacity: .5;
+            khtml-opacity: .5;
+            moz-opacity: .5;
+
+            
+            @include respond(tab-port){
+                width: 100%;
+                top: 85rem;
+                left: -5rem;
+            }
+            
+            @include respond(phone){
+                top: 155rem;
+            }
         }
+
+
 
         &--5{
             width: 50%;
@@ -98,6 +246,16 @@
             top: 250rem; 
             left: 90%;
             transform: rotate(90deg);
+
+            @include respond(tab-port){
+                width: 80%;
+                top: 300rem;
+            }
+
+            @include respond(phone){
+                width: 100%;
+                top: 250rem; 
+            }
         }
 
         &--6{
@@ -105,6 +263,15 @@
             height: 80%;
             top: 250rem; 
             left: -20rem;
+
+            @include respond(tab-port){
+                top: 280rem;
+                width: 300%;
+                transform: rotate(45deg);
+                opacity: .4;
+                khtml-opacity: .4;
+                moz-opacity: .4;
+            }
         }
 
         &--7{
@@ -113,6 +280,11 @@
             top: 340rem; 
             left: -25rem;
             transform: rotate(-20deg);
+
+            @include respond(tab-port){
+                width: 200%;
+                top: 380rem; 
+            }
         }
 
         &--8{
@@ -121,6 +293,10 @@
             top: 480rem; 
             left: 0%;
             transform: rotate(90deg);
+
+            @include respond(tab-port){
+                width: 200%;
+            }
         }
 
         &--9{
@@ -129,6 +305,14 @@
             top: 360rem; 
             left: 50rem;
             opacity: .5;
+            khtml-opacity: .5;
+            moz-opacity: .5;
+
+            @include respond(tab-port){
+                width: 300%;
+                left: 0rem;
+                top: 550rem;
+            }
         }
 
         &--10{
@@ -137,6 +321,14 @@
             top: 300rem; 
             left: 90%;
             opacity: .3;
+            khtml-opacity: .3;
+            moz-opacity: .3;
+
+            @include respond(tab-port){
+                width: 200%;
+                left: 0rem;
+                top: 650rem;
+            }
         }
 
         &--11{
@@ -145,6 +337,14 @@
             top: 460rem; 
             left: 70%;
             opacity: .3;
+            khtml-opacity: .3;
+            moz-opacity: .3;
+
+            @include respond(tab-port){
+                width: 160%;
+                left: -2rem;
+                top: 520rem;
+            }
         }
 
         &--12{
@@ -154,6 +354,13 @@
             left: 20%;
             transform: rotate(90deg);
             opacity: .5;
+            khtml-opacity: .5;
+            moz-opacity: .5;
+
+            @include respond(tab-port){
+                width: 200%;
+                left: 5rem;
+            }
         }
 
         &--13{
@@ -162,6 +369,13 @@
             top: 550rem; 
             left: -10%;
             opacity: .5;
+            khtml-opacity: .5;
+            moz-opacity: .5;
+
+            @include respond(tab-port){
+                width: 300%;
+                top: 840rem;
+            }
         }
 
         &--14{
@@ -169,20 +383,42 @@
             height: 60%;
             top: 595rem; 
             left: 50%;
+
+            @include respond(tab-port){
+                width: 200%;
+                top: 1040rem;
+                left: -50rem;
+            }
         }
     }
 
     &__intro{
         position: relative;
         width: 70%;
-        margin: 12rem 15% 40rem 15%;
+        margin: 12rem 15% 45rem 15%;
         padding: 4rem;
         text-align: center;
+
+        @include respond(big-desktop){
+            margin-bottom: 40%;
+        }
+        
+        @include respond(tab-port){
+            padding: 2rem;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 30%;
+        }
         
         &--button{
-            position: absolute;
-            top: 100%;
-            right: 3.5%;
+            float: right;
+            margin: 4rem -3rem 0 0;
+
+            @include respond(tab-port){
+                margin: 6rem -3rem 0 0;
+            }
+
+
         }
     }
     
@@ -190,15 +426,27 @@
     &__intro-thumbs{
         margin: 0 auto;
         width: 90%;
-        height: 25rem;;
-        padding-top: 4rem;
-        padding-bottom: 8rem;
+        padding: 4rem 0 8rem 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+
+        @include respond(tab-land){
+            padding: 1rem 0 2rem 0;
+        }
         
         &__thumb-wrapper{
             position: relative;
             width: 14rem;
             padding: 1rem;
             transition: all ease-in .4s;
+            text-align: center;
+            justify-content: center;
+
+            @include respond(tab-land){
+                width: 20rem;
+                margin: 1rem 3rem 1rem 1rem;
+            }
 
             
             &--thumb-image{
@@ -208,18 +456,28 @@
                 object-fit: contain;
                 background-color: white;
                 border-radius: $border-radius-sm;
+
+                @include respond(tab-land){
+                    height: 16rem;
+                }
             }
         
             &--thumb-title{
                 position: absolute;
                 color: white;
-                top: 3rem;
-                left: 1rem;
+                width: 90%;
+                top: 12rem;
                 font-size: 1.2rem;
+
+                @include respond(tab-land){
+                    top: 17rem;
+                }
             }
 
-            &:hover{
-                transform: scale(1.1);
+            @media (any-hover: hover){
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
         }
     }
@@ -235,6 +493,18 @@
         &__wrapper{
             max-width: 8rem;
             max-height: 5rem;
+            text-align: center;
+
+            @include respond(tab-port){
+                max-width: 6rem;
+                max-height: 4rem;
+            }
+
+            @include respond(phone){
+                max-width: 3rem;
+                max-height: 3rem;
+            }
+            
 
             &__logo-img{
         

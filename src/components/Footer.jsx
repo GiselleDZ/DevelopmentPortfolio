@@ -38,7 +38,7 @@ export default class Footer extends Component {
                                 </li>
                                 <li className="footer__item">
                                     <a href="http://www.gisellezatonyl.com" className="footer__link">
-                                        art website
+                                        art portfolio
                                     </a>
                                 </li>
                             </ul>
@@ -50,18 +50,15 @@ export default class Footer extends Component {
                 </footer>
                 <section className="popup" id="contactpopup">
                     <div className="popup__content">
-                        <div className="popup__left">
-                        </div>
-                        <div className="popup__right">
-                            <a href="#section-masks" className="popup__close">&times;</a>
+                        <img src="public\assets\imgs\misc-bckg.png" alt="3D landscape with engine grid" className="popup__image"/>
+                        <a href="#footer" className="popup__close">&times;</a>
+                        <div className="popup__text">
                             <h2 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Under construction ¯\_(ツ)_/¯
                             </h2>
-                            <h3 className="heading-tertiary u-margin-bottom-small">
-                                Please e-mail gz@gisellezatonyl.com
+                            <h3 className="heading-tertiary heading-tertiary--light">
+                                Please e-mail gisellezatonyl@gmail.com
                             </h3>
-                            <p className="popup__text u-margin-bottom-medium">
-                            </p>
                         </div>
                     </div>
                 </ section>

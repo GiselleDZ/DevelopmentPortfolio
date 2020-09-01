@@ -19,22 +19,6 @@ $darkest-blue: #001d6c;
 
 
 
-
-$whiskey-tan-light: #A97779;
-$whiskey-tan-dark: #463132;
-
-$vegetable-tan-light: #D69C6E;
-$vegetable-tan-dark: #58402e;
-
-$black-leather-light: #1B2A43;
-$black-leather-dark: #000000;
-
-// c o l o r   g r a d i e n t s
-$whiskey-tan-gradient: linear-gradient(to right bottom, 
-    $whiskey-tan-light, 
-    $whiskey-tan-dark);
-
-
 //   G R I D    V A R I A B L E S
 $grid-width: 114rem;
 $gutter-vertical : 6rem;
@@ -58,7 +42,7 @@ $box-shadow-big-dark: 0 2rem 4rem rgba($color: $darkester-blue, $alpha: .4);
 // C O M P O N E N T   V A R I A B L E S
 $card-height: 35rem;
 $card-height-tab: 100rem;
-$card-height-phone: 32rem;
+$card-height-phone: 53rem;
 
 // S H A P E S 
 $circle70: circle(70% at 70% 70%);

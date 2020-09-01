@@ -14,6 +14,11 @@ html {
         font-size: 75%; 
     }
     
+    // < 1400
+    @include respond(desktop){ // 1rem = 12px
+        font-size: 65%; 
+    }
+    
     // < 1200
     @include respond(tab-land){ // 1rem = 9 px
         font-size: 56.25%; 

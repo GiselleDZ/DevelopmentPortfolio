@@ -2,7 +2,7 @@
     position: relative;
     height: 80vh;
     background-color: $darker-blue;
-    margin: 5rem 0 25rem 0;
+    margin: 5rem 0 15rem 0;
 
     &__text-box {
         text-align: center;
@@ -17,12 +17,22 @@
         width: 100%;
         height: 100%;
 
+        
         &--image{
             position: absolute;
             width: 100%;
             height: 100%;
             margin: 0 auto;
             left: 0%;
+            
+            @include respond(big-desktop){
+                margin-bottom: 30rem; 
+            }
+
+            @include respond(phone){
+                width: 120%;
+                left: -9%;
+            }
         }
         &--shape-1{
             mix-blend-mode: overlay;
@@ -55,6 +65,21 @@
         &--shape-5,
         &--shape-8{
             animation: moveInDictator ease-out 1s ;
+        }
+    }
+
+    &__button{
+        position: absolute;
+        top: 82%;
+        left: 50%;
+        animation: moveInDepths ease-out .9s;
+
+        @include respond(tab-port){
+            top: 68%;
+        }
+
+        @include respond(phone){
+            left: 30%;
         }
     }
 

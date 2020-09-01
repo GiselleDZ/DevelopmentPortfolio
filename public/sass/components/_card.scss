@@ -2,11 +2,21 @@
     perspective: 300rem;
     -moz-perspective: 150rem;
     position: relative;
+    top:0;
+    left:0;
     height: $card-height;
     width: 60%;
     margin: 0 auto;
     margin-top: 10rem;
     margin-bottom: 10rem;
+
+    @include respond(tab-port){
+        width: 80%;    
+    }
+
+    @include respond(phone){
+        height: $card-height-phone;   
+    }
 
 
     // S I D E   F O R M A T T I N G 
@@ -24,6 +34,10 @@
         background-color: $white;
 
         @include basic-blue-shadow(.4);
+
+        @include respond(phone){
+            height: $card-height-phone;   
+        }
 
     }
 
@@ -61,6 +75,13 @@
         padding: 4rem 8rem 8rem 8rem;
         border: 1px solid $medium-blue;
         text-align: center;
+
+        @include respond(phone){
+            padding: 2rem;
+            padding-left: 4rem;;
+        }
+
+        
     }
 
     &__logo-img{
@@ -70,6 +91,17 @@
 
         &:not(:last-child){
             margin-right: 6rem;
+        }
+
+        @include respond(phone){
+            max-height: 4rem;
+            max-width: 7rem;
+            margin: 1rem;
+            margin-bottom: 2rem;
+
+            &:not(:last-child){
+                margin-right: 4rem;
+            }
         }
     }
 
@@ -95,12 +127,21 @@
         margin: 0 auto;
         margin-top: 10rem;
 
+        @include respond(phone){
+            top: 65rem;
+        }
+
         &--right{
-            right: -46%;
+            float: right;
+
+            @include respond(tab-port){
+                float: left; 
+                margin-top: -5rem;
+            }
         }
 
         &--left{
-            left: 0;
+            float: left;
         }
     }
     

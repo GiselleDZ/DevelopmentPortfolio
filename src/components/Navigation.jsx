@@ -22,9 +22,6 @@ export default class Navigation extends Component {
                 <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
                 <label htmlFor="navi-toggle" className="navigation__button"> 
                     <span className="navigation__icon">&nbsp;</span>
-                    <div className="navigation__shadow-wrapper"> 
-                            <span className="navigation__shadow-wrapper--dot-shadow-round "></span>
-                    </div>
                 </label>
                 <div className="navigation__background">&nbsp;</div>
                 <nav className="navigation__nav">

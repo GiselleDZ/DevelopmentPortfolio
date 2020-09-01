@@ -34,31 +34,33 @@ export default class Pentimento extends Component {
     render(){
         return(
             <section className="projects__pentimento  projects__section" id="pentimento">
-                <div className="projects__header">
-                    <h1 className="heading-primary heading-primary--main heading-primary--shadow"> Pentimento </h1>
-                </div>
                 <div className="row">
+                    <div className="projects__header projects__header--titles">
+                        <h1 className="heading-primary heading-primary--sub heading-primary--shadow"> Pentimento </h1>
+                    </div>
                     <div className="col-1of3">
-                        <div className="projects__description">
+                        <div className="projects__description projects__description--60">
                             <p className="paragraph paragraph--light paragraph--big">
                                 Pentimento is a mobile-first web application for finding and uploading street art around New York City. It was created for artists, historians, and art enthusiasts to keep track of ephemeral pieces that may be here today but gone tomorrow.
                             </p>
                             <p className="paragraph paragraph--light paragraph--big">
                                 Pentimento was built during the Grace Hopper Software Engineering program, as the Capstone project. The team members were Angie Spears, Giselle Zatonyl, Saj King, and Chelsea Church.
                             </p>
-                            <a href="https://pentimentostreet.herokuapp.com/" 
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                className="btn btn--white u-margin-top-small">
-                                Project Site
-                            </a>
-                            <a href="https://github.com/Phantom-Blue/phantom-blue" 
-                                rel="noopener noreferrer"
-                                target="_blank"
+                            <div className="projects__description--buttons">
+                                <a href="https://pentimentostreet.herokuapp.com/" 
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    className="btn btn--white u-margin-top-small-medium">
+                                    Project Site
+                                </a>
+                                <a href="https://github.com/Phantom-Blue/phantom-blue" 
+                                    rel="noopener noreferrer"
+                                    target="_blank"
 
-                                className="btn btn--white u-margin-top-small-medium u-margin-bottom-small">
-                                Github Repository
-                            </a>
+                                    className="btn btn--white u-margin-top-small-medium ">
+                                    Github Repository
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div className="col-2of3">
@@ -72,97 +74,94 @@ export default class Pentimento extends Component {
                                         allowFullScreen
                                         className="slideshow__video-big" />
                                     ) : (
-                                        <div className="slideshow__image-wrap">
-                                            <img src={this.state.mainPhoto} alt={this.state.alt} className="slideshow__img-big"/>
-                                        </div>
+                                        <img src={this.state.mainPhoto} alt={this.state.alt} className="slideshow__img-big"/>
+                                    
                                     )
                                 }
                             </div>
                             <div className="slideshow__line"></div>
                             <div className="slideshow__thumbs">
-                                <div className="row">
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/video-thumb.jpg" 
-                                                alt="Pentimento Video" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)} 
-                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/homepage-thumb.jpg"  
-                                                alt="Pentimento Homepage" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">    
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/artgallery-thumb.jpg" 
-                                                alt="Pentimento Gallery View" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/map-thumb.jpg" 
-                                                alt="Pentimento Map" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-1of5">
-                                        <div className="slideshow__thumb-wrap">
-                                            <img onClick={(e) => this.handleImage(e)}
-                                                src="http://www.gisellezatonyl.com/images/dev/pentimento/mapart-thumb.jpg" 
-                                                alt="Pentimento Map Pin Artwork" 
-                                                className="slideshow__thumb"
-                                            />
-                                        </div>
-                                    </div>
+                              
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/pentimento/video-thumb.jpg" 
+                                        alt="Pentimento Video" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                            
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)} 
+                                        src="http://www.gisellezatonyl.com/images/dev/pentimento/homepage-thumb.jpg"  
+                                        alt="Pentimento Homepage" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                            
+                                <div className="slideshow__thumb-wrap">    
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/pentimento/artgallery-thumb.jpg" 
+                                        alt="Pentimento Gallery View" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                            
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/pentimento/map-thumb.jpg" 
+                                        alt="Pentimento Map" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                            
+                                <div className="slideshow__thumb-wrap">
+                                    <img onClick={(e) => this.handleImage(e)}
+                                        src="http://www.gisellezatonyl.com/images/dev/pentimento/mapart-thumb.jpg" 
+                                        alt="Pentimento Map Pin Artwork" 
+                                        className="slideshow__thumb"
+                                    />
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="u-margin-bottom-mobile">
+                        <div className="projects__description projects__description--15">
+                            <div className="projects__tech-logos">
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img" />
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/postgresql.png" alt="postgresql logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/mapbox.png" alt="mapbox logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/sequelize.png" alt="sequelize logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
+                                </div>
+                                <div className="projects__tech-logos__wrapper">
+                                    <img src="../../public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="projects__description projects__description--15">
-                    <div className="projects__tech-logos">
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/node.png" alt="node logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img u-margin-left-medium"/>
-                        </div>
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/react.png" alt="react logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img"/>
-                        </div>
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/css3.png" alt="css3 logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
-                        </div>
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/postgresql.png" alt="postgresql logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
-                        </div>
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/mapbox.png" alt="mapbox logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
-                        </div>
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/sequelize.png" alt="sequelize logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
-                        </div>
-                        <div className="projects__tech-logos__wrapper">
-                            <img src="../../public/assets/greyscale-logos/Expressjs.png" alt="Expressjs logo" className="projects__tech-logos__wrapper projects__tech-logos__wrapper--logo-img "/>
-                        </div>
-                    </div>
-                </div>
                 <div className="row">
-                    <div className="col-1of2 u-margin-top-medium-large">
+                    <div className="col-1of2">
                         <div className="projects__description projects__description--45">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 My role
                             </h3>
-                            <ul className="list">
+                            <ul className="list u-margin-bottom-medium">
                                 <li className="list__item">
                                     Designed relational database schema.
                                 </li>
@@ -184,12 +183,12 @@ export default class Pentimento extends Component {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-1of2 u-margin-top-medium-large">
+                    <div className="col-1of2">
                         <div className="projects__description projects__description--55">
                             <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Challenges
                             </h3>
-                            <ul className="list">
+                            <ul className="list u-margin-bottom-medium">
                                 <li className="list__item">
                                     We were asked to create our app in two weeks, and in a way, our ambition hurt us the most in these circumstances. 
                                     We were too excited to learn and use the MapboxGL API, and did not plan for growth in the architecture of our map component. Ultimately, the map had to be revised a few times to accomodate new features. It is an understatement 

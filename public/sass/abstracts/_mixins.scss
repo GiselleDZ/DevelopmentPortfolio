@@ -96,6 +96,8 @@
         &::after{
             transform: scale(1.05);
             opacity: 0;
+            khtml-opacity: 0;
+            moz-opacity: 0;
         }
     }
 }
@@ -109,6 +111,8 @@
         &::after{
             transform: scale(1.05);
             opacity: 0;
+            khtml-opacity: 0;
+            moz-opacity: 0;
         }
     }
 }
@@ -130,17 +134,22 @@
 // - phone
 // - tab-port
 // - tab-land
-// - big-desktop
+// - desktop
 
 // responsive adaptation order :
+
+// TOP > DOWN
 // base > typography > general layout > grid > layout > components
 
 @mixin respond ($breakpoint) {
 
     /// D E S K T O P   F I R S T   O R D E R -- lg > sml
-    
     @if $breakpoint == big-desktop {
-        @media (min-width: 112.5em) { @content }; //1800px // 12px
+        @media (min-width: 112.5em) { @content }; //1800px // 16px
+    }
+    
+    @if $breakpoint == desktop {
+        @media (min-width: 87.5em) { @content }; //1400px // 12px
     }
     
     @if $breakpoint == tab-land {
