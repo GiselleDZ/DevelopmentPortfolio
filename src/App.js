@@ -22,14 +22,15 @@ const App = () => {
             <meta property="og:url" content="http://dev.gisellezatonyl.com/" />
             <meta property="og:title" content="Giselle Zatonyl Development Portfolio" />
             <meta property="og:description" content="" />
-            <meta property="og:image" content="/assets/imgs/link-preview.JPG" />
+            <meta property="og:image" content="http://gisellezatonyl.com/images/dev/g-dev-site/link-preview.JPG" />
 
             {/* <!-- Twitter --> */}
             <meta property="twitter:card" content="summary_large_image" />
             <meta property="twitter:url" content="http://dev.gisellezatonyl.com/" />
             <meta property="twitter:title" content="Giselle Zatonyl Development Portfolio" />
             <meta property="twitter:description" content="" />
-            <meta property="twitter:image" content="/assets/imgs/link-preview.JPG" />
+            <meta property="twitter:image" content="http://gisellezatonyl.com/images/dev/g-dev-site/link-preview.JPG" />
+            <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0" />
         </Helmet>
         <Navigation />
         <Header />
