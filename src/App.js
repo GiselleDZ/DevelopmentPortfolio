@@ -4,7 +4,6 @@ import Navigation from './components/Navigation'
 import Header from './components/Header'
 import Intro from './components/Intro'
 import Projects from './components/projects/Projects'
-import {Helmet} from "react-helmet"
 import "../public/css/style.css"
 
 

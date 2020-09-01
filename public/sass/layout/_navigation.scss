@@ -70,12 +70,6 @@
         width: 0;
 
         transition: opacity width .8s cubic-bezier(0.33, 1, 0.68, 1);
-
-        @include respond(tab-land){
-            position: absolute;
-            top: 40rem;
-            right: 2rem;
-        }
     }
 
     &__list{
