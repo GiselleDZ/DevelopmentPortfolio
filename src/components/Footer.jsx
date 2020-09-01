@@ -32,6 +32,11 @@ export default class Footer extends Component {
                                     </a>
                                 </li>
                                 <li className="footer__item">
+                                    <a href="https://drive.google.com/file/d/1fvXaVcHTkf5DGg8mp39P2gme4OWn1Xls/view?usp=sharing" className="footer__link">
+                                        resume pdf
+                                    </a>
+                                </li>
+                                <li className="footer__item">
                                     <a href="#contactpopup" className="footer__link">
                                         e-mail
                                     </a>
