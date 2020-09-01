@@ -27,7 +27,7 @@ export default class Coocucachew extends Component {
                     <div className="col-1of3">
                         <div className="projects__description">
                             <p className="paragraph paragraph--light paragraph--big">
-                                Coocucachew is an e-commere site selling cookies, cupcakes, cake pops and chocolate. Coocucachew features many types of these products, which a user may browse, add to cart and check out using Stripe.
+                                Coocucachew is an e-commerce site selling cookies, cupcakes, cake pops and chocolate. Coocucachew features many types of these products, which a user may browse, add to cart and check out using Stripe.
                             </p>
                             <p className="paragraph paragraph--light paragraph--big">
                                 Coocucachew was built using React, Redux, Express, PostgreSQL, and Sequelize. The team that created Coocucachew is: Adrianna Winkelman, Gisele (Yunshu) Xiao, Michelle Broomes, Giselle Zatonyl.
@@ -173,7 +173,7 @@ export default class Coocucachew extends Component {
                                     Constructed server responses and error handling on the back end, using Express and Sequelize.
                                 </li>
                                 <li className="list__item">
-                                    Built the mulptiple product pages, including the home page.
+                                    Built the multiple product pages, including the home page.
                                 </li>
                             </ul>
                         </div>
@@ -190,8 +190,8 @@ export default class Coocucachew extends Component {
                                 <li className="list__item">
                                     As our first group project during our training at the Grace Hopper program, our biggest challenge was learning to 
                                     to work together and manage the project. We used Github projects, and slowly picked up a good rhythm for assigning 
-                                    tasks, and keeping track of work in progress. We reminded each other to update the board more frequenmtly, and 
-                                    established a disipline for recording tasks directly on the task board. 
+                                    tasks, and keeping track of work in progress. We reminded each other to update the board more frequently, and 
+                                    established a discipline for recording tasks directly on the task board. 
                                     By the end of the week, we had mastered our management system, and were ready for another.
                                 </li>
                             </ul>

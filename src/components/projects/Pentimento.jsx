@@ -44,7 +44,7 @@ export default class Pentimento extends Component {
                                 Pentimento is a mobile-first web application for finding and uploading street art around New York City. It was created for artists, historians, and art enthusiasts to keep track of ephemeral pieces that may be here today but gone tomorrow.
                             </p>
                             <p className="paragraph paragraph--light paragraph--big">
-                                Pentimeto was built during the Grace Hopper Software Engineering program, as the Capstone project. The team members were Angie Spears, Giselle Zatonyl, Saj King, and Chelsea Church.
+                                Pentimento was built during the Grace Hopper Software Engineering program, as the Capstone project. The team members were Angie Spears, Giselle Zatonyl, Saj King, and Chelsea Church.
                             </p>
                             <a href="https://pentimentostreet.herokuapp.com/" 
                                 rel="noopener noreferrer"
@@ -196,7 +196,7 @@ export default class Pentimento extends Component {
                                     to say I understand the value of designing for growth. Planning and brainstorming for future proofing is an extremely important task in the development process.
                                 </li>
                                 <li className="list__item">
-                                    Another great challanges brought on by our map sutation was a team mate disagreement on the features to keep, 
+                                    Another great challenges brought on by our map sutation was a teammate disagreement on the features to keep, 
                                     as our deadlines loomed closer and the debugging tasks grew. The feature in question was "Nearby Artworks", which 
                                     as our map stood, couldn't accormodate it. Our map was doing too many things. We resolved it by calling a team meeting,
                                     and brainstorming solutions, how to alter the map component to fit this feature and was it worth the trouble. 

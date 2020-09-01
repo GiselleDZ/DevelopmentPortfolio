@@ -32,7 +32,7 @@ export default class ThirdCultMasks extends Component {
                     <div className="col-1of3">
                         <div className="projects__description">
                             <p className="paragraph paragraph--light paragraph--big">
-                                Third Cult Masks is a site made to singularly advertize Third Cult's high end masks to retailers that may want to purchase them as wholesale.
+                                Third Cult Masks is a site made to singularly advertise Third Cult's high end masks to retailers that may want to purchase them as wholesale.
                             </p>
                             <p className="paragraph paragraph--light paragraph--big">
                                 ThirdCultMasks was built using primarily vanilla Javascript, CSS3 SASS and Express. It was created by Giselle Zatonyl.
