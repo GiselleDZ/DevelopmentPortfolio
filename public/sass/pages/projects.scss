@@ -188,6 +188,14 @@
             }
 
             @include respond(tab-port){
+                width: 100%;
+                height: 1000%;
+                top: 100rem; 
+                left: 45rem;
+            }
+            
+            
+            @include respond(phone){
                 width: 200%;
                 height: 200%;
                 top: 110rem; 
@@ -249,7 +257,7 @@
 
             @include respond(tab-port){
                 width: 80%;
-                top: 300rem;
+                top: 230rem;
             }
 
             @include respond(phone){
@@ -266,11 +274,19 @@
 
             @include respond(tab-port){
                 top: 280rem;
-                width: 300%;
+                width: 200%;
+                left: 0rem;
                 transform: rotate(45deg);
                 opacity: .4;
                 khtml-opacity: .4;
                 moz-opacity: .4;
+            }
+            
+            
+            @include respond(phone){
+                top: 280rem;
+                width: 300%;
+                left: -20rem;
             }
         }
 
@@ -282,8 +298,15 @@
             transform: rotate(-20deg);
 
             @include respond(tab-port){
+                width: 100%;
+                left: 25rem;
+                top: 250rem; 
+            }
+            
+            @include respond(phone){
                 width: 200%;
                 top: 380rem; 
+                left: -25rem;
             }
         }
 
@@ -309,6 +332,13 @@
             moz-opacity: .5;
 
             @include respond(tab-port){
+                width: 200%;
+                left: 0rem;
+                top: 650rem;
+            }
+            
+            
+            @include respond(phone){
                 width: 300%;
                 left: 0rem;
                 top: 550rem;
@@ -325,6 +355,12 @@
             moz-opacity: .3;
 
             @include respond(tab-port){
+                width: 80%;
+                left: -60rem;
+                top: 580rem;
+            }
+            
+            @include respond(phone){
                 width: 200%;
                 left: 0rem;
                 top: 650rem;
@@ -341,6 +377,12 @@
             moz-opacity: .3;
 
             @include respond(tab-port){
+                width: 80%;
+                left: -2rem;
+                top: 550rem;
+            }
+            
+            @include respond(phone){
                 width: 160%;
                 left: -2rem;
                 top: 520rem;
@@ -385,6 +427,12 @@
             left: 50%;
 
             @include respond(tab-port){
+                width: 100%;
+                top: 780rem;
+                left: 30rem;
+            }
+
+            @include respond(phone){
                 width: 200%;
                 top: 1040rem;
                 left: -50rem;

@@ -1,6 +1,11 @@
 .body{
     position: relative;
     background-color: $darker-blue;
+       overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .intro{
@@ -19,7 +24,7 @@
         }
 
         @include respond(tab-port){
-            top: 9.5%;
+            top: 12%;
             left: 5%;
             width: 90%;    
         }
@@ -45,12 +50,13 @@
         }
 
         @include respond(tab-port){
-            width: 100%;    
+            width: 120%;    
+            top: 12%;
         }
         
         @include respond(phone){
-            top: 5.5%;
             width: 180%;  
+            top: 5.5%;
         }
         
         &--main{

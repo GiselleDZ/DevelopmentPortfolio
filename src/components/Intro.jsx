@@ -38,7 +38,7 @@ export default class Intro extends Component {
         return(
             <section className="intro" id="intro">
                 <div className="intro__card-container">
-                    <div className={this.state.cardClass}>
+                    <div className={this.state.cardClass} onClick={() => this.handleFlip() } >
                         <div className="card__side card__side--back">
                             <div className="card__tech-logos">
                                     <img src="./public/assets/greyscale-logos/node.png" alt="node logo" className="card__logo-img "/>
