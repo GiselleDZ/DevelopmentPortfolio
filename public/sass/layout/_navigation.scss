@@ -16,7 +16,7 @@
         height: 8rem;
         width: 8rem;
         top: 6rem;
-        right: 6rem;
+        left: 6rem;
         border-radius: 50%;
         z-index: 2000;
         box-shadow: $box-shadow-dark;
@@ -29,10 +29,9 @@
             width: 12rem;
         }
 
-        @include respond(tab-land){
-            position: absolute;
-            top: -3rem;
-            right: 2rem;
+        @include respond(phone){
+            top: 3rem;
+            left: 3rem;
         }
     }
 
@@ -42,7 +41,7 @@
         border-radius: 50%;
         position: fixed;
         top: 6.5rem;
-        right: 6.5rem;
+        left: 6.5rem;
         background-image: radial-gradient( $black, $darkester-blue );
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.33, 1, 0.68, 1);
@@ -52,10 +51,9 @@
             width: 10rem;
         }
 
-        @include respond(tab-land){
-            position: absolute;
-            top: -3rem;
-            right: 2rem;
+        @include respond(phone){
+            top: 3rem;
+            left: 3rem;
         }
     }
 

@@ -100,7 +100,7 @@
                 height: 42rem;
             }
 
-            @include respond(tab-port){
+            @include respond(phone){
                 height: 68rem;
             }
         }
@@ -112,7 +112,7 @@
                 height: 37rem;
             }
 
-            @include respond(tab-port){
+            @include respond(phone){
                 height: 59rem;
             }
         }
