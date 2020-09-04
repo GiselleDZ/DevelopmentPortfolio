@@ -4,7 +4,7 @@ export default class Coocucachew extends Component {
     constructor(){   
         super() 
         this.state= {
-            mainPhoto: "http://www.gisellezatonyl.com/images/dev/coocucachew/gif1.gif"
+            mainPhoto: "https://res.cloudinary.com/delu9m4xu/image/upload/v1599206986/G-Dev/imgs/imgs_coocucachew-gif1_y0ijre.gif"
         }
         this.handleImage = this.handleImage.bind(this)
     }
@@ -58,35 +58,35 @@ export default class Coocucachew extends Component {
                             <div className="slideshow__thumbs">
                                 <div className="slideshow__thumb-wrap">
                                     <img onClick={(e) => this.handleImage(e)} 
-                                        src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif1.gif"  
+                                        src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206986/G-Dev/imgs/imgs_coocucachew-gif1_y0ijre.gif"  
                                         alt="Site walk-through part 1" 
                                         className="slideshow__thumb"
                                     />
                                 </div>
                                 <div className="slideshow__thumb-wrap">    
                                     <img onClick={(e) => this.handleImage(e)}
-                                        src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif2.gif" 
+                                        src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206983/G-Dev/imgs/imgs_coocucachew-gif2_d6bz5u.gif" 
                                         alt="Site walk-through part 2" 
                                         className="slideshow__thumb"
                                     />
                                 </div>
                                 <div className="slideshow__thumb-wrap">
                                     <img onClick={(e) => this.handleImage(e)}
-                                        src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif3.gif" 
+                                        src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206981/G-Dev/imgs/imgs_coocucachew-gif3_vmoplz.gif" 
                                         alt="Site walk-through part 3" 
                                         className="slideshow__thumb"
                                     />
                                 </div>
                                 <div className="slideshow__thumb-wrap">
                                     <img onClick={(e) => this.handleImage(e)}
-                                        src="http://www.gisellezatonyl.com/images/dev/coocucachew/gif4.gif" 
+                                        src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206978/G-Dev/imgs/imgs_coocucachew-gif4_vkvkha.gif" 
                                         alt="Site walk-through part 4" 
                                         className="slideshow__thumb"
                                     />
                                 </div>
                                 <div className="slideshow__thumb-wrap">
                                     <img onClick={(e) => this.handleImage(e)}
-                                        src="http://www.gisellezatonyl.com/images/dev/coocucachew/main.png" 
+                                        src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206977/G-Dev/imgs/imgs_coocucachew-main_ftwq4v.png" 
                                         alt="Coocucachew Landing" 
                                         className="slideshow__thumb"
                                     />

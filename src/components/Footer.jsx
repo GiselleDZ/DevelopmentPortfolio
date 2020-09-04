@@ -15,7 +15,7 @@ export default class Footer extends Component {
             <section id="footer">
                 <footer className="footer">
                     <div className="footer__logo-box">
-                        <img src="http://gisellezatonyl.com/images/dev/logos/G-logomark-w-sm.png" alt="full logo" className="footer__logo"></img>
+                        <img src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599207984/Giselle-Zatonyl-Logo-Mark-white-sm-01_absjmr.png" alt="full logo" className="footer__logo"></img>
                     </div>
                     <div className="row">
                         <div className="footer__line-nav"></div>

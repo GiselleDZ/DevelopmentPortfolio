@@ -114,7 +114,7 @@ export default class Intro extends Component {
                     </div>
                 </div>
                 <div className="intro__shape">
-                    <img className="intro__shape intro__shape--main" src="http://gisellezatonyl.com/images/dev/shapes/composition-02.svg"></img>
+                    <img className="intro__shape intro__shape--main" src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206968/G-Dev/imgs/imgs_composition-02_e0atux.svg"></img>
                 </div>
                 <section className="popup" id="biopopup">
                     <div className="popup__content popup__content--bio">

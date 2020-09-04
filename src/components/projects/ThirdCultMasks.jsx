@@ -4,7 +4,7 @@ export default class ThirdCultMasks extends Component {
     constructor(){   
         super() 
         this.state= {
-            mainPhoto: "http://www.gisellezatonyl.com/images/dev/thirdcult/homepage.JPG",
+            mainPhoto: "https://res.cloudinary.com/delu9m4xu/image/upload/v1599206972/G-Dev/imgs/imgs_thirdcult-homepage_jwii5p.jpg",
             alt: "Third Cult Homepage",
             thumb: "slideshow__thumb"
         }
@@ -14,7 +14,8 @@ export default class ThirdCultMasks extends Component {
     handleImage(e){
         e.preventDefault()
         let imageSrc = e.target.src
-        let mainSrc = imageSrc.slice(0, (imageSrc.length - 10)).concat(".JPG")
+        let mainSrc = imageSrc
+        // imageSrc.slice(0, (imageSrc.length - 10)).concat(".JPG")
 
         this.setState({
             mainPhoto: mainSrc,
@@ -65,7 +66,7 @@ export default class ThirdCultMasks extends Component {
                             <div className="slideshow__thumbs">
                                 <div className="slideshow__thumb-wrap">
                                     <img onClick={(e) => this.handleImage(e)} 
-                                        src="http://www.gisellezatonyl.com/images/dev/thirdcult/homepage-thumb.jpg"  
+                                        src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206972/G-Dev/imgs/imgs_thirdcult-homepage_jwii5p.jpg"  
                                         alt="Third Cult masks site homepage" 
                                         className={this.state.thumb}
                                     />
@@ -73,7 +74,7 @@ export default class ThirdCultMasks extends Component {
                         
                                 <div className="slideshow__thumb-wrap">    
                                     <img onClick={(e) => this.handleImage(e)}
-                                        src="http://www.gisellezatonyl.com/images/dev/thirdcult/details-thumb.jpg" 
+                                        src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206966/G-Dev/imgs/imgs_thirdcult-details_ysdgxy.jpg" 
                                         alt="Third Cult masks details section" 
                                         className={this.state.thumb}
                                     />
@@ -81,7 +82,7 @@ export default class ThirdCultMasks extends Component {
                         
                                 <div className="slideshow__thumb-wrap">
                                     <img onClick={(e) => this.handleImage(e)}
-                                        src="http://www.gisellezatonyl.com/images/dev/thirdcult/features-thumb.jpg" 
+                                        src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206968/G-Dev/imgs/imgs_thirdcult-features_syznyd.jpg" 
                                         alt="Third Cult feature cards section" 
                                         className={this.state.thumb}
                                     />
@@ -89,7 +90,7 @@ export default class ThirdCultMasks extends Component {
                         
                                 <div className="slideshow__thumb-wrap">
                                     <img onClick={(e) => this.handleImage(e)}
-                                        src="http://www.gisellezatonyl.com/images/dev/thirdcult/masks-thumb.jpg" 
+                                        src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206963/G-Dev/imgs/imgs_thirdcult-masks_nzr85c.jpg" 
                                         alt="Third Cult Masks section depicting three masks" 
                                         className={this.state.thumb}
                                     />
@@ -97,7 +98,7 @@ export default class ThirdCultMasks extends Component {
                         
                                 <div className="slideshow__thumb-wrap">
                                     <img onClick={(e) => this.handleImage(e)}
-                                        src="http://www.gisellezatonyl.com/images/dev/thirdcult/reviews-thumb.jpg" 
+                                        src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206975/G-Dev/imgs/imgs_thirdcult-reviews_uh3fjt.jpg" 
                                         alt="Third Cult Mask Reviews section" 
                                         className={this.state.thumb}
                                     />
