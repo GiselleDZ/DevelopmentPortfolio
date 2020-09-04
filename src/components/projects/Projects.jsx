@@ -36,7 +36,7 @@ export default class Projects extends Component {
                                 </h3>
                             </a>
                             <a href="#coocucachew" className="projects__intro-thumbs__thumb-wrapper">
-                                <img src="zatonyl.com/images/dev/coocucachew/main-thumb.jpg"  alt="Coocucachew Home Page Thumbnail" className="projects__intro-thumbs__thumb-wrapper projects__intro-thumbs__thumb-wrapper--thumb-image"/>
+                                <img src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206976/G-Dev/imgs/imgs_coocucachew-main-thumb_jaxfs0.jpg"  alt="Coocucachew Home Page Thumbnail" className="projects__intro-thumbs__thumb-wrapper projects__intro-thumbs__thumb-wrapper--thumb-image"/>
                                 <h3 className="heading-tertiary  projects__intro-thumbs__thumb-wrapper projects__intro-thumbs__thumb-wrapper--thumb-title">
                                     Coocucachew
                                 </h3>
