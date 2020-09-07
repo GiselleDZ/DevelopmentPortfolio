@@ -85,6 +85,7 @@
         height: 100%;
         padding: 4rem 8rem 8rem 8rem;
         text-align: center;
+        overflow: auto;
         
         @include respond(tab-port){
             padding: 4rem 2rem 4rem 6rem;

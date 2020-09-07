@@ -6,6 +6,24 @@
     box-sizing: inherit;
 }
 
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $darker-blue $medium-light-blue;
+}
+  
+  /* Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+*::-webkit-scrollbar-track {
+    background: $medium-light-blue;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: $darker-blue;
+    border-radius: 20px;
+    border: 3px solid $medium-light-blue;
+}
+
 html {
     font-size: 62.5%; // 1rem = 10px
 
@@ -29,6 +47,7 @@ body {
     box-sizing: border-box;
     background-color: $darker-blue;
     padding: 1rem;
+
 
     
     @include respond(tab-port){ 

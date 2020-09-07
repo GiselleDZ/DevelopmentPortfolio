@@ -40,7 +40,7 @@ export default class Pentimento extends Component {
                         <h1 className="heading-primary heading-primary--sub heading-primary--shadow"> Pentimento </h1>
                     </div>
                     <div className="col-1of3">
-                        <div className="projects__description projects__description--60">
+                        <div className="projects__description projects__description--description-sm">
                             <p className="paragraph paragraph--light paragraph--medium-large">
                                 Pentimento is a mobile-first web application for finding and uploading street art around New York City. It was created for artists, historians, and art enthusiasts to keep track of ephemeral pieces that may be here today but gone tomorrow.
                             </p>

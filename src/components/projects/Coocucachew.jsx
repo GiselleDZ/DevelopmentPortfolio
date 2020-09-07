@@ -25,7 +25,7 @@ export default class Coocucachew extends Component {
                         <h1 className="heading-primary heading-primary--sub heading-primary--shadow"> Coocucachew </h1>
                     </div>
                     <div className="col-1of3">
-                        <div className="projects__description projects__description--60">
+                        <div className="projects__description projects__description--description-sm">
                             <p className="paragraph paragraph--light paragraph--medium-large">
                                 Coocucachew is an e-commerce site selling cookies, cupcakes, cake pops and chocolate. Coocucachew features many types of these products, which a user may browse, add to cart and check out using Stripe.
                             </p>

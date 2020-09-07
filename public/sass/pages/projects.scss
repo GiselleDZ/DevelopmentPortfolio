@@ -72,27 +72,29 @@
             padding: 3rem;
         }
         
-        &--65{
+        &--description{
             height: 60rem;
+            overflow: auto;
 
             @include respond(tab-port){
                 height: 42rem;
             }
 
             @include respond(phone){
-                height: 68rem;
+                height: 50rem;
             }
         }
 
-        &--60{
+        &--description-sm{
             height: 60rem;
+            overflow: auto;
 
             @include respond(tab-port){
                 height: 37rem;
             }
 
             @include respond(phone){
-                height: 59rem;
+                height: 45rem;
             }
         }
 

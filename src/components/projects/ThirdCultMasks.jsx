@@ -31,7 +31,7 @@ export default class ThirdCultMasks extends Component {
                         <h1 className="heading-primary heading-primary--sub heading-primary--shadow"> Third Cult Masks </h1>
                     </div>
                     <div className="col-1of3">
-                        <div className="projects__description projects__description--60">
+                        <div className="projects__description projects__description--description-sm">
                             <p className="paragraph paragraph--light paragraph--medium-large">
                                 Third Cult Masks is a site made to singularly advertise Third Cult's high end masks to retailers that may want to purchase them as wholesale.
                             </p>

@@ -42,7 +42,7 @@ export default class VChatBot extends Component {
                         <h1 className="heading-primary heading-primary--sub heading-primary--shadow"> Vi Chat Bot </h1>
                     </div>
                     <div className="col-1of3">
-                        <div className="projects__description projects__description--65">
+                        <div className="projects__description projects__description--description">
                             <p className="paragraph paragraph--light paragraph--medium-large">
                                  Vi Chat Bot is an app developed during NYC Coders for Black Lives Matter Hackathon. The app was created to help the Center for Racial Justice in Education disseminate their learning resources, by engaging their community in conversation, and facilitating access with a chat bot built-in to their website, as well as Facebook Messenger. The bot was trained using Google's DialogFlow API, integrated into a PWA React.js application, using BotCopy.
                             </p>
