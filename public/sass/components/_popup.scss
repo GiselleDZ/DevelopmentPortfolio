@@ -50,6 +50,10 @@
 
         &--bio{
             padding: 4rem;
+
+            @include respond(big-desktop){
+                padding: 8rem;
+            }
         }
     }
 
@@ -70,6 +74,10 @@
             @include respond(phone){
                 margin: 0 0 1rem 1rem;
             }
+
+            @include respond(big-desktop){
+                width: 20%;
+            }
         }
     }
     
@@ -78,19 +86,15 @@
         padding: 2rem;
 
         &--bio{
-            letter-spacing: 1px;
             text-align: left;
             color: $lightish-blue;
-            font-size: small;
-
         }
     }
 
     &__link{
         font-weight: 500;
-        font-size: small;
         color: $light-blue;
-        letter-spacing: .3rem;;
+        letter-spacing: .2rem;;
         text-transform: uppercase;
         text-decoration: none;
 

@@ -10,19 +10,24 @@
 
 .intro{
     height: 100vh;
+    position: relative;
 
     &__card-container{
         position: absolute;
         display: fixed;
         width: 80%;
-        top: 9%;
+        top: 4%;
         left: 10%;
         z-index: 3;
 
         @include respond(big-desktop){
-            top: 12%; 
+            top: 0%;
         }
-
+        
+        @include respond(tab-land){
+            top: 0%;
+        }
+        
         @include respond(tab-port){
             top: 12%;
             left: 5%;
@@ -30,15 +35,15 @@
         }
 
         @include respond(phone){
-            top: 8%; 
+            top: -10%; 
         }
     }
 
     &__shape{
         position: absolute;
-        width: 80%;
-        top: 10%;
-        left: 22%;
+        width: 100%;
+        top: -9%;
+        left: 5%;
         display: fixed;
         z-index: 0;
         opacity: .9;
@@ -46,23 +51,29 @@
         moz-opacity: .9;
 
         @include respond(big-desktop){
-            top: 12%; 
+            top: -10%;
         }
 
+        @include respond(tab-land){
+            width: 100%;    
+            top: 5%;
+        }
+        
         @include respond(tab-port){
             width: 120%;    
             top: 12%;
+            left: 20%;
         }
         
         @include respond(phone){
-            width: 180%;  
-            top: 8%;
+            width: 150%;  
+            top: -15%;
             left: 5%;
         }
         
         &--main{
-            top: 20%;
             left: -5.5%;
+
             
             @include respond(tab-port){
                 top: 15%;   

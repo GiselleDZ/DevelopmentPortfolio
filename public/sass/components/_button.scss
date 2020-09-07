@@ -11,6 +11,10 @@
         text-decoration: none;
         letter-spacing: .3rem;
         font-weight: 600;
+
+        @include respond(tab-port){
+            letter-spacing: .15rem;
+        }
     }
 
     
@@ -29,7 +33,7 @@
     &--white {
         z-index: 500;
         text-transform: uppercase;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: 1.5rem 3rem;
         border-radius: $border-radius-sm;
         background-color: $light-blue;
@@ -38,6 +42,11 @@
         @include basic-blue-shadow(.3);
         
         @include dither-primary-button-hover;
+
+        @include respond(tab-land){
+            font-size: 1.1;
+            padding: 1rem 2rem;
+        }
         
         &--small{
             letter-spacing: .1rem;
@@ -47,7 +56,6 @@
                 text-align: center;
             }
         }
-        
         
         &::after {
             background-color: $light-blue;
@@ -69,11 +77,28 @@
         
         @include dither-primary-button-hover;
 
+        @include respond(big-desktop){
+            font-size: 2.8rem;
+        }
+        
         @include respond(phone){
             font-size: 1.2rem;
             padding: 1rem 2rem 1rem 2rem;
         }
+        
+        &--image{
+            border-radius: 0;
+            float: right;
+            width: 8rem;
+            height: 8rem;
+    
+            @include respond(tab-land){
+                margin: 1rem;
+                padding: 2rem;
+            }
+        }
     }
+
     
     &:active,
     &:focus {

@@ -43,13 +43,13 @@ export default class VChatBot extends Component {
                     </div>
                     <div className="col-1of3">
                         <div className="projects__description projects__description--65">
-                            <p className="paragraph paragraph--light paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--medium-large">
                                  Vi Chat Bot is an app developed during NYC Coders for Black Lives Matter Hackathon. The app was created to help the Center for Racial Justice in Education disseminate their learning resources, by engaging their community in conversation, and facilitating access with a chat bot built-in to their website, as well as Facebook Messenger. The bot was trained using Google's DialogFlow API, integrated into a PWA React.js application, using BotCopy.
                             </p>
-                            <p className="paragraph paragraph--light paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--medium-large">
                                 Developers : Youssouf da Silva, Liang Liang, Vanessa Corlette, Giselle Zatonyl, and Jessica Choi; Project Manager: Marc Luna; UI/UX Designer: Rae Shambrook
                             </p>
-                            <div className="projects__description--buttons">
+                            <div className="projects__description__button--links">
                                 <a href="http://vi-bot.surge.sh/" 
                                     rel="noopener noreferrer"
                                     target="_blank"
@@ -160,16 +160,16 @@ export default class VChatBot extends Component {
                                 My role
                             </h3>
                             <ul className="list u-margin-bottom-medium">
-                                    <li className="list__item">
+                                    <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                         Researched the best chat bot technology for our purpose and how to use it. Eventually selected Google DialogFlow from three similar options.
                                     </li>
-                                    <li className="list__item">
+                                    <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                         Designed conversation pattern to use for different directions the user could take during interactions. 
                                     </li>
-                                    <li className="list__item">
+                                    <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                         Trained the bot using Google DialogFlow Platform
                                     </li>
-                                    <li className="list__item">
+                                    <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                         Integrated the bot into our Node.js React environment.
                                     </li>
                                 </ul>
@@ -181,11 +181,16 @@ export default class VChatBot extends Component {
                                 Challenges
                             </h3>
                             <ul className="list u-margin-bottom-medium">
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     Our biggest challenge was the integration of our bot. Initially, we used DialogFlow's Facebook integration into our stand-alone page. This presented two problems, we were unable to customize the chat box UI, and created a Facebook dependency we thought would
                                     ultimately be problematic. We kept the Facebook integration, and additionally duplicated our conversation training data on a stand alone integration we could use on our Vi site, as well as on the Center for Racial Justice Site.
                                 </li>
                             </ul>
+                        </div>
+                        <div className="projects__description__button projects__description__button--arrow">
+                            <a href="#coocucachew" className="btn">
+                                <img src="public\assets\imgs\g-dev-site\fast-down-arow-01.svg" alt="scroll down to next project" className="btn btn--black btn--black--image"/>
+                            </a>
                         </div>
                     </div>
                 </div>

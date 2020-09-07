@@ -7,25 +7,20 @@
 }
 
 html {
-    font-size: 62.5%; 
+    font-size: 62.5%; // 1rem = 10px
 
     // > 1800
     @include respond(big-desktop){ // 1rem = 12px
         font-size: 75%; 
     }
-    
-    // < 1400
-    @include respond(desktop){ // 1rem = 12px
-        font-size: 65%; 
-    }
-    
+
     // < 1200
     @include respond(tab-land){ // 1rem = 9 px
         font-size: 56.25%; 
     }
 
     // < 900
-    @include respond(tab-port){ // 1rem = 8 px
+    @include respond(tab-port){ // 1rem = 8 px 
         font-size: 50%; 
     }
 }

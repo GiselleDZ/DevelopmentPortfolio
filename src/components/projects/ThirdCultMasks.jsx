@@ -25,33 +25,33 @@ export default class ThirdCultMasks extends Component {
 
     render(){
         return(
-            <section className="projects__ThirdCultMasks projects__section" id="thirdcultmasks">
+            <section className="projects__thirdcultmasks projects__section" id="thirdcultmasks">
                 <div className="row">
                     <div className="projects__header projects__header--titles">
                         <h1 className="heading-primary heading-primary--sub heading-primary--shadow"> Third Cult Masks </h1>
                     </div>
                     <div className="col-1of3">
                         <div className="projects__description projects__description--60">
-                            <p className="paragraph paragraph--light paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--medium-large">
                                 Third Cult Masks is a site made to singularly advertise Third Cult's high end masks to retailers that may want to purchase them as wholesale.
                             </p>
-                            <p className="paragraph paragraph--light paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--medium-large">
                                 ThirdCultMasks was built using primarily vanilla Javascript, CSS3 SASS and Express. It was created by Giselle Zatonyl.
                             </p>
-                            <p className="paragraph paragraph--light paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--medium-large">
                                 Visit on a desktop browser, and you will notice a large percentage of the elements are animated. This project created largely to practice animating CSS3, SASS and minimal Javascript.
                             </p>
-                            <div className="projects__description--buttons">
+                            <div className="projects__description__button--links">
                                 <a href="https://thirdcult-masks.herokuapp.com/" 
                                     rel="noopener noreferrer"
                                     target="_blank"
-                                    className="btn btn--white btn--white--small u-margin-top-small-medium">
+                                    className="btn btn--white u-margin-top-small-medium">
                                     Project Site
                                 </a>
                                 <a href="https://github.com/GiselleDZ/ThirdCvltMasks" 
                                     rel="noopener noreferrer"
                                     target="_blank"
-                                    className="btn btn--white btn--white--small u-margin-top-small-medium">
+                                    className="btn btn--white u-margin-top-small-medium">
                                     Github Repository
                                 </a>
                             </div>
@@ -131,53 +131,12 @@ export default class ThirdCultMasks extends Component {
                             </div>
                         </div>
                     </div>
+                    <div className="projects__description__button projects__description__button--arrow">
+                        <a href="#pentimento" className="btn">
+                            <img src="public\assets\imgs\g-dev-site\fast-down-arow-01.svg" alt="scroll down to next project" className="btn btn--black btn--black--image"/>
+                        </a>
+                    </div>
                 </div>
-                {/* <div className="row">
-                    <div className="col-1of2">
-                        <div className="projects__description projects__description--55">
-                            <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
-                                My role
-                            </h3>
-                            <ul className="list">
-                                <li className="list__item">
-                                    Designed relational database schema.
-                                </li>
-                                <li className="list__item">
-                                    Designed API calls for adding, deleting, and updating products, using Axios on the front end.
-                                </li>
-                                <li className="list__item">
-                                    Managed products state on the front end, using Redux, and Secure Local Storage.
-                                </li>
-                                <li className="list__item">
-                                    Constructed server responses and error handling on the back end, using Express and Sequelize.
-                                </li>
-                                <li className="list__item">
-                                    Built the mulptiple product pages, including the home page.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-1of2">
-                        <div className="projects__description projects__description--55">
-                            <h3 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
-                                Challenges
-                            </h3>
-                            <ul className="list">
-                                <li className="list__item">
-                                    Our biggest challenge laid in a planning oversight. With only one week to build our e-commerce site, we overlooked the need for the integration of a user who does not have an account or is not logged in. Ultimately, we resolved it by integrating local storage.
-                                </li>
-                                <li className="list__item">
-                                    As our first group project during our training at the Grace Hopper program, our biggest challenge was learning to 
-                                    to work together and manage the project. We used Github projects, and slowly picked up a good rhythm for assigning 
-                                    tasks, and keeping track of work in progress. We reminded each other to update the board more frequenmtly, and 
-                                    established a disipline for recording tasks directly on the task board. 
-                                    By the end of the week, we had mastered our management system, and were ready for another.
-                                </li>
-                            </ul>
-                            
-                        </div>
-                    </div>
-                </div> */}
             </section>
             
         )

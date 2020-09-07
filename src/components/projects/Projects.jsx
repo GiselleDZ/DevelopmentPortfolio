@@ -10,8 +10,8 @@ export default class Projects extends Component {
         return(
             <section className="projects" id="projects">
                 <Shapes />
-                <div className="projects__intro">
-                    <div className="projects__header projects__header--small">
+                <section className="projects__intro" id="projects">
+                    <div className="projects__header projects__header--main">
                         <h2 className="heading-primary heading-primary--main heading-primary--shadow ">Projects</h2> 
                     </div>
                     <div className="projects__description">
@@ -48,14 +48,16 @@ export default class Projects extends Component {
                                 </h3>
                             </a>
                         </div>
-                        <div className="projects__intro--button">
+                        <div className="projects__description__button">
                             <a href="#thirdcultmasks"
                             className="btn btn--white u-margin-bottom-medium">
                                 Or keep scrolling &#x21B4;
                             </a>
                         </div>
                     </div>
-                </div>
+                </section>
+               
+
                 
                 <ThirdCultMasks />
                 <Pentimento />

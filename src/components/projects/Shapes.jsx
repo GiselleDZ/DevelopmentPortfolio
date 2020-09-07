@@ -31,7 +31,7 @@ export default class Shapes extends Component{
                 <div className="projects__background projects__background--9">
                     <img src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206970/G-Dev/imgs/imgs_shape-16-01_n4xwpp.svg" alt="composition of abstract shapes"/>
                 </div>
-                <div className="projects__background projects__background--10">
+                <div className="projects__background projects__background--long-dots">
                     <img src="https://res.cloudinary.com/delu9m4xu/image/upload/v1599206983/G-Dev/imgs/imgs_shape-17-01_imjb4f.svg" alt="composition of abstract shapes"/>
                 </div>
                 <div className="projects__background projects__background--11">

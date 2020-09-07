@@ -104,7 +104,11 @@
            transition: all .5s;
 
            @include respond(big-desktop){
-            font-size: 4rem;
+                font-size: 4rem;
+            }
+
+            @include respond(tab-land){
+                font-size: 3rem;
             }
        }
 

@@ -2,15 +2,19 @@
     perspective: 300rem;
     -moz-perspective: 150rem;
     position: relative;
-    top:0;
+    top: 16rem;
     left:0;
     height: $card-height;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
 
-    @include respond(tab-port){
+    @include respond(big-desktop){
+        height: $card-height-big;
+        top: 32rem;
+    }
+    
+    @include respond(tab-land){
+        height: $card-height-tab; 
         width: 80%;    
     }
 
@@ -21,7 +25,6 @@
 
     // S I D E   F O R M A T T I N G 
     &__side{
-        margin-top: 16rem;
         height: $card-height;
         transition: all 1s;
         position: absolute;
@@ -29,11 +32,19 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden;
-        overflow: hidden;
+        overflow: auto;
         border-radius: $border-radius-sm;
-        background-color: $white;
+        background-color: white;
 
         @include basic-blue-shadow(.4);
+
+        @include respond(big-desktop){
+            height: $card-height-big;   
+        }
+
+        @include respond(tab-land){
+            height: $card-height-tab;
+        }
 
         @include respond(phone){
             height: $card-height-phone;   
@@ -60,7 +71,7 @@
         margin: 0 auto;
         width: 90%;
     }
-
+    
     &__text{
         margin: 0 auto;
     }
@@ -71,33 +82,39 @@
         background-color: white;
         margin: 0 auto;
         width: 100%;
-        height: 150%;
+        height: 100%;
         padding: 4rem 8rem 8rem 8rem;
-        border: 1px solid $medium-blue;
         text-align: center;
-
-        @include respond(phone){
-            padding: 2rem;
-            padding-left: 4rem;;
-        }
-
         
+        @include respond(tab-port){
+            padding: 4rem 2rem 4rem 6rem;
+        }
+        
+        @include respond(phone){
+            padding: 4rem 2rem 4rem 4rem;
+        }
     }
 
     &__logo-img{
         margin: 1.5rem;
-        max-height: 3.2rem;
-        max-width: 6rem;
-
+        max-height: 4.5rem;
+        max-width: 7.5rem;
+        
         &:not(:last-child){
-            margin-right: 6rem;
+            margin-right: 8rem;
+        }
+
+        @include respond(big-desktop){
+            max-height: 5.5rem;
+            max-width: 9.5rem;
+            margin: 3rem;
+            margin-bottom: 2rem;
         }
 
         @include respond(phone){
             max-height: 4rem;
             max-width: 7rem;
-            margin: 1rem;
-            margin-bottom: 2rem;
+            margin: 2rem;
 
             &:not(:last-child){
                 margin-right: 4rem;
@@ -105,62 +122,37 @@
         }
     }
 
-    &__headshot{
-        position: relative;
-        top: 2rem;
-        width: 12rem;
-        height: 12rem;
-        float: right;
-        clip-path: $circle40;
-        shape-outside: $circle70;
-        box-shadow: $box-shadow-light;
-    }
-    
-    &__image{
-        height: 90%;
-    }
-
     &__button-container{
         position: absolute;
         width: 100%;
-        top: 50rem;
+        top: 44rem;
         margin: 0 auto;
         margin-top: 10rem;
 
-        @include respond(phone){
-            top: 65rem;
+        @include respond(big-desktop){
+            top: 52rem;
+        }
+        
+        @include respond(tab-land){
+            top: 48rem;
         }
 
         &--right{
             float: right;
 
-            @include respond(tab-port){
+            @include respond(phone){
                 float: left; 
-                margin-top: -5rem;
             }
         }
 
         &--left{
             float: left;
-        }
-    }
 
-    &__link{
-        font-weight: 600;
-        font-size: larger;
-        color: $dark-blue;
-        letter-spacing: .2rem;;
-        text-transform: uppercase;
-        text-decoration-style: wavy;
-        text-decoration-color: $dark-blue;
-        text-decoration-thickness: 1px;
-
-        @media (any-hover:hover){
-            :hover{
-                color: $darker-blue;
+            @include respond(phone){
+                margin-right: 6rem;
             }
-        }
 
+        }
     }
     
 }   

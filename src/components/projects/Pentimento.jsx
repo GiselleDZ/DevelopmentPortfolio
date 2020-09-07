@@ -41,13 +41,13 @@ export default class Pentimento extends Component {
                     </div>
                     <div className="col-1of3">
                         <div className="projects__description projects__description--60">
-                            <p className="paragraph paragraph--light paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--medium-large">
                                 Pentimento is a mobile-first web application for finding and uploading street art around New York City. It was created for artists, historians, and art enthusiasts to keep track of ephemeral pieces that may be here today but gone tomorrow.
                             </p>
-                            <p className="paragraph paragraph--light paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--medium-large">
                                 Pentimento was built during the Grace Hopper Software Engineering program, as the Capstone project. The team members were Angie Spears, Giselle Zatonyl, Saj King, and Chelsea Church.
                             </p>
-                            <div className="projects__description--buttons">
+                            <div className="projects__description__button--links">
                                 <a href="https://pentimentostreet.herokuapp.com/" 
                                     rel="noopener noreferrer"
                                     target="_blank"
@@ -163,22 +163,22 @@ export default class Pentimento extends Component {
                                 My role
                             </h3>
                             <ul className="list u-margin-bottom-medium">
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     Designed relational database schema.
                                 </li>
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     Designed API calls for Artworks, and location using Axios on the front end.
                                 </li>
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     Managed Artwork and Location State on the front end, using Redux, and Secure Local Storage respectively.
                                 </li>
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     Constructed server responses and error handling on the back end, using Express and Sequelize.
                                 </li>
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     Composed map and search bars using React and MapboxGL API
                                 </li>
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     Deviced Artwork Slideshows using React
                                 </li>
                             </ul>
@@ -190,20 +190,25 @@ export default class Pentimento extends Component {
                                 Challenges
                             </h3>
                             <ul className="list u-margin-bottom-medium">
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     We were asked to create our app in two weeks, and in a way, our ambition hurt us the most in these circumstances. 
-                                    We were too excited to learn and use the MapboxGL API, and did not plan for growth in the architecture of our map component. Ultimately, the map had to be revised a few times to accomodate new features. It is an understatement 
+                                    We were too excited to learn and use the MapboxGL API, and did not plan for growth in the architecture of our map component. Ultimately, the map had to be refactored a few times to accomodate new features. It is an understatement 
                                     to say I understand the value of designing for growth. Planning and brainstorming for future proofing is an extremely important task in the development process.
                                 </li>
-                                <li className="list__item">
+                                {/* <li className="list__item">
                                     Another great challenges brought on by our map sutation was a teammate disagreement on the features to keep, 
                                     as our deadlines loomed closer and the debugging tasks grew. The feature in question was "Nearby Artworks", which 
                                     as our map stood, couldn't accormodate it. Our map was doing too many things. We resolved it by calling a team meeting,
                                     and brainstorming solutions, how to alter the map component to fit this feature and was it worth the trouble. 
                                     Our team meeting was fruitful, and after moving a few parts around, and making others efficient, we were able to keep the feature.
-                                </li>
+                                </li> */}
                             </ul>
                             
+                        </div>
+                        <div className="projects__description__button projects__description__button--arrow">
+                            <a href="#vchatbot" className="btn">
+                                <img src="public\assets\imgs\g-dev-site\fast-down-arow-01.svg" alt="scroll down to next project" className="btn btn--black btn--black--image"/>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -26,13 +26,13 @@ export default class Coocucachew extends Component {
                     </div>
                     <div className="col-1of3">
                         <div className="projects__description projects__description--60">
-                            <p className="paragraph paragraph--light paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--medium-large">
                                 Coocucachew is an e-commerce site selling cookies, cupcakes, cake pops and chocolate. Coocucachew features many types of these products, which a user may browse, add to cart and check out using Stripe.
                             </p>
-                            <p className="paragraph paragraph--light paragraph--big">
+                            <p className="paragraph paragraph--light paragraph--medium-large">
                                 Coocucachew was built using React, Redux, Express, PostgreSQL, and Sequelize. The team that created Coocucachew is: Adrianna Winkelman, Gisele (Yunshu) Xiao, Michelle Broomes, Giselle Zatonyl.
                             </p>
-                            <div className="projects__description--buttons">
+                            <div className="projects__description__button--links">
                                 <a href="https://coocucachewstreet.herokuapp.com/" 
                                     rel="noopener noreferrer"
                                     target="_blank"
@@ -150,19 +150,19 @@ export default class Coocucachew extends Component {
                                 My role
                             </h3>
                             <ul className="list u-margin-bottom-medium">
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     Designed relational database schema.
                                 </li>
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     Designed API calls for adding, deleting, and updating products, using Axios on the front end.
                                 </li>
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     Managed products state on the front end, using Redux, and Secure Local Storage.
                                 </li>
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     Constructed server responses and error handling on the back end, using Express and Sequelize.
                                 </li>
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     Built the multiple product pages, including the home page.
                                 </li>
                             </ul>
@@ -174,10 +174,10 @@ export default class Coocucachew extends Component {
                                 Challenges
                             </h3>
                             <ul className="list u-margin-bottom-medium">
-                                <li className="list__item">
-                                    Our biggest challenge laid in a planning oversight. With only one week to build our e-commerce site, we overlooked the need for the integration of a user who does not have an account or is not logged in. Ultimately, we resolved it by integrating local storage.
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
+                                    Our medium-largegest challenge laid in a planning oversight. With only one week to build our e-commerce site, we overlooked the need for the integration of a user who does not have an account or is not logged in. Ultimately, we resolved it by integrating local storage.
                                 </li>
-                                <li className="list__item">
+                                <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     As our first group project during our training at the Grace Hopper program, our biggest challenge was learning to 
                                     to work together and manage the project. We used Github projects, and slowly picked up a good rhythm for assigning 
                                     tasks, and keeping track of work in progress. We reminded each other to update the board more frequently, and 

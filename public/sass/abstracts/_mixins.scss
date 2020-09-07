@@ -145,7 +145,7 @@
 
     /// D E S K T O P   F I R S T   O R D E R -- lg > sml
     @if $breakpoint == big-desktop {
-        @media (min-width: 112.5em) { @content }; //1800px // 16px
+        @media (min-width: 130em) { @content }; //1800px // 12px
     }
     
     @if $breakpoint == desktop {
@@ -160,8 +160,12 @@
         @media (max-width: 56.25em) { @content }; // 900px // 8px
     }
 
+    @if $breakpoint == big-phone {
+        @media (max-width: 45em) { @content }; // 720px // 7px
+    }
+
     @if $breakpoint == phone {
-        @media (max-width: 37.5em) { @content }; // 600px // 6px
+        @media (max-width: 37.5em) { @content }; // 450px // 6px
     }
     
 }

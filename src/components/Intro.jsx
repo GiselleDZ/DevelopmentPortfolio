@@ -15,7 +15,7 @@ export default class Intro extends Component {
     }
 
     handleFlip(e){
-        const aboutMe = "About me"
+        const aboutMe = "Back to about me"
         const tech = "Some of the tech I use"
 
         if (this.state.card === "front"){
@@ -74,42 +74,37 @@ export default class Intro extends Component {
                             <div className="card__about">
                                
                                 <div className="card__text">
-                                    <h3 className="heading-quaternary--dark u-margin-bottom-small">
+                                    <h3 className="heading-quaternary heading-quaternary--dark u-margin-bottom-small">
                                         Hi, Hello!
                                     </h3>
-                                    <p className="paragraph--sm-dark u-margin-bottom-small">
-                                        I'm a Full Stack Software Engineer. I used to work as a Graphic Designer, but Design tech couldn't keep up with my desire to automate, improve systems, and get under the hood. So here I am, spending all my time working with the tech I love. 
+                                    <p className="paragraph paragraph--big paragraph--thick paragraph--dark u-margin-bottom-small">
+                                        I'm a Full Stack Software Engineer. I recently pivotted because Graphic Design tech couldn't keep up with my desire to automate, improve systems, and get under the hood. 
                                     </p>
-                                    <p className="paragraph--sm-dark u-margin-bottom-small">
+                                    <p className="paragraph paragraph--big paragraph--thick paragraph--dark u-margin-bottom-small">
                                     I'm interested in creating memorable user experiences with engaging functionality, captivating design, state-of-the-art tech, and agile code. My current aim is to master Javascript, while familiarizing myself with C++ and Python. 
                                     </p>
                                 </div>
                                 <div className="card__text">
-                                    <p className="paragraph--sm-dark u-margin-bottom-small">
-                                        As a human, I'm a sci-fi nerd, I love hiking in nature, abstract music, advocating for BIPOC and LGBT rights, and all kinds of fitness. I was born in Buenos Aires, Argentina. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Find out more in &nbsp;
-                                        <a href="#biopopup" className="card__link" onClick={(e) => this.noFlip(e)}>
+                                    <p className="paragraph paragraph--big paragraph--thick paragraph--dark u-margin-bottom-small">
+                                        As a human, I'm a sci-fi nerd, I love hiking in nature, abstract music, advocating for BIPOC and LGBTQ+ rights, Net Neutrality and Climate Action. I also love many types of sports: cycling, tennis, running, water polo, etc. I was born in Buenos Aires, Argentina; yes I'm fluent in Spanish. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Find out more in &nbsp;
+                                        <a href="#biopopup" className="paragraph paragraph--link" onClick={(e) => this.noFlip(e)}>
                                              my bio
-                                        </a>!
+                                        </a> &nbsp; !
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div className="card__button-container">
-                            <div className="row">
-                                <div className="col-1of2">
-                                    <a
-                                        onClick={() => this.handleFlip() } 
-                                        className="card__button-container--left btn btn--white btn--white--small u-margin-bottom-medium">
-                                            { this.state.text } &#x219F;
-                                    </a>
-                                </div>
-                                <div className="col-1of2">
-                                    <a href="#projects"
-                                    className="card__button-container--right btn btn--white  btn--white--small u-margin-bottom-medium">
-                                        View Projects &#x21B4;
-                                    </a>
-                                </div>
-                            </div>
+                            <a
+                                onClick={() => this.handleFlip() } 
+                                className="card__button-container--left btn btn--white u-margin-bottom-medium">
+                                    { this.state.text } &#x219F;
+                            </a>
+                        
+                            <a href="#projects"
+                            className="card__button-container--right btn btn--white u-margin-bottom-medium">
+                                View Projects &#x21B4;
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -124,19 +119,19 @@ export default class Intro extends Component {
                             <h2 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
                                 Hi again!
                             </h2>
-                            <p className="popup__text--bio u-margin-bottom-small">
+                            <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">
                                 So I'll get right down to it. For the previous 10 years, I worked as Graphic and Motion Designer for companies like CBRE, Gensler and Estee Lauder.</p>
-                            <p className="popup__text--bio u-margin-bottom-small">
+                            <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">
                                 Simultaneously, I worked on side projects, focusing on 3D animation, which meant working with software engineers to develop interactive interfaces, for example, a future inspired Art Museum on the web, created in WebGL and ThreeJS. Or &nbsp; <a href="http://www.dream-space.net/artists/zatonyl/" className="popup__link">this project</a> &nbsp; I built for Dreamspace, in Unity. I even built my own &nbsp;<a href="http://www.dream-space.net/artists/zatonyl/" className="popup__link">art portfolio website</a>&nbsp; on Adobe Dreamweaver and Muse. Don't worry, I'll get to fixing it soon with my **actual development skills.
-                                Projects like these, drove me to really learn programming, so I joined the Grace Hopper Program to kick start my learning. I haven't stopped learning or creating since.
+                                Projects like these, drove me to really learn programming, so I joined the Grace Hopper Program to kick start my learning. 
                             </p>
-                            <p className="popup__text--bio u-margin-bottom-small">
+                            <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">
                                 I look forward to creating user focused, agile products, and making a difference in the way technology affects and includes people.
                             </p>
-                            <p className="popup__text--bio u-margin-bottom-small">
-                                Somethig not typically included in bios are stances on imperative social issues, but I feel that our current circumstances demand bolder action. As someone who is aware of the structures that make up our world, I have ideals to uphold while working in tech. I believe in net-neutrality, climate action, inclusion, reparations, and transparency. I expect teams and companies to actively work toward bettering our world, and anything less, would be a diservice.
+                            <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">
+                                 As someone who is aware of the structures that make up our world, I have ideals to uphold while working in tech. I believe in net-neutrality, climate action, inclusion, reparations, and transparency. I expect teams and companies to actively work toward bettering our world, and anything less, would be a diservice.
                             </p>
-                            <p className="popup__text--bio u-margin-bottom-small">
+                            <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">
                                 If you would like to chat or have any questions, email me at gisellezatonyl@gmail.com
                             </p>
                         </div>

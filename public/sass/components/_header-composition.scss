@@ -2,7 +2,6 @@
     position: relative;
     height: 100vh;
     background-color: $darker-blue;
-    margin: 5rem 0 15rem 0;
 
     &__text-box {
         text-align: center;
@@ -26,6 +25,14 @@
             
             @include respond(big-desktop){
                 margin-bottom: 30rem; 
+            }
+
+            @include respond(desktop){
+                top: -5%;
+            }
+
+            @include respond(tab-land){
+                margin-bottom: 20rem; 
             }
 
             @include respond(phone){
@@ -66,23 +73,34 @@
         &--shape-8{
             animation: moveInFascist ease-out 1s ;
         }
+        
+        &__button{
+            position: absolute;
+            top: 82%;
+            left: 50%;
+            animation: moveInDepths ease-out .9s;
+    
+            @include respond(desktop){
+                top: 78%;
+            }
+            
+            @include respond(tab-land){
+                top: 67%;
+                left: 40%;
+            }
+    
+            @include respond(tab-port){
+                top: 65%;
+                left: 42%;
+            }
+            
+            @include respond(phone){
+                top: 55%;
+                left: 40%;
+            }
+        }
     }
 
-    &__button{
-        position: absolute;
-        top: 82%;
-        left: 50%;
-        animation: moveInDepths ease-out .9s;
-
-        @include respond(tab-port){
-            top: 68%;
-        }
-
-        @include respond(phone){
-            top: 52%;
-            left: 30%;
-        }
-    }
 
     
 }

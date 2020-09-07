@@ -57,7 +57,7 @@ export default class Header extends Component {
 
                         </div>
                     </div>
-                    <div className="header-composition__button">
+                    <div className="header-composition__background__button">
                         <a href="#intro" className="btn btn--black">
                             Hi, thanks for stopping by 🡓 
                         </a>

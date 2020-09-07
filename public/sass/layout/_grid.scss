@@ -3,10 +3,9 @@
     margin: 0 auto;
 
     @include clearfix;
-
+    
     @include respond(tab-port){
         max-width: 90rem;
-        // margin-bottom: $gutter-vertical-small;
     }
 
 

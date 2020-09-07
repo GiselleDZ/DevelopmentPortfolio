@@ -77,7 +77,7 @@ body {
     }
 
     &--small{
-        font-size: 1.9rem;
+        font-size: 2.2rem;
         font-weight: 500;
         color: $lightish-blue;
 
@@ -120,20 +120,23 @@ body {
 
 .heading-quaternary{
     font-family: inherit;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 400;
+    font-size: 3rem;
+    font-weight: 600;
 
     &--light{
         color: $light-blue;
     }
 
     &--dark{
-        color: $darkest-blue;
+        color: $darker-blue;
+    }
+
+    @include respond(big-desktop){
+        font-size: 4rem;
     }
     
     @include respond(phone){
-        font-size: 1.4rem;
+        font-size: 2rem;
         letter-spacing: .1rem;
     }
 
@@ -144,7 +147,7 @@ body {
     width: 100%;
     margin-bottom: 2rem;
     font-weight: 300;
-
+    
     @include respond(tab-port){ 
         font-size: 1.4rem;
     }
@@ -153,42 +156,49 @@ body {
         font-size: 1.6rem;
     }
 
-    &--light{
-        color: $light-blue;
-    }
+    &--light{color: $light-blue;}
 
-    &--medium{
-        color: $dark-blue;
-    }
+    &--medium{ color: $dark-blue;}
 
-    &--med-dark{
-        color: $darker-blue;
-        font-weight: 500;
-    }
+    &--med-dark{color: $darker-blue;}
 
-    &--sm-dark{
-        color: $darkester-blue;
-        font-weight: 500;
-        font-size: 1.3rem;
+    &--dark{color: $darkester-blue;}
 
-        @include respond(big-desktop){
-            font-size: 1.6rem;
-        }
-    }
+    &--small{font-size: 1.1rem;}
 
-    &--dark{
-        color: $darkester-blue;
-        font-weight: 500;
-    }
+    &--medium-large{font-size: 1.4rem;}
 
     &--big{
-        font-size: 1.3rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
 
-        @include respond(tab-port){ 
-            font-size: 1.5rem;
-            letter-spacing: .1rem;
+        @include respond(big-desktop){ 
+            font-size: 2rem;
         }
+
+        @include respond(phone){ 
+            font-size: 1.2rem;
+        }
+
+    };
+
+    &--thick{font-weight: 500;}
+
+    &--tall{line-height: 2.5rem;}
+
+
+    &--link{
+        font-weight: 600;
+        font-size: larger;
+        color: $dark-blue;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        @media (any-hover:hover){
+            &:hover{
+                color: $darkester-blue;
+            }
+        }
+
     }
     
 }
@@ -199,9 +209,6 @@ body {
 
     &__item{
         list-style: square;
-        font-size: 1.3rem;
-        font-weight: 400;
-        line-height: 2rem;
         color: $light-blue;
         
         &:not(:last-child){
