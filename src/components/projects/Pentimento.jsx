@@ -45,7 +45,7 @@ export default class Pentimento extends Component {
                                 Pentimento is a mobile-first web application for finding and uploading street art around New York City. It was created for artists, historians, and art enthusiasts to keep track of ephemeral pieces that may be here today but gone tomorrow.
                             </p>
                             <p className="paragraph paragraph--light paragraph--medium-large">
-                                Pentimento was built during the Grace Hopper Software Engineering program, as the Capstone project. The team members were Angie Spears, Giselle Zatonyl, Saj King, and Chelsea Church.
+                                Pentimento was built during the Grace Hopper Software Engineering program, as the Capstone project. The team members were Angie Spears, Giselle Zatonyl, Saj King, and Chelsea Church. Watch the our demo video to learn about our process and tech stack.
                             </p>
                             <div className="projects__description__button--links">
                                 <a href="https://pentimentostreet.herokuapp.com/" 

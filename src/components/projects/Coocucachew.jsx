@@ -175,7 +175,7 @@ export default class Coocucachew extends Component {
                             </h3>
                             <ul className="list u-margin-bottom-medium">
                                 <li className="list__item paragraph paragraph--light paragraph--medium-large">
-                                    Our medium-largegest challenge laid in a planning oversight. With only one week to build our e-commerce site, we overlooked the need for the integration of a user who does not have an account or is not logged in. Ultimately, we resolved it by integrating local storage.
+                                    Our largest challenge laid in a planning oversight. With only one week to build our e-commerce site, we overlooked the need for the integration of a user who does not have an account or is not logged in. Ultimately, we resolved it by integrating local storage.
                                 </li>
                                 <li className="list__item paragraph paragraph--light paragraph--medium-large">
                                     As our first group project during our training at the Grace Hopper program, our biggest challenge was learning to 

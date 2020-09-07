@@ -78,7 +78,7 @@ export default class Intro extends Component {
                                         Hi, Hello!
                                     </h3>
                                     <p className="paragraph paragraph--big paragraph--thick paragraph--dark u-margin-bottom-small">
-                                        I'm a Full Stack Software Engineer. I recently pivotted because Graphic Design tech couldn't keep up with my desire to automate, improve systems, and get under the hood. 
+                                        I'm a Full Stack Software Engineer. I recently pivoted from Graphic Design because the tech couldn't keep up with my desire to automate, improve systems, and get under the hood. 
                                     </p>
                                     <p className="paragraph paragraph--big paragraph--thick paragraph--dark u-margin-bottom-small">
                                     I'm interested in creating memorable user experiences with engaging functionality, captivating design, state-of-the-art tech, and agile code. My current aim is to master Javascript, while familiarizing myself with C++ and Python. 
@@ -86,10 +86,10 @@ export default class Intro extends Component {
                                 </div>
                                 <div className="card__text">
                                     <p className="paragraph paragraph--big paragraph--thick paragraph--dark u-margin-bottom-small">
-                                        As a human, I'm a sci-fi nerd, I love hiking in nature, abstract music, advocating for BIPOC and LGBTQ+ rights, Net Neutrality and Climate Action. I also love many types of sports: cycling, tennis, running, water polo, etc. I was born in Buenos Aires, Argentina; yes I'm fluent in Spanish. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Find out more in &nbsp;
+                                        As a human, I'm a sci-fi nerd. I love hiking in nature, staying active, noise music and techno. I'm also a vocal advocate for BIPOC and LGBTQ+ rights, Net Neutrality and Climate Action. I was born in Buenos Aires, Argentina; I'm bilingual. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Find out more in&nbsp;
                                         <a href="#biopopup" className="paragraph paragraph--link" onClick={(e) => this.noFlip(e)}>
                                              my bio
-                                        </a> &nbsp; !
+                                        </a>&nbsp; !
                                     </p>
                                 </div>
                             </div>

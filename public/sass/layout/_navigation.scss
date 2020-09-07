@@ -111,13 +111,16 @@
             @include respond(tab-land){
                 font-size: 3rem;
             }
+            
+            @media (any-hover:hover){
+                &:hover{
+                    background-position: 100%;
+                    color: $darkester-blue;
+                    transform: translateX(.5rem);
+                }
+            }
        }
 
-       &:hover{
-           background-position: 100%;
-           color: $darkester-blue;
-           transform: translateX(.5rem);
-       }
     }
     
 
@@ -204,7 +207,7 @@
         }
     
         &__button:hover &__icon::after{
-           transform-origin: right;
+           transform-origin: left;
            top: 1rem;
 
            @include respond(big-desktop){

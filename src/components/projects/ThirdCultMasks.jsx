@@ -36,10 +36,10 @@ export default class ThirdCultMasks extends Component {
                                 Third Cult Masks is a site made to singularly advertise Third Cult's high end masks to retailers that may want to purchase them as wholesale.
                             </p>
                             <p className="paragraph paragraph--light paragraph--medium-large">
-                                ThirdCultMasks was built using primarily vanilla Javascript, CSS3 SASS and Express. It was created by Giselle Zatonyl.
+                                Third Cult Masks was built by me, using primarily vanilla Javascript, CSS3 SASS and Express.
                             </p>
                             <p className="paragraph paragraph--light paragraph--medium-large">
-                                Visit on a desktop browser, and you will notice a large percentage of the elements are animated. This project created largely to practice animating CSS3, SASS and minimal Javascript.
+                                Visit on a desktop browser, and you will notice a large percentage of the elements are animated. This project was created largely to practice animating CSS3, SASS and minimal Javascript.
                             </p>
                             <div className="projects__description__button--links">
                                 <a href="https://thirdcult-masks.herokuapp.com/" 
