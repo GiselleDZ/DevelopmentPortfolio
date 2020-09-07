@@ -61,7 +61,7 @@
         height: 100%;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -300rem;
         z-index: 1500;
 
         opacity: 0;
@@ -133,19 +133,12 @@
     }
 
     &__checkbox:checked ~ &__nav {
+        left: 0;
         opacity: 1;
         khtml-opacity: 1;
         moz-opacity: 1;
-        width: 100%;
-        
-        &__list {
-
-            &__items{
-                transform: scale(4);
-            }
-        }
+        width: 100%;  
     }
-
 
 
     // I C O N
