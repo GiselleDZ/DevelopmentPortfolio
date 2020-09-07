@@ -96,6 +96,11 @@
                 margin: 1rem;
                 padding: 2rem;
             }
+
+            @include respond(phone){
+                width: 6rem;
+                height: 6rem;
+            }
         }
     }
 

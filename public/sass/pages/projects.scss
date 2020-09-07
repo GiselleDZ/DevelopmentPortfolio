@@ -81,7 +81,7 @@
             }
 
             @include respond(phone){
-                height: 50rem;
+                height: 55rem;
             }
         }
 
@@ -94,7 +94,7 @@
             }
 
             @include respond(phone){
-                height: 45rem;
+                height: 52rem;
             }
         }
 
@@ -134,7 +134,7 @@
                 }
                 
                 @include respond(phone){
-                    margin: 3rem -11rem 0 0;
+                    margin: 3rem 4rem 0 0;
                 }
 
             }

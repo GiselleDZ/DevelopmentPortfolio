@@ -138,6 +138,10 @@
             top: 48rem;
         }
 
+        @include respond(phone){
+            top: 56rem;
+        }
+
         &--right{
             float: right;
 

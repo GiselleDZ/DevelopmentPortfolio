@@ -83,6 +83,7 @@
 
     &__items{
         margin: 1rem;
+        transform: scale(1);
     }
 
     &__link{
@@ -136,7 +137,15 @@
         khtml-opacity: 1;
         moz-opacity: 1;
         width: 100%;
+        
+        &__list {
+
+            &__items{
+                transform: scale(4);
+            }
+        }
     }
+
 
 
     // I C O N

@@ -22,27 +22,42 @@ export default class Footer extends Component {
                         <div className="footer__navigation">
                             <ul className="footer__list">
                                 <li className="footer__item">
-                                    <a href="https://linkedin.com/in/gisellezatonyl" className="footer__link">
+                                    <a href="https://linkedin.com/in/gisellezatonyl" 
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        className="footer__link">
                                         linkedin
                                     </a>
                                 </li>
                                 <li className="footer__item">
-                                    <a href="https://github.com/GiselleDZ" className="footer__link">
+                                    <a href="https://github.com/GiselleDZ" 
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        className="footer__link">
                                         github
                                     </a>
                                 </li>
                                 <li className="footer__item">
-                                    <a href="https://drive.google.com/file/d/1fvXaVcHTkf5DGg8mp39P2gme4OWn1Xls/view?usp=sharing" className="footer__link">
+                                    <a href="https://drive.google.com/file/d/1fvXaVcHTkf5DGg8mp39P2gme4OWn1Xls/view?usp=sharing" 
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        className="footer__link">
                                         resume pdf
                                     </a>
                                 </li>
                                 <li className="footer__item">
-                                    <a href="#contactpopup" className="footer__link">
+                                    <a href="#contactpopup" 
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        className="footer__link">
                                         e-mail
                                     </a>
                                 </li>
                                 <li className="footer__item">
-                                    <a href="http://www.gisellezatonyl.com" className="footer__link">
+                                    <a href="http://www.gisellezatonyl.com" 
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        className="footer__link">
                                         art portfolio
                                     </a>
                                 </li>

@@ -66,9 +66,9 @@
         }
         
         @include respond(phone){
-            width: 150%;  
+            width: 180%;  
             top: -15%;
-            left: 5%;
+            left: 20%;
         }
         
         &--main{
@@ -78,12 +78,6 @@
             @include respond(tab-port){
                 top: 15%;   
                 left: -22%;
-            }
-
-            
-            @include respond(phone){
-                top: 10%;
-                left: -52%;
             }
         }
         
