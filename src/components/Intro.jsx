@@ -81,15 +81,15 @@ export default class Intro extends Component {
                                         I'm a Full Stack Software Engineer. I recently pivoted from Graphic Design because the tech couldn't keep up with my desire to automate, improve systems, and get under the hood. 
                                     </p>
                                     <p className="paragraph paragraph--big paragraph--thick paragraph--dark u-margin-bottom-small">
-                                    I'm interested in creating memorable user experiences with engaging functionality, captivating design, state-of-the-art tech, and agile code. My current aim is to master Javascript, while familiarizing myself with C++ and Python. 
+                                    I'm interested in creating memorable user experiences with engaging functionality, captivating design, state-of-the-art tech, and agile code. 
                                     </p>
                                 </div>
                                 <div className="card__text">
                                     <p className="paragraph paragraph--big paragraph--thick paragraph--dark u-margin-bottom-small">
-                                        As a human, I'm a sci-fi nerd. I love hiking in nature, staying active, noise music and techno. I'm also a vocal advocate for BIPOC and LGBTQ+ rights, Net Neutrality and Climate Action. I was born in Buenos Aires, Argentina; I'm bilingual. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Find out more in&nbsp;
+                                        As a human, I'm a sci-fi nerd. I love hiking in nature, staying active, noise music and techno. I'm also a vocal advocate for BIPOC and LGBTQ+ rights, Net Neutrality and Climate Action. I was born in Buenos Aires, Argentina; I'm bilingual. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Find out more in &nbsp;
                                         <a href="#biopopup" className="paragraph paragraph--link" onClick={(e) => this.noFlip(e)}>
                                              my bio
-                                        </a>&nbsp; !
+                                        </a> &nbsp; !
                                     </p>
                                 </div>
                             </div>
@@ -120,16 +120,16 @@ export default class Intro extends Component {
                                 Hi again!
                             </h2>
                             <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">
-                                So I'll get right down to it. For the previous 10 years, I worked as Graphic and Motion Designer for companies like CBRE, Gensler and Estee Lauder.</p>
+                                For the previous 10 years, I worked as Graphic and Motion Designer for companies like CBRE, Gensler and Estee Lauder.</p>
                             <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">
-                                Simultaneously, I worked on side projects, focusing on 3D animation, which meant working with software engineers to develop interactive interfaces, for example, a future inspired Art Museum on the web, created in WebGL and ThreeJS. Or &nbsp; <a href="http://www.dream-space.net/artists/zatonyl/" className="popup__link">this project</a> &nbsp; I built for Dreamspace, in Unity. I even built my own &nbsp;<a href="http://www.dream-space.net/artists/zatonyl/" className="popup__link">art portfolio website</a>&nbsp; on Adobe Dreamweaver and Muse. Don't worry, I'll get to fixing it soon with my **actual development skills.
+                                Simultaneously, I worked on side projects, focusing on 3D animation, which meant working with software engineers to develop interactive interfaces, for example, a future inspired Art Museum on the web, created in WebGL and ThreeJS. Or&nbsp; <a href="http://www.dream-space.net/artists/zatonyl/" className="popup__link">this project</a> &nbsp;I built in Unity for Dreamspace. I even built my own &nbsp;<a href="http://www.dream-space.net/artists/zatonyl/" className="popup__link">art portfolio website</a>&nbsp; on Adobe Dreamweaver and Muse. 
                                 Projects like these, drove me to really learn programming, so I joined the Grace Hopper Program to kick start my learning. 
                             </p>
                             <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">
                                 I look forward to creating user focused, agile products, and making a difference in the way technology affects and includes people.
                             </p>
                             <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">
-                                 As someone who is aware of the structures that make up our world, I have ideals to uphold while working in tech. I believe in net-neutrality, climate action, inclusion, reparations, and transparency. I expect teams and companies to actively work toward bettering our world, and anything less, would be a diservice.
+                                 As someone who is aware of the structures that make up our world, I have ideals to uphold while working in tech. I believe in net-neutrality, climate action, inclusion, reparations, and transparency. I expect teams and companies to actively work toward bettering our world, and nothing less.
                             </p>
                             <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">
                                 If you would like to chat or have any questions, email me at gisellezatonyl@gmail.com

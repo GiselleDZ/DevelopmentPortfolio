@@ -54,7 +54,7 @@ export default class Footer extends Component {
                                     </a>
                                 </li>
                                 <li className="footer__item">
-                                    <a href="http://www.gisellezatonyl.com" 
+                                    <a href="http://gisellezatonyl.com" 
                                         rel="noopener noreferrer"
                                         target="_blank"
                                         className="footer__link">
