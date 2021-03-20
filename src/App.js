@@ -6,6 +6,7 @@ import Intro from './components/Intro'
 import Projects from './components/projects/Projects'
 import Loading from './components/Loading'
 import "../public/css/style.css"
+import ContactPop from './components/ContactPop'
 
 
 export default class App extends Component {
@@ -26,6 +27,7 @@ export default class App extends Component {
     return (
         <div className="body">
             <Navigation />
+            <ContactPop />
 
             {
                 this.state.loaded === true ? (

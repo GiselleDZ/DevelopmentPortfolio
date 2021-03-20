@@ -1,14 +1,16 @@
 import React, { Component } from "react"
+import ContactPop from "./ContactPop"
 
 export default class Footer extends Component {
     constructor(){
         super()
-        this.handleContact = this.handleContact.bind(this)
+        // this.handleContact = this.handleContact.bind(this)
     }
+    // handleContact(e){
+    //     e.preventDefault()
+    //     localStorage.setItem('location','footer')
+    // }
 
-    handleContact(){
-
-    }
     
     render(){
         return(
@@ -46,10 +48,10 @@ export default class Footer extends Component {
                                     </a>
                                 </li>
                                 <li className="footer__item">
-                                    <a href="#contactpopup" 
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                        className="footer__link">
+                                    <a href="#contactpopup"
+                                        className="footer__link" 
+                                        // onClick={(e)=>this.handleContact(e)}
+                                        >
                                         e-mail
                                     </a>
                                 </li>
@@ -57,7 +59,8 @@ export default class Footer extends Component {
                                     <a href="http://gisellezatonyl.com" 
                                         rel="noopener noreferrer"
                                         target="_blank"
-                                        className="footer__link">
+                                        className="footer__link"
+                                        >
                                         art portfolio
                                     </a>
                                 </li>
@@ -68,20 +71,6 @@ export default class Footer extends Component {
                         </div>
                     </div>
                 </footer>
-                <section className="popup" id="contactpopup">
-                    <div className="popup__content">
-                        <img src="public\assets\imgs\misc-bckg.png" alt="3D landscape with engine grid" className="popup__image"/>
-                        <a href="#footer" className="popup__close">&times;</a>
-                        <div className="popup__text">
-                            <h2 className="heading-secondary heading-secondary--light u-margin-bottom-smallmedium">
-                                Under construction ¯\_(ツ)_/¯
-                            </h2>
-                            <h3 className="heading-tertiary heading-tertiary--light">
-                                Please e-mail gisellezatonyl@gmail.com
-                            </h3>
-                        </div>
-                    </div>
-                </ section>
             </section>
         )
     }

@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import ContactPop from "./ContactPop"
 
 export default class Navigation extends Component {
     constructor(){
@@ -9,11 +10,7 @@ export default class Navigation extends Component {
     toggleNav(e){
         const checkbox = document.getElementById('navi-toggle')
 
-        if(checkbox.checked === true){
-            checkbox.checked = false
-        } else {
-            checkbox.checked = true
-        }
+        checkbox.checked = !checkbox.checked
     }
 
     render(){
@@ -48,7 +45,7 @@ export default class Navigation extends Component {
                             <a href="#coocucachew" onClick={e => this.toggleNav(e)} className="navigation__link navigation__link--small">Coocucachew</a>
                         </li>
                         <li className="navigation__items">
-                            <a href="#footer" onClick={e => this.toggleNav(e)} className="navigation__link navigation__link--small">Contact</a>
+                            <a href="#contactpopup" id='nav-contact' onClick={e => this.toggleNav(e)} className="navigation__link navigation__link--small">Contact</a>
                         </li>
                     </ol>
                 </nav>
