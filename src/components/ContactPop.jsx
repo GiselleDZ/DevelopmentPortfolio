@@ -122,7 +122,7 @@ export default class ContactPop extends Component {
                 <div className='popup__content'>
                     <div className="row">
                         <div className="col-1of2">
-                            <img src="public\assets\imgs\misc-bckg.png" alt="3D landscape with engine grid" className="popup__image"/>
+                            <img src="public\assets\imgs\misc-bckg.png" alt="3D landscape with 3D engine grid" className="popup__image"/>
                         </div>
                         <div className="col-1of2">
                             <a href='#footer' className="popup__close">&times;</a>
