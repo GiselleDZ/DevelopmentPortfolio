@@ -119,16 +119,17 @@ export default class ContactPop extends Component {
     
         return (
             <section className="popup" id="contactpopup">
+                <a href="#footer" className="popup__background popup__close"></a>
                 <div className='popup__content'>
                     <div className="row">
                         <div className="col-1of2">
-                            <img src="public\assets\imgs\misc-bckg.png" alt="3D landscape with engine grid" className="popup__image"/>
+                            <img src="public\assets\imgs\misc-bckg.png" alt="3D landscape with 3D engine grid" className="popup__image"/>
                         </div>
                         <div className="col-1of2">
                             <a href='#footer' className="popup__close">&times;</a>
                             <br></br>
                             <h2 className="popup__header heading-secondary heading-secondary--light">
-                                Hit me up!
+                                Drop me a line
                             </h2>
                             <form id='popup' onSubmit={this.handleSubmit} noValidate>
                                 <input
@@ -203,17 +204,3 @@ export default class ContactPop extends Component {
         )
     }
 }
-
-
-{/* <section className="popup" id="contactpopup">
-<div className="popup__content">
-        <img src="public\assets\imgs\misc-bckg.png" alt="3D landscape with engine grid" className="popup__image"/>
-        <a href="#footer" className="popup__close">&times;</a>
-        <div className="popup__text">
-            <h3 className="heading-tertiary heading-tertiary--light">
-                Please e-mail gisellezatonyl@gmail.com
-            </h3>
-
-        </div>
-    </div>
-</ section> */}

@@ -32,6 +32,14 @@ export default class App extends Component {
             {
                 this.state.loaded === true ? (
                     <div id="loaded">
+                        <a href="#HiHello" className="btt">
+                            <figure className="btt__main">
+                                <figcaption className="btt__caption">
+                                    <span className="btt__arrow">&#x2191;</span> Back to Top
+                                </figcaption>
+                            </figure>
+                        </a>
+
                         <Header />
                         <Intro />
                         <Projects />

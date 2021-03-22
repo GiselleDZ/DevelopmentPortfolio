@@ -20,8 +20,15 @@
         width: 100%;
     }
 
+    &__background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
 
     &__content{
+        width: 80%;
         border: 1px solid $medium-blue;
         background-color: $darkest-blue;
         box-shadow: $box-shadow-dark;
@@ -42,6 +49,7 @@
         }
 
         @include respond(phone){
+            max-height: 80%;
         }
 
         &--bio{
@@ -102,6 +110,10 @@
         display: block;
         object-fit: cover;
         border: .1rem solid $medium-light-blue;
+
+        @include respond(phone){
+            height: 30rem;
+        }
 
         &--headshot{
             float: right;

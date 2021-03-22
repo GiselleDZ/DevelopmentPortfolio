@@ -4,12 +4,7 @@ import ContactPop from "./ContactPop"
 export default class Footer extends Component {
     constructor(){
         super()
-        // this.handleContact = this.handleContact.bind(this)
     }
-    // handleContact(e){
-    //     e.preventDefault()
-    //     localStorage.setItem('location','footer')
-    // }
 
     
     render(){
@@ -40,7 +35,7 @@ export default class Footer extends Component {
                                     </a>
                                 </li>
                                 <li className="footer__item">
-                                    <a href="https://drive.google.com/file/d/1fvXaVcHTkf5DGg8mp39P2gme4OWn1Xls/view?usp=sharing" 
+                                    <a href="https://drive.google.com/file/d/13KboxwJRf0cAr4p6s3hsa9LOJ9ymV5w9/view?usp=sharing" 
                                         rel="noopener noreferrer"
                                         target="_blank"
                                         className="footer__link">
@@ -50,7 +45,6 @@ export default class Footer extends Component {
                                 <li className="footer__item">
                                     <a href="#contactpopup"
                                         className="footer__link" 
-                                        // onClick={(e)=>this.handleContact(e)}
                                         >
                                         e-mail
                                     </a>

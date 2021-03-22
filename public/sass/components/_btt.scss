@@ -1,0 +1,35 @@
+.btt{
+    position: fixed;
+    z-index: 900;
+    bottom: 5%;
+    right: 5%;
+    width: 6rem;
+    height: 6rem;
+    background-image: radial-gradient( $darker-blue, $darkester-blue );
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 50%;
+
+    @include basic-blue-shadow(.5);
+
+    &__main{
+        width: 100%;
+        @include center-axis(50%,50%);
+    }
+
+    &__arrow{
+        color: white;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    &__caption{
+        width: 50%;
+        color: white;
+        font-size: .8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        @include center-axis(50%,50%);
+    }
+}

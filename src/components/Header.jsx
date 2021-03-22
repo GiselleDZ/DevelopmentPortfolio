@@ -59,7 +59,7 @@ export default class Header extends Component {
                     </div>
                     <div className="header-composition__background__button">
                         <a href="#intro" className="btn btn--black">
-                            Hi, thanks for stopping by 🡓 
+                            Hi, thanks for stopping by <span className="paragraph paragraph--big">&#x21B4;</span>
                         </a>
                     </div>
                 </div>

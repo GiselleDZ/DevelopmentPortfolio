@@ -75,21 +75,27 @@ export default class Intro extends Component {
                                
                                 <div className="card__text">
                                     <h3 className="heading-quaternary heading-quaternary--dark u-margin-bottom-small">
-                                        Hi, Hello!
+                                    Hi, Hello !
                                     </h3>
-                                    <p className="paragraph paragraph--big paragraph--thick paragraph--dark u-margin-bottom-small">
-                                        I'm a Full Stack Software Engineer. I recently pivoted from Graphic Design because the tech couldn't keep up with my desire to automate, improve systems, and get under the hood. 
+                                    <p className="paragraph paragraph--medium-large paragraph--spacious paragraph--thick paragraph--dark u-margin-bottom-small">
+                                        I'm Giselle, a Front-End-leaning-Full-Stack Software Engineer (who isn't about labels.)  Welcome to my portfolio! 
                                     </p>
-                                    <p className="paragraph paragraph--big paragraph--thick paragraph--dark u-margin-bottom-small">
-                                    I'm interested in creating memorable user experiences with engaging functionality, captivating design, state-of-the-art tech, and agile code. 
+                                    <p className="paragraph paragraph--medium-large paragraph--spacious paragraph--thick paragraph--dark u-margin-bottom-small">
+                                        I'm interested in creating memorable user experiences with engaging functionality, captivating design, state-of-the-art tech, and efficient code. 
+                                    </p>
+                                    <p className="paragraph paragraph--medium-large paragraph--spacious paragraph--thick paragraph--dark u-margin-bottom-small">
+                                        I recently pivoted from Graphic Design because it wasn't technical enough. BUT, tbh, once a designer, always a designer..  
                                     </p>
                                 </div>
                                 <div className="card__text">
-                                    <p className="paragraph paragraph--big paragraph--thick paragraph--dark u-margin-bottom-small">
-                                        As a human, I'm a sci-fi nerd. I love hiking in nature, staying active, noise music and techno. I'm also a vocal advocate for BIPOC and LGBTQ+ rights, Net Neutrality and Climate Action. I was born in Buenos Aires, Argentina; I'm bilingual. I'm married to my incredible wife Stella, we have two really cute and spoiled cats. Find out more in &nbsp;
+                                    <p className="paragraph paragraph--medium-large paragraph--spacious paragraph--thick paragraph--dark u-margin-bottom-small">
+                                        As a human, I am mostly composed of Sci-Fi-Noise-Techno Nerd. I love hiking in nature and staying active. I'm also a vocal advocate for BIPOC and LGBTQ+ rights, Net Neutrality, and Climate Justice. I was born in Buenos Aires, Argentina. I'm married to my rad wife Stella, we have two really cute and spoiled cats.
+                                    </p>
+                                    <p className="paragraph paragraph--medium-large paragraph--spacious paragraph--thick paragraph--dark u-margin-bottom-small">
+                                    Find out more in &nbsp;
                                         <a href="#biopopup" className="paragraph paragraph--link" onClick={(e) => this.noFlip(e)}>
-                                             my bio
-                                        </a> &nbsp; !
+                                             MY BIO!
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -122,7 +128,7 @@ export default class Intro extends Component {
                             <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">
                                 For the previous 10 years, I worked as Graphic and Motion Designer for companies like CBRE, Gensler and Estee Lauder.</p>
                             <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">
-                                Simultaneously, I worked on side projects, focusing on 3D animation, which meant working with software engineers to develop interactive interfaces, for example, a future inspired Art Museum on the web, created in WebGL and ThreeJS. Or&nbsp; <a href="http://www.dream-space.net/artists/zatonyl/" className="popup__link">this project</a> &nbsp;I built in Unity for Dreamspace. I even built my own &nbsp;<a href="http://www.dream-space.net/artists/zatonyl/" className="popup__link">art portfolio website</a>&nbsp; on Adobe Dreamweaver and Muse. 
+                                Simultaneously, I worked on side projects, focusing on 3D animation, which meant working with software engineers to develop interactive interfaces, for example, a future inspired Art Museum on the web, created in WebGL and ThreeJS. Or&nbsp; <a href="http://www.dream-space.net/artists/zatonyl/" className="popup__link" rel="noopener noreferrer" target="_blank" >this project</a> &nbsp;I built in Unity for Dreamspace. I even built my own &nbsp;<a href="http://www.dream-space.net/artists/zatonyl/" className="popup__link" rel="noopener noreferrer" target="_blank">art portfolio website</a>&nbsp; on Adobe Dreamweaver and Muse. 
                                 Projects like these, drove me to really learn programming, so I joined the Grace Hopper Program to kick start my learning. 
                             </p>
                             <p className="paragraph paragraph--light paragraph--big popup__text--bio u-margin-bottom-small">

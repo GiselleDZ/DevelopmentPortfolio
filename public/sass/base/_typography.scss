@@ -156,6 +156,10 @@ body {
         font-size: 1.6rem;
     }
 
+    &--spacious{
+        letter-spacing: .1rem;
+    }
+
     &--light{color: $light-blue;}
 
     &--medium{ color: $dark-blue;}
