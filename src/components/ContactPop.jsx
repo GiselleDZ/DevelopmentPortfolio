@@ -8,6 +8,7 @@ const emailRegex = RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[
 const formValid = ({ formErrors, ...rest }) => {
     let valid = true
 
+    console.log(formErrors)
     // Validate form errors being empty
     Object.values(formErrors).forEach((val) => {
         val.length > 0 && (valid = false)
@@ -46,36 +47,37 @@ export default class ContactPop extends Component {
 
     handleSubmit(e) {
         e.preventDefault()
+        // console.log(this.state)
     
         if (formValid(this.state)) {
-        // Handle form validation success
-        const { name, email, subject, message } = this.state
-    
-        // Set template params
-        let templateParams = {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message,
-        }
+            // Handle form validation success
+            const { name, email, subject, message } = this.state
+        
+            // Set template params
+            let templateParams = {
+                name: name,
+                email: email,
+                subject: subject,
+                message: message,
+            }
 
-        emailjs.send('service_w5eoino', 'template_o92s2as', templateParams, 'user_EIa0SEKr06VePcoRzBkwW')
+            emailjs.send('service_w5eoino', 'template_o92s2as', templateParams, 'user_EIa0SEKr06VePcoRzBkwW')
 
-        alert(`Thanks, ${name}! I forwaded your message to Giselle. You'll receive an e-mail confirmation shortly`)
+            alert(`Thanks, ${name}! I forwaded your message to Giselle. You'll receive an e-mail confirmation shortly`)
     
-        console.log(`
-            --SUBMITTED--
-            Name: ${name}
-            Email: ${email}
-            Subject: ${subject}
-            Message: ${message}
-        `)
-    
-        this.resetForm()
+            console.log(`
+                --SUBMITTED--
+                Name: ${name}
+                Email: ${email}
+                Subject: ${subject}
+                Message: ${message}
+            `)
+        
+            this.resetForm()
         } else {
-        // Handle form validation failure
-        console.error('There was an error submitting the contact form, please check all fields are filled and try again.')
-        alert('There was an error submitting your message. Please check the form and try again. If the error persists, let me know! gz@gisellezatonyl.com ')
+            // Handle form validation failure
+            console.error('There was an error submitting the contact form, please check all fields are filled and try again.')
+            alert('There was an error submitting your message. Please check the form and try again. If the error persists, let me know! gz@gisellezatonyl.com ')
         }
     }
     
@@ -100,7 +102,7 @@ export default class ContactPop extends Component {
             formErrors.name = value.length < 1 ? "What's your name?" : ''
             break
         case 'email':
-            formErrors.email = emailRegex.test(value) ? "What e-mail can we use to get in touch?" : "What e-mail can we use to get in touch?"
+            formErrors.email = emailRegex.test(value) ? '' : "What e-mail can we use to get in touch?"
             break
         case 'subject':
             formErrors.subject = value.length < 1 ? "What's your message about?" : ''
