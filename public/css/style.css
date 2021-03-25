@@ -560,6 +560,8 @@ body {
       @media (min-width: 130em) {
         .popup__content--bio {
           padding: 8rem; } }
+    .popup__content--cert {
+      width: 100%; }
   .popup__error {
     color: #edf5ff; }
   .popup__error-message {
@@ -648,22 +650,22 @@ body {
   position: relative;
   top: 16rem;
   left: 0;
-  height: 42rem;
+  height: 50rem;
   width: 70%;
   margin: 0 auto; }
   @media (min-width: 130em) {
     .card {
-      height: 50rem;
+      height: 60rem;
       top: 32rem; } }
   @media (max-width: 75em) {
     .card {
-      height: 45rem;
+      height: 48rem;
       width: 80%; } }
   @media (max-width: 37.5em) {
     .card {
-      height: 62rem; } }
+      height: 70rem; } }
   .card__side {
-    height: 42rem;
+    height: 50rem;
     transition: all 1s;
     position: absolute;
     top: 0;
@@ -676,13 +678,13 @@ body {
     box-shadow: 0 1rem 2rem rgba(15, 98, 254, 0.4); }
     @media (min-width: 130em) {
       .card__side {
-        height: 50rem; } }
+        height: 60rem; } }
     @media (max-width: 75em) {
       .card__side {
-        height: 45rem; } }
+        height: 48rem; } }
     @media (max-width: 37.5em) {
       .card__side {
-        height: 62rem; } }
+        height: 70rem; } }
   .card--flip {
     transform: rotateY(360deg); }
   .card--flip .card__side--back {
@@ -738,18 +740,18 @@ body {
   .card__button-container {
     position: absolute;
     width: 100%;
-    top: 44rem;
+    top: 50rem;
     margin: 0 auto;
-    margin-top: 10rem; }
+    margin-top: 8rem; }
     @media (min-width: 130em) {
       .card__button-container {
-        top: 52rem; } }
+        top: 60rem; } }
     @media (max-width: 75em) {
       .card__button-container {
         top: 48rem; } }
     @media (max-width: 37.5em) {
       .card__button-container {
-        top: 56rem; } }
+        top: 70rem; } }
     .card__button-container--right {
       float: right; }
       @media (max-width: 37.5em) {

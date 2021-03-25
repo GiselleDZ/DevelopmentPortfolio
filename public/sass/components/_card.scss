@@ -126,20 +126,20 @@
     &__button-container{
         position: absolute;
         width: 100%;
-        top: 44rem;
+        top: $card-height;
         margin: 0 auto;
-        margin-top: 10rem;
+        margin-top: 8rem;
 
         @include respond(big-desktop){
-            top: 52rem;
+            top: $card-height-big;
         }
         
         @include respond(tab-land){
-            top: 48rem;
+            top: $card-height-tab;
         }
 
         @include respond(phone){
-            top: 56rem;
+            top: $card-height-phone;
         }
 
         &--right{
