@@ -35,7 +35,7 @@ export default class Footer extends Component {
                                     </a>
                                 </li>
                                 <li className="footer__item">
-                                    <a href="https://drive.google.com/file/d/13KboxwJRf0cAr4p6s3hsa9LOJ9ymV5w9/view?usp=sharing" 
+                                    <a href="https://drive.google.com/file/d/1WGL0CSPix7EAmTgjUxV86aLplXlP83Qm/view?usp=sharing" 
                                         rel="noopener noreferrer"
                                         target="_blank"
                                         className="footer__link">
