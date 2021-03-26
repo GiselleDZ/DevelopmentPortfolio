@@ -130,9 +130,15 @@ export default class ContactPop extends Component {
                         <div className="col-1of2">
                             <a href='#footer' className="popup__close">&times;</a>
                             <br></br>
-                            <h2 className="popup__header heading-secondary heading-secondary--light">
-                                Drop me a line
-                            </h2>
+                            {/* <h2 className="popup__header heading-secondary heading-secondary--light">
+                                Hit me up!
+                            </h2> */}
+                             <a href="mailto:gz@gisellezatonyl.com?subject=Mail from dev.gisellezatonyl.com" className="paragraph paragraph--light" >
+                                <h2 className="popup__header heading-secondary heading-secondary--light">
+                                    Hit me up!
+                                </h2>
+                                <p className="paragraph paragraph--light">gz@gisellezatonyl.com</p>
+                            </a>
                             <form id='popup' onSubmit={this.handleSubmit} noValidate>
                                 <input
                                     type='text'
