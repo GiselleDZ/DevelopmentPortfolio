@@ -20,7 +20,13 @@ const PlaygroundTemplate = ({ title, children }) => (
     >
       {title}
     </header>
-    <div style={{ width: "800px", height: "500px", background: "pink" }}>
+    <div
+      style={{
+        width: window.innerWidth - 100,
+        height: window.innerHeight - 194,
+        border: "3px solid #3d7cff",
+      }}
+    >
       {children}
     </div>
   </div>
