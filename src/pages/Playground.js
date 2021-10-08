@@ -1,33 +1,17 @@
 import React, { useEffect, useRef } from "react";
+import firstSketch from "../artComponents";
 import { ReactP5Wrapper } from "react-p5-wrapper";
-import sketch from "../artComponents/sketch";
+import { PlaygroundTemplate } from "../components";
 
-const Playground = (p5) => {
+const Playground = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        alignContent: "center",
-        flexFlow: "column",
-      }}
-    >
-      <header
-        style={{
-          margin: "1em",
-          color: "white",
-          fontSize: "30px",
-        }}
-      >
-        SKETCHY SKETCH
-      </header>
-      <div style={{ width: "800px", height: "500px", background: "pink" }}>
+    <>
+      <PlaygroundTemplate title="SKETCHY SKETCH">
         <>
-          <ReactP5Wrapper sketch={sketch} />
+          <ReactP5Wrapper sketch={firstSketch} />
         </>
-      </div>
-    </div>
+      </PlaygroundTemplate>
+    </>
   );
 };
 
