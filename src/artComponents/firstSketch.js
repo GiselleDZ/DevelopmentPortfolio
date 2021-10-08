@@ -17,6 +17,7 @@ const firstSketch = (p) => {
       p.fill(255);
       p.ellipse(p.mouseX, p.mouseY, 8, 8);
     }
+    console.log("mouse position", mouseX, mouseY);
   };
 };
 
