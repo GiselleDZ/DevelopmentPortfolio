@@ -15,8 +15,7 @@ const Button = ({
     <div
       style={{
         margin: "1rem",
-        padding: "1rem 2rem",
-        borderRadius: "10%",
+        padding: "1rem 3rem",
         border: `3px solid ${borderColor}`,
         backgroundColor: bgColor,
         color: textColor,

@@ -16,6 +16,7 @@ const PlaygroundTemplate = ({ title, borderColor, bgColor, children }) => (
         margin: "1em",
         color: "white",
         fontSize: "30px",
+        marginBottom: "2em",
       }}
     >
       {title}
@@ -23,7 +24,7 @@ const PlaygroundTemplate = ({ title, borderColor, bgColor, children }) => (
     <div
       style={{
         width: window.innerWidth - 100,
-        height: window.innerHeight - 194,
+        height: window.innerHeight - 294,
         border: `3px solid ${borderColor}`,
         backgroundColor: `${bgColor}`,
       }}
