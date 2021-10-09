@@ -30,7 +30,7 @@ export class Navigation extends Component {
           <ol className="navigation__list">
             <li className="navigation__items">
               <a
-                href="#HiHello"
+                href="/#HiHello"
                 onClick={(e) => this.toggleNav(e)}
                 className="navigation__link"
               >
@@ -39,7 +39,7 @@ export class Navigation extends Component {
             </li>
             <li className="navigation__items">
               <a
-                href="#intro"
+                href="/#intro"
                 onClick={(e) => this.toggleNav(e)}
                 className="navigation__link"
               >
@@ -48,7 +48,7 @@ export class Navigation extends Component {
             </li>
             <li className="navigation__items">
               <a
-                href="#projects"
+                href="/#projects"
                 onClick={(e) => this.toggleNav(e)}
                 className="navigation__link"
               >
@@ -57,7 +57,7 @@ export class Navigation extends Component {
             </li>
             <li className="navigation__items">
               <a
-                href="#thirdcultmasks"
+                href="/#thirdcultmasks"
                 onClick={(e) => this.toggleNav(e)}
                 className="navigation__link navigation__link--small"
               >
@@ -66,7 +66,7 @@ export class Navigation extends Component {
             </li>
             <li className="navigation__items">
               <a
-                href="#pentimento"
+                href="/#pentimento"
                 onClick={(e) => this.toggleNav(e)}
                 className="navigation__link navigation__link--small"
               >
@@ -75,7 +75,7 @@ export class Navigation extends Component {
             </li>
             <li className="navigation__items">
               <a
-                href="#vchatbot"
+                href="/#vchatbot"
                 onClick={(e) => this.toggleNav(e)}
                 className="navigation__link navigation__link--small"
               >
@@ -84,7 +84,7 @@ export class Navigation extends Component {
             </li>
             <li className="navigation__items">
               <a
-                href="#coocucachew"
+                href="/#coocucachew"
                 onClick={(e) => this.toggleNav(e)}
                 className="navigation__link navigation__link--small"
               >
@@ -93,7 +93,7 @@ export class Navigation extends Component {
             </li>
             <li className="navigation__items">
               <a
-                href="#contactpopup"
+                href="/#contactpopup"
                 id="nav-contact"
                 onClick={(e) => this.toggleNav(e)}
                 className="navigation__link navigation__link--small"
