@@ -19,6 +19,9 @@
     "build:all": "npm-run-all --parallel build:css build ",
     "heroku-postbuild": "webpack -p"
   },
+  "engines": {
+    "node": ">=0.12"
+  },
   "browserslist": [
     "last 10 versions",
     "> 5%",
